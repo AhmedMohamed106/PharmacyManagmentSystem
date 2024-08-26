@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             label1 = new Label();
@@ -60,12 +60,10 @@
             PurchaseReturnTab = new TabPage();
             customersTab = new TabPage();
             dgvCustomer = new DataGridView();
-            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            nameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            addressDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            phoneNumDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            customerBindingSource = new BindingSource(components);
+            customerBindingSource1 = new BindingSource(components);
             groupBox2 = new GroupBox();
+            txtCEmail = new TextBox();
+            label10 = new Label();
             btnUpdate = new Button();
             txtCPhone = new TextBox();
             txtCAddress = new TextBox();
@@ -77,8 +75,10 @@
             reportsTab = new TabPage();
             accountTab = new TabPage();
             backupTab = new TabPage();
-            Sales = new DataGridViewTextBoxColumn();
-            customerBindingSource1 = new BindingSource(components);
+            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            nameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            addressDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            phoneNumDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             Email = new DataGridViewTextBoxColumn();
             Column1 = new DataGridViewButtonColumn();
             Column2 = new DataGridViewButtonColumn();
@@ -89,9 +89,8 @@
             groupBox1.SuspendLayout();
             customersTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvCustomer).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)customerBindingSource).BeginInit();
-            groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)customerBindingSource1).BeginInit();
+            groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -104,7 +103,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1242, 77);
+            panel1.Size = new Size(1579, 77);
             panel1.TabIndex = 0;
             // 
             // guna2ControlBox1
@@ -112,14 +111,14 @@
             guna2ControlBox1.Anchor = AnchorStyles.Right;
             guna2ControlBox1.BackColor = Color.Gray;
             guna2ControlBox1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            guna2ControlBox1.CustomizableEdges = customizableEdges3;
+            guna2ControlBox1.CustomizableEdges = customizableEdges1;
             guna2ControlBox1.FillColor = Color.FromArgb(0, 0, 0, 0);
             guna2ControlBox1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
             guna2ControlBox1.IconColor = Color.White;
-            guna2ControlBox1.Location = new Point(1193, 15);
+            guna2ControlBox1.Location = new Point(1530, 15);
             guna2ControlBox1.Margin = new Padding(3, 4, 3, 4);
             guna2ControlBox1.Name = "guna2ControlBox1";
-            guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2ControlBox1.Size = new Size(35, 49);
             guna2ControlBox1.TabIndex = 1;
             // 
@@ -143,7 +142,7 @@
             panel2.Location = new Point(0, 77);
             panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1242, 704);
+            panel2.Size = new Size(1579, 704);
             panel2.TabIndex = 1;
             // 
             // guna2TabControl1
@@ -165,7 +164,7 @@
             guna2TabControl1.Margin = new Padding(3, 4, 3, 4);
             guna2TabControl1.Name = "guna2TabControl1";
             guna2TabControl1.SelectedIndex = 0;
-            guna2TabControl1.Size = new Size(1242, 704);
+            guna2TabControl1.Size = new Size(1579, 704);
             guna2TabControl1.TabButtonHoverState.BorderColor = Color.Empty;
             guna2TabControl1.TabButtonHoverState.FillColor = Color.FromArgb(40, 52, 70);
             guna2TabControl1.TabButtonHoverState.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
@@ -190,7 +189,7 @@
             loginTab.Location = new Point(184, 4);
             loginTab.Margin = new Padding(3, 4, 3, 4);
             loginTab.Name = "loginTab";
-            loginTab.Size = new Size(1054, 696);
+            loginTab.Size = new Size(1391, 696);
             loginTab.TabIndex = 9;
             loginTab.Text = "Login";
             loginTab.UseVisualStyleBackColor = true;
@@ -201,7 +200,7 @@
             salesTab.Margin = new Padding(3, 4, 3, 4);
             salesTab.Name = "salesTab";
             salesTab.Padding = new Padding(3, 4, 3, 4);
-            salesTab.Size = new Size(1054, 696);
+            salesTab.Size = new Size(1391, 696);
             salesTab.TabIndex = 1;
             salesTab.Text = "Sales";
             salesTab.UseVisualStyleBackColor = true;
@@ -211,7 +210,7 @@
             purchaseTab.Location = new Point(184, 4);
             purchaseTab.Margin = new Padding(3, 4, 3, 4);
             purchaseTab.Name = "purchaseTab";
-            purchaseTab.Size = new Size(1054, 696);
+            purchaseTab.Size = new Size(1391, 696);
             purchaseTab.TabIndex = 2;
             purchaseTab.Text = "Purchase";
             purchaseTab.UseVisualStyleBackColor = true;
@@ -222,7 +221,7 @@
             stockTab.Location = new Point(184, 4);
             stockTab.Margin = new Padding(3, 4, 3, 4);
             stockTab.Name = "stockTab";
-            stockTab.Size = new Size(1054, 696);
+            stockTab.Size = new Size(1391, 696);
             stockTab.TabIndex = 3;
             stockTab.Text = "Stock";
             stockTab.UseVisualStyleBackColor = true;
@@ -397,7 +396,7 @@
             salesReturnTab.Location = new Point(184, 4);
             salesReturnTab.Margin = new Padding(3, 4, 3, 4);
             salesReturnTab.Name = "salesReturnTab";
-            salesReturnTab.Size = new Size(1054, 696);
+            salesReturnTab.Size = new Size(1391, 696);
             salesReturnTab.TabIndex = 4;
             salesReturnTab.Text = "Sales Return";
             salesReturnTab.UseVisualStyleBackColor = true;
@@ -407,7 +406,7 @@
             PurchaseReturnTab.Location = new Point(184, 4);
             PurchaseReturnTab.Margin = new Padding(3, 4, 3, 4);
             PurchaseReturnTab.Name = "PurchaseReturnTab";
-            PurchaseReturnTab.Size = new Size(1054, 696);
+            PurchaseReturnTab.Size = new Size(1391, 696);
             PurchaseReturnTab.TabIndex = 5;
             PurchaseReturnTab.Text = "Purchase Return";
             PurchaseReturnTab.UseVisualStyleBackColor = true;
@@ -419,7 +418,7 @@
             customersTab.Location = new Point(184, 4);
             customersTab.Margin = new Padding(3, 4, 3, 4);
             customersTab.Name = "customersTab";
-            customersTab.Size = new Size(1054, 696);
+            customersTab.Size = new Size(1391, 696);
             customersTab.TabIndex = 8;
             customersTab.Text = "Customers";
             customersTab.UseVisualStyleBackColor = true;
@@ -429,49 +428,23 @@
             dgvCustomer.AutoGenerateColumns = false;
             dgvCustomer.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvCustomer.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCustomer.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, nameDataGridViewTextBoxColumn, addressDataGridViewTextBoxColumn, phoneNumDataGridViewTextBoxColumn, Sales, Email, Column1, Column2 });
+            dgvCustomer.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, nameDataGridViewTextBoxColumn, addressDataGridViewTextBoxColumn, phoneNumDataGridViewTextBoxColumn, Email, Column1, Column2 });
             dgvCustomer.DataSource = customerBindingSource1;
             dgvCustomer.Location = new Point(24, 235);
             dgvCustomer.Name = "dgvCustomer";
             dgvCustomer.RowHeadersWidth = 51;
             dgvCustomer.RowTemplate.Height = 29;
-            dgvCustomer.Size = new Size(999, 193);
+            dgvCustomer.Size = new Size(1357, 193);
             dgvCustomer.TabIndex = 2;
             // 
-            // idDataGridViewTextBoxColumn
+            // customerBindingSource1
             // 
-            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            idDataGridViewTextBoxColumn.HeaderText = "Id";
-            idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            nameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-            addressDataGridViewTextBoxColumn.HeaderText = "Address";
-            addressDataGridViewTextBoxColumn.MinimumWidth = 6;
-            addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            // 
-            // phoneNumDataGridViewTextBoxColumn
-            // 
-            phoneNumDataGridViewTextBoxColumn.DataPropertyName = "Phone_Num";
-            phoneNumDataGridViewTextBoxColumn.HeaderText = "Phone_Num";
-            phoneNumDataGridViewTextBoxColumn.MinimumWidth = 6;
-            phoneNumDataGridViewTextBoxColumn.Name = "phoneNumDataGridViewTextBoxColumn";
-            // 
-            // customerBindingSource
-            // 
-            customerBindingSource.DataSource = typeof(PharmacyManagementSystem.BLL.Models.Customer);
+            customerBindingSource1.DataSource = typeof(PharmacyManagementSystem.BLL.Models.Customer);
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(txtCEmail);
+            groupBox2.Controls.Add(label10);
             groupBox2.Controls.Add(btnUpdate);
             groupBox2.Controls.Add(txtCPhone);
             groupBox2.Controls.Add(txtCAddress);
@@ -484,10 +457,28 @@
             groupBox2.Margin = new Padding(3, 4, 3, 4);
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(3, 4, 3, 4);
-            groupBox2.Size = new Size(999, 189);
+            groupBox2.Size = new Size(1357, 189);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Product";
+            // 
+            // txtCEmail
+            // 
+            txtCEmail.Location = new Point(1097, 51);
+            txtCEmail.Margin = new Padding(3, 4, 3, 4);
+            txtCEmail.Name = "txtCEmail";
+            txtCEmail.Size = new Size(183, 27);
+            txtCEmail.TabIndex = 17;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.Location = new Point(1027, 50);
+            label10.Name = "label10";
+            label10.Size = new Size(64, 25);
+            label10.TabIndex = 16;
+            label10.Text = "Email:";
             // 
             // btnUpdate
             // 
@@ -573,7 +564,7 @@
             reportsTab.Location = new Point(184, 4);
             reportsTab.Margin = new Padding(3, 4, 3, 4);
             reportsTab.Name = "reportsTab";
-            reportsTab.Size = new Size(1054, 696);
+            reportsTab.Size = new Size(1391, 696);
             reportsTab.TabIndex = 7;
             reportsTab.Text = "Reports";
             reportsTab.UseVisualStyleBackColor = true;
@@ -584,7 +575,7 @@
             accountTab.Margin = new Padding(3, 4, 3, 4);
             accountTab.Name = "accountTab";
             accountTab.Padding = new Padding(3, 4, 3, 4);
-            accountTab.Size = new Size(1054, 696);
+            accountTab.Size = new Size(1391, 696);
             accountTab.TabIndex = 0;
             accountTab.Text = "Account";
             accountTab.UseVisualStyleBackColor = true;
@@ -594,21 +585,38 @@
             backupTab.Location = new Point(184, 4);
             backupTab.Margin = new Padding(3, 4, 3, 4);
             backupTab.Name = "backupTab";
-            backupTab.Size = new Size(1054, 696);
+            backupTab.Size = new Size(1391, 696);
             backupTab.TabIndex = 6;
             backupTab.Text = "Backup";
             backupTab.UseVisualStyleBackColor = true;
             // 
-            // Sales
+            // idDataGridViewTextBoxColumn
             // 
-            Sales.DataPropertyName = "Sales";
-            Sales.HeaderText = "Sales";
-            Sales.MinimumWidth = 6;
-            Sales.Name = "Sales";
+            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            idDataGridViewTextBoxColumn.HeaderText = "Id";
+            idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             // 
-            // customerBindingSource1
+            // nameDataGridViewTextBoxColumn
             // 
-            customerBindingSource1.DataSource = typeof(PharmacyManagementSystem.BLL.Models.Customer);
+            nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            addressDataGridViewTextBoxColumn.MinimumWidth = 6;
+            addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
+            // phoneNumDataGridViewTextBoxColumn
+            // 
+            phoneNumDataGridViewTextBoxColumn.DataPropertyName = "Phone_Num";
+            phoneNumDataGridViewTextBoxColumn.HeaderText = "Phone_Num";
+            phoneNumDataGridViewTextBoxColumn.MinimumWidth = 6;
+            phoneNumDataGridViewTextBoxColumn.Name = "phoneNumDataGridViewTextBoxColumn";
             // 
             // Email
             // 
@@ -633,7 +641,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1242, 781);
+            ClientSize = new Size(1579, 781);
             ControlBox = false;
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -651,10 +659,9 @@
             groupBox1.PerformLayout();
             customersTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvCustomer).EndInit();
-            ((System.ComponentModel.ISupportInitialize)customerBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)customerBindingSource1).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)customerBindingSource1).EndInit();
             ResumeLayout(false);
         }
 
@@ -701,14 +708,14 @@
         private Label label12;
         private Button btnUpdate;
         private DataGridView dgvCustomer;
-        private BindingSource customerBindingSource;
+        private BindingSource customerBindingSource1;
+        private Label label10;
+        private TextBox txtCEmail;
         private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn phoneNumDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn Sales;
         private DataGridViewTextBoxColumn Email;
-        private BindingSource customerBindingSource1;
         private DataGridViewButtonColumn Column1;
         private DataGridViewButtonColumn Column2;
     }

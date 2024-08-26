@@ -27,6 +27,7 @@ namespace PharmacyManagmentSystem.UI.Forms
                 Name=this.txtCName.Text,
                 Address=this.txtCAddress.Text,
                 Phone_Num=this.txtCPhone.Text,
+                Email=this.txtCEmail.Text
             };
             context.Customers.Add(customer);
             context.SaveChanges();
@@ -34,6 +35,7 @@ namespace PharmacyManagmentSystem.UI.Forms
             this.txtCAddress.Text = "";
             this.txtCName.Text= "";
             this.txtCPhone.Text = "";
+            this.txtCEmail.Text = "";
             dgvCustomer.DataSource = context.Customers.ToList();
         }
         
