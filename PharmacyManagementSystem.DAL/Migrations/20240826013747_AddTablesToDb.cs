@@ -113,13 +113,13 @@ namespace PharmacyManagementSystem.DAL.Migrations
                         column: x => x.Customer_ID,
                         principalTable: "Customers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.SetNull);
                     table.ForeignKey(
                         name: "FK_Sales_products_Product_ID",
                         column: x => x.Product_ID,
                         principalTable: "products",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.SetNull);
                 });
 
             migrationBuilder.CreateTable(
@@ -142,13 +142,13 @@ namespace PharmacyManagementSystem.DAL.Migrations
                         column: x => x.Supplier_ID,
                         principalTable: "Suppliers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.SetNull);
                     table.ForeignKey(
                         name: "FK_Purchases_products_Product_ID",
                         column: x => x.Product_ID,
                         principalTable: "products",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.SetNull);
                 });
 
             migrationBuilder.CreateIndex(
