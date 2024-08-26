@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace PharmacyManagementSystem.BLL.Models
 {
-    internal class Customer:Person
+    public class Customer:Person
     {
-       
+       public virtual ICollection<Sale> Sales { get; set; }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PharmacyManagementSystem.BLL.Models
 {
-    internal class Sale
+    public class Sale
     {
         public int Id { get; set; }
 

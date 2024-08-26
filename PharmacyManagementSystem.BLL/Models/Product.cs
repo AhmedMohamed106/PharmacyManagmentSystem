@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PharmacyManagementSystem.BLL.Models
 {
-    internal class Product
+    public class Product
     {
         public int Id { get; set; }
 
@@ -26,6 +26,9 @@ namespace PharmacyManagementSystem.BLL.Models
         public string Company {  get; set; }
         public string Pack_Size { get; set; }
         public string Location { get; set; }
+
+        public virtual ICollection<Sale> Sales { get; set; }
+        public virtual ICollection<Purchase> Purchases { get; set; }
 
     }
 }
