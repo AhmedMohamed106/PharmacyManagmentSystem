@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PharmacyManagementSystem.DAL.DataContext;
+using PharmacyManagementSystem.BLL.Models;
 
 namespace PharmacyManagmentSystem.UI.Forms
 {
@@ -17,19 +19,23 @@ namespace PharmacyManagmentSystem.UI.Forms
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
-
+            ApplicationDbContext context = new ApplicationDbContext();
+            Customer customer = new Customer()
+            {
+                Name=this.txtCName.Text,
+                Address=this.txtCAddress.Text,
+                Phone_Num=this.txtCPhone.Text,
+            };
+            context.Customers.Add(customer);
+            context.SaveChanges();
+            MessageBox.Show("Data Successfully Added");
+            this.txtCAddress.Text = "";
+            this.txtCName.Text= "";
+            this.txtCPhone.Text = "";
+            dgvCustomer.DataSource = context.Customers.ToList();
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
