@@ -26,6 +26,8 @@ namespace  PharmacyManagementSystem.DAL.Models
         public string Company { get; set; }
         public string Pack_Size { get; set; }
 
+        public decimal price { get; set; }
+
         [ForeignKey("Category")]
         public int Category_ID { get; set; }
         public virtual Category Category { get; set; }

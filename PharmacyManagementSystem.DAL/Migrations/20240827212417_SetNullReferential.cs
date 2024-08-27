@@ -5,7 +5,7 @@
 namespace PharmacyManagementSystem.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class CreatingDatabase : Migration
+    public partial class SetNullReferential : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

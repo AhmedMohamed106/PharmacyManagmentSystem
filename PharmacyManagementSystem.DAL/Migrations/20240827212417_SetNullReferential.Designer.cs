@@ -12,8 +12,8 @@ using PharmacyManagementSystem.DAL.DataContext;
 namespace PharmacyManagementSystem.DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240827173519_SaleItemAndPurchaseItem")]
-    partial class SaleItemAndPurchaseItem
+    [Migration("20240827212417_SetNullReferential")]
+    partial class SetNullReferential
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -108,6 +108,9 @@ namespace PharmacyManagementSystem.DAL.Migrations
                     b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 

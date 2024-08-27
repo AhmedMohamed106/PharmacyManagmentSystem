@@ -71,5 +71,9 @@ namespace PharmacyManagementSystem.DAL.Repository
             dbset.Add(entity);
         }
 
+        public IEnumerable<T> GetAll(Func<T, bool> predicate)
+        {
+            return dbset.Where(predicate).ToList();
+        }
     }
 }

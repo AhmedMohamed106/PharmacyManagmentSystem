@@ -18,4 +18,8 @@
     <ProjectReference Include="..\PharmacyManagementSystem.DAL\PharmacyManagementSystem.DAL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Validators\" />
+  </ItemGroup>
+
 </Project>
