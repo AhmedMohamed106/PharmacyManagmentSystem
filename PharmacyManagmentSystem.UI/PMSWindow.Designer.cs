@@ -1,6 +1,6 @@
 ﻿namespace PharmacyManagmentSystem.UI
 {
-    partial class Form1
+    partial class PMSWindow
     {
         /// <summary>
         ///  Required designer variable.
