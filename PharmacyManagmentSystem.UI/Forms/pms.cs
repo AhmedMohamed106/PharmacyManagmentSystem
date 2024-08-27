@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PharmacyManagmentSystem.UI.Forms
 {
-    public partial class pms : Form
+    public partial class PMSWindow : Form
     {
-        public pms()
+        public PMSWindow()
         {
             InitializeComponent();
         }
@@ -28,6 +28,31 @@ namespace PharmacyManagmentSystem.UI.Forms
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void purchaseTab_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox15_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox10_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox12_Enter(object sender, EventArgs e)
         {
 
         }
