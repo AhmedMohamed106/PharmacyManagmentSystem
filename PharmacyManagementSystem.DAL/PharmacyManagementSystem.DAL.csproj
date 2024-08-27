@@ -14,8 +14,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\PharmacyManagementSystem.BLL\PharmacyManagementSystem.BLL.csproj" />
-  </ItemGroup>
-
 </Project>

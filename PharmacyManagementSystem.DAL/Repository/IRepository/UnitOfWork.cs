@@ -25,7 +25,6 @@ namespace PharmacyManagementSystem.DAL.Repository.IRepository
 
 
         private ApplicationDbContext _db;
-
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
@@ -36,9 +35,6 @@ namespace PharmacyManagementSystem.DAL.Repository.IRepository
             purchaseRepository = new PurchaseRepository(_db);
             userRepository = new UserRepository(_db);
             supplierRepository = new SupplierRepository(_db);
-
-
-
 
         }
         public void Save()
