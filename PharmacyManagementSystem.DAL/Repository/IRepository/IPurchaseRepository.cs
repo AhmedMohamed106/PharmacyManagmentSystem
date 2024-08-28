@@ -1,4 +1,4 @@
-﻿using PharmacyManagementSystem.BLL.Models;
+﻿using PharmacyManagementSystem.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

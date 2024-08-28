@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PharmacyManagementSystem.BLL.Models;
+using PharmacyManagementSystem.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +23,8 @@ namespace PharmacyManagementSystem.DAL.DataContext
         public DbSet<Sale> Sales { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<Users> Users { get; set; }
+        public DbSet<PurchaseItem> purchaseItems { get; set; }
+        public DbSet<SaleItem> saleItems { get; set; }
 
 
     }

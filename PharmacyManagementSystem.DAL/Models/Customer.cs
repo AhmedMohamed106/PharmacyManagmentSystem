@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PharmacyManagementSystem.BLL.Models
+namespace PharmacyManagementSystem.DAL.Models
 {
     public class Customer:Person
     {
-       public virtual ICollection<Sale> Sales { get; set; }
+        public virtual ICollection<Sale> Sales { get; set; } = new List<Sale>();
     }
 }

@@ -12,8 +12,8 @@ using PharmacyManagementSystem.DAL.DataContext;
 namespace PharmacyManagementSystem.DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240826231013_createDB")]
-    partial class createDB
+    [Migration("20240828122453_updateDB")]
+    partial class updateDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace PharmacyManagementSystem.DAL.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("PharmacyManagementSystem.BLL.Models.Category", b =>
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -42,7 +42,7 @@ namespace PharmacyManagementSystem.DAL.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("PharmacyManagementSystem.BLL.Models.Customer", b =>
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.Customer", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -71,13 +71,16 @@ namespace PharmacyManagementSystem.DAL.Migrations
                     b.ToTable("Customers");
                 });
 
-            modelBuilder.Entity("PharmacyManagementSystem.BLL.Models.Product", b =>
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Category_ID")
+                        .HasColumnType("int");
 
                     b.Property<string>("Company")
                         .IsRequired()
@@ -90,10 +93,6 @@ namespace PharmacyManagementSystem.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Location")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -103,29 +102,45 @@ namespace PharmacyManagementSystem.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Patch_Num")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Purchase_Rate")
-                        .HasColumnType("int");
-
                     b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Sale_Rate")
                         .HasColumnType("int");
 
                     b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal>("price")
+                        .HasColumnType("decimal(18,2)");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("Category_ID");
 
                     b.ToTable("products");
                 });
 
-            modelBuilder.Entity("PharmacyManagementSystem.BLL.Models.Purchase", b =>
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.Purchase", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("Purchase_Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Supplier_ID")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Supplier_ID");
+
+                    b.ToTable("Purchases");
+                });
+
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.PurchaseItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -136,28 +151,25 @@ namespace PharmacyManagementSystem.DAL.Migrations
                     b.Property<int>("Product_ID")
                         .HasColumnType("int");
 
-                    b.Property<int>("Product_Quantity")
+                    b.Property<int>("Purchase_ID")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("Purchase_Date")
-                        .HasColumnType("datetime2");
+                    b.Property<decimal>("Purchase_Price")
+                        .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("Supplier_ID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Total")
+                    b.Property<int>("Quantity")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("Product_ID");
 
-                    b.HasIndex("Supplier_ID");
+                    b.HasIndex("Purchase_ID");
 
-                    b.ToTable("Purchases");
+                    b.ToTable("purchaseItems");
                 });
 
-            modelBuilder.Entity("PharmacyManagementSystem.BLL.Models.Sale", b =>
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.Sale", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -168,28 +180,46 @@ namespace PharmacyManagementSystem.DAL.Migrations
                     b.Property<int>("Customer_ID")
                         .HasColumnType("int");
 
-                    b.Property<int>("Product_ID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Product_Quantity")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("Sale_Date")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("Total")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("Customer_ID");
 
-                    b.HasIndex("Product_ID");
-
                     b.ToTable("Sales");
                 });
 
-            modelBuilder.Entity("PharmacyManagementSystem.BLL.Models.Supplier", b =>
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.SaleItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Product_ID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Sale_ID")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Sale_Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Product_ID");
+
+                    b.HasIndex("Sale_ID");
+
+                    b.ToTable("saleItems");
+                });
+
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.Supplier", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -218,7 +248,7 @@ namespace PharmacyManagementSystem.DAL.Migrations
                     b.ToTable("Suppliers");
                 });
 
-            modelBuilder.Entity("PharmacyManagementSystem.BLL.Models.Users", b =>
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.Users", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -226,70 +256,128 @@ namespace PharmacyManagementSystem.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.Property<string>("UserName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("UserPassword")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("PharmacyManagementSystem.BLL.Models.Purchase", b =>
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.Product", b =>
                 {
-                    b.HasOne("PharmacyManagementSystem.BLL.Models.Product", "Product")
-                        .WithMany("Purchases")
-                        .HasForeignKey("Product_ID")
+                    b.HasOne("PharmacyManagementSystem.DAL.Models.Category", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("Category_ID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("PharmacyManagementSystem.BLL.Models.Supplier", "Supplier")
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.Purchase", b =>
+                {
+                    b.HasOne("PharmacyManagementSystem.DAL.Models.Supplier", "Supplier")
                         .WithMany("Purchases")
                         .HasForeignKey("Supplier_ID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Product");
-
                     b.Navigation("Supplier");
                 });
 
-            modelBuilder.Entity("PharmacyManagementSystem.BLL.Models.Sale", b =>
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.PurchaseItem", b =>
                 {
-                    b.HasOne("PharmacyManagementSystem.BLL.Models.Customer", "Customer")
+                    b.HasOne("PharmacyManagementSystem.DAL.Models.Product", "Product")
+                        .WithMany("PurchaseItems")
+                        .HasForeignKey("Product_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("PharmacyManagementSystem.DAL.Models.Purchase", "Purchase")
+                        .WithMany("PurchaseItems")
+                        .HasForeignKey("Purchase_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("Purchase");
+                });
+
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.Sale", b =>
+                {
+                    b.HasOne("PharmacyManagementSystem.DAL.Models.Customer", "Customer")
                         .WithMany("Sales")
                         .HasForeignKey("Customer_ID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("PharmacyManagementSystem.BLL.Models.Product", "Product")
-                        .WithMany("Sales")
+                    b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.SaleItem", b =>
+                {
+                    b.HasOne("PharmacyManagementSystem.DAL.Models.Product", "Product")
+                        .WithMany("SaleItems")
                         .HasForeignKey("Product_ID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Customer");
+                    b.HasOne("PharmacyManagementSystem.DAL.Models.Sale", "Sale")
+                        .WithMany("SaleItems")
+                        .HasForeignKey("Sale_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Product");
+
+                    b.Navigation("Sale");
                 });
 
-            modelBuilder.Entity("PharmacyManagementSystem.BLL.Models.Customer", b =>
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.Category", b =>
+                {
+                    b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.Customer", b =>
                 {
                     b.Navigation("Sales");
                 });
 
-            modelBuilder.Entity("PharmacyManagementSystem.BLL.Models.Product", b =>
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.Product", b =>
                 {
-                    b.Navigation("Purchases");
+                    b.Navigation("PurchaseItems");
 
-                    b.Navigation("Sales");
+                    b.Navigation("SaleItems");
                 });
 
-            modelBuilder.Entity("PharmacyManagementSystem.BLL.Models.Supplier", b =>
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.Purchase", b =>
+                {
+                    b.Navigation("PurchaseItems");
+                });
+
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.Sale", b =>
+                {
+                    b.Navigation("SaleItems");
+                });
+
+            modelBuilder.Entity("PharmacyManagementSystem.DAL.Models.Supplier", b =>
                 {
                     b.Navigation("Purchases");
                 });

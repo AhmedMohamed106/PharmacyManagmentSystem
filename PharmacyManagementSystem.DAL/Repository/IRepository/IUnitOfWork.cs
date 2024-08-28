@@ -15,7 +15,8 @@ namespace PharmacyManagementSystem.DAL.Repository.IRepository
         IPurchaseRepository purchaseRepository { get; }
         IUserRepository userRepository { get; }
         ISupplierRepository supplierRepository { get; }
-
+        IPurchaseItemRepository PurchaseItemRepository { get; }
+        ISaleItemRepository saleItemRepository { get; }
         void Save();
     }
 }
