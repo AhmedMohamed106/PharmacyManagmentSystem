@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -16,6 +16,11 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- <PackageReference Include="Guna.Charts.WinForms" Version="1.0.9" /> -->
+    <!-- <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.6" /> -->
   </ItemGroup>
 
 </Project>

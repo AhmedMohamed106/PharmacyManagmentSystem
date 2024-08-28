@@ -4,6 +4,8 @@ using PharmacyManagementSystem.BLL.Services;
 using PharmacyManagementSystem.DAL.DataContext;
 using PharmacyManagementSystem.DAL.Repository.IRepository;
 
+using PharmacyManagmentSystem.UI.Forms;
+
 namespace PharmacyManagmentSystem.UI
 {
     internal static class Program
