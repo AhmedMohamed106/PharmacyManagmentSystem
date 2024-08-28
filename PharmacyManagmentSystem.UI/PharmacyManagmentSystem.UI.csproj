@@ -43,4 +43,8 @@
     <ProjectReference Include="..\PharmacyManagementSystem.DAL\PharmacyManagementSystem.DAL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
 </Project>
