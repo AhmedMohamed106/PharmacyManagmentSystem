@@ -14,13 +14,10 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <!-- <PackageReference Include="Guna.Charts.WinForms" Version="1.0.9" /> -->
+  <ItemGroup><!-- <PackageReference Include="Guna.Charts.WinForms" Version="1.0.9" /> -->
     <!-- <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.6" /> -->
+  
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>
