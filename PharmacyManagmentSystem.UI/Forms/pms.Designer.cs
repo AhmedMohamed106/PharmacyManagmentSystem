@@ -271,7 +271,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1084, 528);
             panel2.TabIndex = 1;
-            panel2.Paint += panel2_Paint;
+            //panel2.Paint += panel2_Paint;
             // 
             // guna2TabControl1
             // 
@@ -450,7 +450,7 @@
             textBox15.Name = "textBox15";
             textBox15.Size = new Size(97, 23);
             textBox15.TabIndex = 3;
-            textBox15.TextChanged += textBox15_TextChanged;
+            //textBox15.TextChanged += textBox15_TextChanged;
             // 
             // groupBox3
             // 
@@ -631,7 +631,7 @@
             purchaseTab.TabIndex = 2;
             purchaseTab.Text = "Purchase";
             purchaseTab.UseVisualStyleBackColor = true;
-            purchaseTab.Click += purchaseTab_Click;
+            //purchaseTab.Click += purchaseTab_Click;
             // 
             // button1
             // 
@@ -1064,7 +1064,7 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Add Product";
-            groupBox1.Enter += groupBox1_Enter;
+          //  groupBox1.Enter += groupBox1_Enter;
             // 
             // addBtn
             // 
@@ -1221,7 +1221,7 @@
             groupBox10.TabIndex = 12;
             groupBox10.TabStop = false;
             groupBox10.Text = "Remove Customer";
-            groupBox10.Enter += groupBox10_Enter;
+           // groupBox10.Enter += groupBox10_Enter;
             // 
             // label40
             // 
@@ -1359,7 +1359,7 @@
             groupBox12.TabIndex = 11;
             groupBox12.TabStop = false;
             groupBox12.Text = "Add Customer";
-            groupBox12.Enter += groupBox12_Enter;
+            //groupBox12.Enter += groupBox12_Enter;
             // 
             // button8
             // 
@@ -1510,7 +1510,7 @@
             accountTab.TabIndex = 0;
             accountTab.Text = "Account";
             accountTab.UseVisualStyleBackColor = true;
-            accountTab.Click += tabPage1_Click;
+            //accountTab.Click += tabPage1_Click;
             // 
             // userData
             // 

@@ -28,134 +28,136 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            panel1 = new Panel();
-            guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            label1 = new Label();
-            textBox14 = new TextBox();
-            textBox8 = new TextBox();
-            Password = new Label();
-            userName = new Label();
-            login = new Button();
-            groupBox1 = new GroupBox();
-            panel1.SuspendLayout();
-            groupBox1.SuspendLayout();
-            SuspendLayout();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.Password = new System.Windows.Forms.Label();
+            this.userName = new System.Windows.Forms.Label();
+            this.login = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ButtonShadow;
-            panel1.Controls.Add(guna2ControlBox1);
-            panel1.Controls.Add(label1);
-            panel1.Dock = DockStyle.Top;
-            panel1.ForeColor = SystemColors.ActiveCaptionText;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1087, 58);
-            panel1.TabIndex = 1;
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel1.Controls.Add(this.guna2ControlBox1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1087, 58);
+            this.panel1.TabIndex = 1;
             // 
             // guna2ControlBox1
             // 
-            guna2ControlBox1.Anchor = AnchorStyles.Right;
-            guna2ControlBox1.BackColor = Color.Gray;
-            guna2ControlBox1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            guna2ControlBox1.CustomizableEdges = customizableEdges1;
-            guna2ControlBox1.FillColor = Color.FromArgb(0, 0, 0, 0);
-            guna2ControlBox1.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            guna2ControlBox1.IconColor = Color.White;
-            guna2ControlBox1.Location = new Point(1931, -10);
-            guna2ControlBox1.Name = "guna2ControlBox1";
-            guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2ControlBox1.Size = new Size(31, 37);
-            guna2ControlBox1.TabIndex = 1;
+            this.guna2ControlBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Gray;
+            this.guna2ControlBox1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.guna2ControlBox1.CustomizableEdges = customizableEdges3;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2ControlBox1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1931, -10);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(31, 37);
+            this.guna2ControlBox1.TabIndex = 1;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20F);
-            label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(532, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(387, 37);
-            label1.TabIndex = 0;
-            label1.Text = "Pharmacy Management System";
-            label1.TextAlign = ContentAlignment.TopCenter;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(532, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(387, 37);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Pharmacy Management System";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox14
+            // txtPassword
             // 
-            textBox14.Location = new Point(95, 76);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(161, 23);
-            textBox14.TabIndex = 7;
+            this.txtPassword.Location = new System.Drawing.Point(95, 76);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(161, 23);
+            this.txtPassword.TabIndex = 7;
             // 
-            // textBox8
+            // txtUserName
             // 
-            textBox8.Location = new Point(95, 28);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(161, 23);
-            textBox8.TabIndex = 8;
+            this.txtUserName.Location = new System.Drawing.Point(95, 28);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(161, 23);
+            this.txtUserName.TabIndex = 8;
             // 
             // Password
             // 
-            Password.AutoSize = true;
-            Password.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            Password.Location = new Point(11, 76);
-            Password.Name = "Password";
-            Password.Size = new Size(76, 20);
-            Password.TabIndex = 5;
-            Password.Text = "Password";
+            this.Password.AutoSize = true;
+            this.Password.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Password.Location = new System.Drawing.Point(11, 76);
+            this.Password.Name = "Password";
+            this.Password.Size = new System.Drawing.Size(76, 20);
+            this.Password.TabIndex = 5;
+            this.Password.Text = "Password";
             // 
             // userName
             // 
-            userName.AutoSize = true;
-            userName.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            userName.Location = new Point(11, 29);
-            userName.Name = "userName";
-            userName.Size = new Size(80, 20);
-            userName.TabIndex = 6;
-            userName.Text = "Username";
+            this.userName.AutoSize = true;
+            this.userName.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.userName.Location = new System.Drawing.Point(11, 29);
+            this.userName.Name = "userName";
+            this.userName.Size = new System.Drawing.Size(80, 20);
+            this.userName.TabIndex = 6;
+            this.userName.Text = "Username";
             // 
             // login
             // 
-            login.Location = new Point(116, 122);
-            login.Name = "login";
-            login.Size = new Size(118, 39);
-            login.TabIndex = 9;
-            login.Text = "Login";
-            login.UseVisualStyleBackColor = true;
+            this.login.Location = new System.Drawing.Point(116, 122);
+            this.login.Name = "login";
+            this.login.Size = new System.Drawing.Size(118, 39);
+            this.login.TabIndex = 9;
+            this.login.Text = "Login";
+            this.login.UseVisualStyleBackColor = true;
+            this.login.Click += new System.EventHandler(this.login_Click_1);
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(login);
-            groupBox1.Controls.Add(textBox14);
-            groupBox1.Controls.Add(userName);
-            groupBox1.Controls.Add(textBox8);
-            groupBox1.Controls.Add(Password);
-            groupBox1.Location = new Point(385, 149);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(284, 190);
-            groupBox1.TabIndex = 10;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Login";
+            this.groupBox1.Controls.Add(this.login);
+            this.groupBox1.Controls.Add(this.txtPassword);
+            this.groupBox1.Controls.Add(this.userName);
+            this.groupBox1.Controls.Add(this.txtUserName);
+            this.groupBox1.Controls.Add(this.Password);
+            this.groupBox1.Location = new System.Drawing.Point(385, 149);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(284, 190);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Login";
             // 
             // Landing
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1087, 586);
-            ControlBox = false;
-            Controls.Add(groupBox1);
-            Controls.Add(panel1);
-            Name = "Landing";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Login";
-            WindowState = FormWindowState.Maximized;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1087, 586);
+            this.ControlBox = false;
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel1);
+            this.Name = "Landing";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Login";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -163,8 +165,8 @@
         private Panel panel1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Label label1;
-        private TextBox textBox14;
-        private TextBox textBox8;
+        private TextBox txtPassword;
+        private TextBox txtUserName;
         private Label Password;
         private Label userName;
         private Button login;

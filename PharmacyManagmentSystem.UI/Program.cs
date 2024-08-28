@@ -28,7 +28,7 @@ namespace PharmacyManagmentSystem.UI
 
             using (var context = services.BuildServiceProvider())
             {
-                var mainform = context.GetRequiredService<PMSWindow>();
+                var mainform = context.GetRequiredService<Landing>();
                 Application.Run(mainform);
             }
 
@@ -56,6 +56,8 @@ namespace PharmacyManagmentSystem.UI
 
             // Register the forms
             services.AddTransient<PMSWindow>(); // Assuming Form1 is the main form
+            services.AddTransient<Landing>();
+
             // You can add other forms here as needed
             // services.AddTransient<OtherForm>();
         }
