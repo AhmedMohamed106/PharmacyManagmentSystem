@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace PharmacyManagementSystem.DAL.Repository.IRepository
 {
-    public interface IProductRepository : IRepository<Product>
+    public interface IPurchaseItemRepository : IRepository<PurchaseItem>
     {
-        void Update(Product product);
+        void Update(PurchaseItem purchaseItem);
     }
 }

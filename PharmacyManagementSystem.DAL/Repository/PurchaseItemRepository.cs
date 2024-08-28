@@ -9,17 +9,18 @@ using System.Threading.Tasks;
 
 namespace PharmacyManagementSystem.DAL.Repository
 {
-    public class CustomerRepository : Repository<Customer>, ICustomerRepository
+    public class PurchaseItemRepository : Repository<PurchaseItem>, IPurchaseItemRepository
     {
-
         private ApplicationDbContext _dbContext;
-        public CustomerRepository(ApplicationDbContext dbContext) : base(dbContext)
+
+        public PurchaseItemRepository(ApplicationDbContext dbContext) : base(dbContext)
         {
             _dbContext = dbContext;
         }
-        public void Update(Customer customer)
+
+        public void Update(PurchaseItem purchaseItem)
         {
-            _dbContext.Customers.Update(customer);
+            //_dbContext.PurchaseItems.Update(purchaseItem);
         }
     }
 }

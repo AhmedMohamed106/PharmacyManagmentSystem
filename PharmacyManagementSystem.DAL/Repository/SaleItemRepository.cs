@@ -1,5 +1,5 @@
-﻿using PharmacyManagementSystem.DAL.Models;
-using PharmacyManagementSystem.DAL.DataContext;
+﻿using PharmacyManagementSystem.DAL.DataContext;
+using PharmacyManagementSystem.DAL.Models;
 using PharmacyManagementSystem.DAL.Repository.IRepository;
 using System;
 using System.Collections.Generic;
@@ -9,17 +9,17 @@ using System.Threading.Tasks;
 
 namespace PharmacyManagementSystem.DAL.Repository
 {
-    public class PurchaseRepository : Repository<Purchase>, IPurchaseRepository
+    public class SaleItemRepository : Repository<SaleItem>, ISaleItemRepository
     {
         private ApplicationDbContext _dbContext;
-        public PurchaseRepository(ApplicationDbContext dbContext) : base(dbContext)
+        public SaleItemRepository(ApplicationDbContext dbContext) : base(dbContext)
         {
             _dbContext = dbContext;
         }
 
-        public void Update(Purchase purchase)
+        public void Update(SaleItem entity)
         {
-           _dbContext.Purchases.Update(purchase);
+            _dbContext.saleItems.Update(entity);
         }
     }
 }

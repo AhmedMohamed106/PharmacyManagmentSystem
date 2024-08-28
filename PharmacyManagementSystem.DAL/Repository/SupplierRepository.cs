@@ -1,4 +1,4 @@
-﻿using PharmacyManagementSystem.BLL.Models;
+﻿using PharmacyManagementSystem.DAL.Models;
 using PharmacyManagementSystem.DAL.DataContext;
 using PharmacyManagementSystem.DAL.Repository.IRepository;
 using System;

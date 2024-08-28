@@ -23,9 +23,11 @@ namespace PharmacyManagementSystem.DAL.Repository.IRepository
 
         public ISupplierRepository supplierRepository { get; private set; }
 
+        public IPurchaseItemRepository PurchaseItemRepository { get; private set; }
+
+        public ISaleItemRepository saleItemRepository { get; private set; }
 
         private ApplicationDbContext _db;
-
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
@@ -36,9 +38,8 @@ namespace PharmacyManagementSystem.DAL.Repository.IRepository
             purchaseRepository = new PurchaseRepository(_db);
             userRepository = new UserRepository(_db);
             supplierRepository = new SupplierRepository(_db);
-
-
-
+            PurchaseItemRepository = new PurchaseItemRepository(_db);
+            saleItemRepository = new SaleItemRepository(_db);
 
         }
         public void Save()

@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -12,6 +12,19 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PharmacyManagementSystem.DAL\PharmacyManagementSystem.DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Validators\" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <!-- <PackageReference Include="Guna.Charts.WinForms" Version="1.0.9" /> -->
+	  <!--  <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.6" /> -->
   </ItemGroup>
 
 </Project>
