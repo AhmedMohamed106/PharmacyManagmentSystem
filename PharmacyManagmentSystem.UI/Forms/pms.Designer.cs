@@ -28,2271 +28,2340 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.Logoutbtn = new System.Windows.Forms.Button();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.gtcPharmacy = new Guna.UI2.WinForms.Guna2TabControl();
-            this.salesTab = new System.Windows.Forms.TabPage();
-            this.saveInvoice = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.salesSearch = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.P_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qPack = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.packPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.discountInPercentage = new System.Windows.Forms.Label();
-            this.finalPrice = new System.Windows.Forms.Label();
-            this.totalPrice = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.purchaseTab = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label26 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.purchaseSearch = new System.Windows.Forms.Button();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.purchasepackPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.expire = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.Stock = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.search = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stockQPack = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stockQUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addNewProduct = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genericNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.expireDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.companyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.packSizeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.saleItemsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.purchaseItemsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtCategory = new System.Windows.Forms.TextBox();
-            this.cmpny = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.addBtn = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.quantity = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.customersTab = new System.Windows.Forms.TabPage();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.btnCSearch = new System.Windows.Forms.Button();
-            this.txtCSearch = new System.Windows.Forms.TextBox();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.btnCRemove = new System.Windows.Forms.Button();
-            this.label41 = new System.Windows.Forms.Label();
-            this.txtECPhone = new System.Windows.Forms.TextBox();
-            this.btnCEdit = new System.Windows.Forms.Button();
-            this.txtECAddress = new System.Windows.Forms.TextBox();
-            this.txtECID = new System.Windows.Forms.TextBox();
-            this.txtECName = new System.Windows.Forms.TextBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.btnCAdd = new System.Windows.Forms.Button();
-            this.txtCPhone = new System.Windows.Forms.TextBox();
-            this.txtCAddress = new System.Windows.Forms.TextBox();
-            this.txtCName = new System.Windows.Forms.TextBox();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.dgvCustomer = new System.Windows.Forms.DataGridView();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.reportsTab = new System.Windows.Forms.TabPage();
-            this.customerReport = new System.Windows.Forms.Button();
-            this.purchaseReport = new System.Windows.Forms.Button();
-            this.salesReport = new System.Windows.Forms.Button();
-            this.shortageReport = new System.Windows.Forms.Button();
-            this.accountTab = new System.Windows.Forms.TabPage();
-            this.dgvAccounts = new System.Windows.Forms.DataGridView();
-            this.userNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roleDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isActiveDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.usersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.userData = new System.Windows.Forms.GroupBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.btnAddAccount = new System.Windows.Forms.Button();
-            this.itemAcRole = new System.Windows.Forms.ComboBox();
-            this.txtAcPassword = new System.Windows.Forms.TextBox();
-            this.txtAcUserName = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.supplierTap = new System.Windows.Forms.TabPage();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.btnSuSearch = new System.Windows.Forms.Button();
-            this.txtSuSearch = new System.Windows.Forms.TextBox();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.btnSuRemove = new System.Windows.Forms.Button();
-            this.txtESuEmail = new System.Windows.Forms.TextBox();
-            this.txtESuPhone = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.btnSuEdit = new System.Windows.Forms.Button();
-            this.txtESuAddress = new System.Windows.Forms.TextBox();
-            this.txtESuName = new System.Windows.Forms.TextBox();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.txtSuEmail = new System.Windows.Forms.TextBox();
-            this.txtSuAddress = new System.Windows.Forms.TextBox();
-            this.txtSuName = new System.Windows.Forms.TextBox();
-            this.txtSuPhone = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.btnAddSpplier = new System.Windows.Forms.Button();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.dgvSupplier = new System.Windows.Forms.DataGridView();
-            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNumDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.gtcPharmacy.SuspendLayout();
-            this.salesTab.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            this.purchaseTab.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            this.groupBox6.SuspendLayout();
-            this.Stock.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.addNewProduct.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.customersTab.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
-            this.reportsTab.SuspendLayout();
-            this.accountTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAccounts)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).BeginInit();
-            this.userData.SuspendLayout();
-            this.supplierTap.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            Logoutbtn = new Button();
+            guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            label1 = new Label();
+            panel2 = new Panel();
+            gtcPharmacy = new Guna.UI2.WinForms.Guna2TabControl();
+            salesTab = new TabPage();
+            DGVSales = new DataGridView();
+            salesPCodeDGV = new DataGridViewTextBoxColumn();
+            salesProductName = new DataGridViewTextBoxColumn();
+            salesUnitprice = new DataGridViewTextBoxColumn();
+            salesUnitQuantity = new DataGridViewTextBoxColumn();
+            groupBox13 = new GroupBox();
+            salesTotalPrice = new TextBox();
+            SalesBillNo = new TextBox();
+            salesTotalAmount = new Label();
+            salesPay = new TextBox();
+            label55 = new Label();
+            label58 = new Label();
+            label59 = new Label();
+            groupBox4 = new GroupBox();
+            comboPForm = new ComboBox();
+            comboPName = new ComboBox();
+            textsalesExpire = new TextBox();
+            salesProductCode = new TextBox();
+            textsalesBalance = new TextBox();
+            PQty = new TextBox();
+            label53 = new Label();
+            salesPPrice = new TextBox();
+            label56 = new Label();
+            label9 = new Label();
+            label19 = new Label();
+            label16 = new Label();
+            label20 = new Label();
+            label24 = new Label();
+            label52 = new Label();
+            saveInvoice = new Button();
+            groupBox3 = new GroupBox();
+            comboCustomerName = new ComboBox();
+            customerBindingSource = new BindingSource(components);
+            customerAddress = new TextBox();
+            customerPhone = new TextBox();
+            salesCustomerCode = new TextBox();
+            label18 = new Label();
+            label17 = new Label();
+            label10 = new Label();
+            label54 = new Label();
+            purchaseTab = new TabPage();
+            groupBox14 = new GroupBox();
+            purchTotal = new TextBox();
+            purchBillNo = new TextBox();
+            label25 = new Label();
+            textBox34 = new TextBox();
+            label26 = new Label();
+            label68 = new Label();
+            label69 = new Label();
+            groupBox6 = new GroupBox();
+            purchSName = new ComboBox();
+            label29 = new Label();
+            label61 = new Label();
+            label60 = new Label();
+            purchSCode = new TextBox();
+            PurchSPhone = new TextBox();
+            label57 = new Label();
+            purchSAddress = new TextBox();
+            button1 = new Button();
+            groupBox5 = new GroupBox();
+            purchPExpire = new DateTimePicker();
+            purchaseSearch = new Button();
+            label22 = new Label();
+            label67 = new Label();
+            purchPCode = new TextBox();
+            label65 = new Label();
+            label64 = new Label();
+            label70 = new Label();
+            label63 = new Label();
+            label62 = new Label();
+            label66 = new Label();
+            label23 = new Label();
+            purchPQty = new TextBox();
+            purchPGeneric = new TextBox();
+            purchPSize = new TextBox();
+            purchPCompany = new TextBox();
+            purchPForm = new TextBox();
+            purchPName = new TextBox();
+            DGVpurch = new DataGridView();
+            purchId = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn8 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn9 = new DataGridViewTextBoxColumn();
+            expire = new DataGridViewTextBoxColumn();
+            Stock = new TabPage();
+            groupBox2 = new GroupBox();
+            search = new Button();
+            textBox10 = new TextBox();
+            label12 = new Label();
+            label13 = new Label();
+            textBox11 = new TextBox();
+            label14 = new Label();
+            textBox12 = new TextBox();
+            label15 = new Label();
+            dataGridView2 = new DataGridView();
+            dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
+            stockQPack = new DataGridViewTextBoxColumn();
+            stockQUnit = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn7 = new DataGridViewTextBoxColumn();
+            addNewProduct = new TabPage();
+            dataGridView1 = new DataGridView();
+            productBindingSource = new BindingSource(components);
+            groupBox1 = new GroupBox();
+            button2 = new Button();
+            label6 = new Label();
+            txtCategory = new TextBox();
+            cmpny = new Label();
+            dateTimePicker1 = new DateTimePicker();
+            addBtn = new Button();
+            textBox6 = new TextBox();
+            label8 = new Label();
+            textBox5 = new TextBox();
+            label7 = new Label();
+            textBox4 = new TextBox();
+            quantity = new Label();
+            textBox3 = new TextBox();
+            label5 = new Label();
+            comboBox1 = new ComboBox();
+            label4 = new Label();
+            textBox2 = new TextBox();
+            label3 = new Label();
+            textBox1 = new TextBox();
+            label2 = new Label();
+            customersTab = new TabPage();
+            groupBox10 = new GroupBox();
+            label40 = new Label();
+            btnCSearch = new Button();
+            txtCSearch = new TextBox();
+            groupBox11 = new GroupBox();
+            btnCRemove = new Button();
+            label41 = new Label();
+            txtECPhone = new TextBox();
+            btnCEdit = new Button();
+            txtECAddress = new TextBox();
+            txtECID = new TextBox();
+            txtECName = new TextBox();
+            label47 = new Label();
+            label42 = new Label();
+            label43 = new Label();
+            groupBox12 = new GroupBox();
+            btnCAdd = new Button();
+            txtCPhone = new TextBox();
+            txtCAddress = new TextBox();
+            txtCName = new TextBox();
+            label46 = new Label();
+            label44 = new Label();
+            label45 = new Label();
+            dgvCustomer = new DataGridView();
+            reportsTab = new TabPage();
+            customerReport = new Button();
+            purchaseReport = new Button();
+            salesReport = new Button();
+            shortageReport = new Button();
+            accountTab = new TabPage();
+            dgvAccounts = new DataGridView();
+            usersBindingSource1 = new BindingSource(components);
+            userData = new GroupBox();
+            label27 = new Label();
+            btnAddAccount = new Button();
+            itemAcRole = new ComboBox();
+            txtAcPassword = new TextBox();
+            txtAcUserName = new TextBox();
+            label33 = new Label();
+            label32 = new Label();
+            label28 = new Label();
+            supplierTap = new TabPage();
+            groupBox9 = new GroupBox();
+            label39 = new Label();
+            btnSuSearch = new Button();
+            txtSuSearch = new TextBox();
+            groupBox8 = new GroupBox();
+            btnSuRemove = new Button();
+            txtESuEmail = new TextBox();
+            txtESuPhone = new TextBox();
+            label36 = new Label();
+            label37 = new Label();
+            btnSuEdit = new Button();
+            txtESuAddress = new TextBox();
+            txtESuName = new TextBox();
+            label50 = new Label();
+            label51 = new Label();
+            groupBox7 = new GroupBox();
+            txtSuEmail = new TextBox();
+            txtSuAddress = new TextBox();
+            txtSuName = new TextBox();
+            txtSuPhone = new TextBox();
+            label48 = new Label();
+            label49 = new Label();
+            btnAddSpplier = new Button();
+            label30 = new Label();
+            label35 = new Label();
+            dgvSupplier = new DataGridView();
+            supplierBindingSource = new BindingSource(components);
+            userNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            roleDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            usersBindingSource = new BindingSource(components);
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            gtcPharmacy.SuspendLayout();
+            salesTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DGVSales).BeginInit();
+            groupBox13.SuspendLayout();
+            groupBox4.SuspendLayout();
+            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)customerBindingSource).BeginInit();
+            purchaseTab.SuspendLayout();
+            groupBox14.SuspendLayout();
+            groupBox6.SuspendLayout();
+            groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DGVpurch).BeginInit();
+            Stock.SuspendLayout();
+            groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            addNewProduct.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)productBindingSource).BeginInit();
+            groupBox1.SuspendLayout();
+            customersTab.SuspendLayout();
+            groupBox10.SuspendLayout();
+            groupBox11.SuspendLayout();
+            groupBox12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvCustomer).BeginInit();
+            reportsTab.SuspendLayout();
+            accountTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvAccounts).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)usersBindingSource1).BeginInit();
+            userData.SuspendLayout();
+            supplierTap.SuspendLayout();
+            groupBox9.SuspendLayout();
+            groupBox8.SuspendLayout();
+            groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvSupplier).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)supplierBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)usersBindingSource).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel1.Controls.Add(this.Logoutbtn);
-            this.panel1.Controls.Add(this.guna2ControlBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1084, 58);
-            this.panel1.TabIndex = 0;
+            panel1.BackColor = SystemColors.ButtonShadow;
+            panel1.Controls.Add(Logoutbtn);
+            panel1.Controls.Add(guna2ControlBox1);
+            panel1.Controls.Add(label1);
+            panel1.Dock = DockStyle.Top;
+            panel1.ForeColor = SystemColors.ActiveCaptionText;
+            panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1084, 58);
+            panel1.TabIndex = 0;
             // 
             // Logoutbtn
             // 
-            this.Logoutbtn.Location = new System.Drawing.Point(24, 23);
-            this.Logoutbtn.Name = "Logoutbtn";
-            this.Logoutbtn.Size = new System.Drawing.Size(75, 23);
-            this.Logoutbtn.TabIndex = 2;
-            this.Logoutbtn.Text = "Log Out";
-            this.Logoutbtn.UseVisualStyleBackColor = true;
-            this.Logoutbtn.Click += new System.EventHandler(this.Logoutbtn_Click);
+            Logoutbtn.Location = new Point(24, 23);
+            Logoutbtn.Name = "Logoutbtn";
+            Logoutbtn.Size = new Size(75, 23);
+            Logoutbtn.TabIndex = 2;
+            Logoutbtn.Text = "Log Out";
+            Logoutbtn.UseVisualStyleBackColor = true;
+            Logoutbtn.Click += Logoutbtn_Click;
             // 
             // guna2ControlBox1
             // 
-            this.guna2ControlBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.guna2ControlBox1.BackColor = System.Drawing.Color.Gray;
-            this.guna2ControlBox1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.guna2ControlBox1.CustomizableEdges = customizableEdges1;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2ControlBox1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1531, 15);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(35, 49);
-            this.guna2ControlBox1.TabIndex = 1;
+            guna2ControlBox1.Anchor = AnchorStyles.Right;
+            guna2ControlBox1.BackColor = Color.Gray;
+            guna2ControlBox1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            guna2ControlBox1.CustomizableEdges = customizableEdges1;
+            guna2ControlBox1.FillColor = Color.FromArgb(0, 0, 0, 0);
+            guna2ControlBox1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2ControlBox1.IconColor = Color.White;
+            guna2ControlBox1.Location = new Point(1531, 15);
+            guna2ControlBox1.Margin = new Padding(3, 4, 3, 4);
+            guna2ControlBox1.Name = "guna2ControlBox1";
+            guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2ControlBox1.Size = new Size(35, 49);
+            guna2ControlBox1.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(381, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(387, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Pharmacy Management System";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(381, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(387, 37);
+            label1.TabIndex = 0;
+            label1.Text = "Pharmacy Management System";
+            label1.TextAlign = ContentAlignment.TopCenter;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel2.Controls.Add(this.gtcPharmacy);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 58);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1084, 526);
-            this.panel2.TabIndex = 1;
+            panel2.BackColor = SystemColors.ControlLight;
+            panel2.Controls.Add(gtcPharmacy);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(0, 58);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1084, 526);
+            panel2.TabIndex = 1;
             // 
             // gtcPharmacy
             // 
-            this.gtcPharmacy.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.gtcPharmacy.Controls.Add(this.salesTab);
-            this.gtcPharmacy.Controls.Add(this.purchaseTab);
-            this.gtcPharmacy.Controls.Add(this.Stock);
-            this.gtcPharmacy.Controls.Add(this.addNewProduct);
-            this.gtcPharmacy.Controls.Add(this.customersTab);
-            this.gtcPharmacy.Controls.Add(this.reportsTab);
-            this.gtcPharmacy.Controls.Add(this.accountTab);
-            this.gtcPharmacy.Controls.Add(this.supplierTap);
-            this.gtcPharmacy.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gtcPharmacy.ItemSize = new System.Drawing.Size(180, 40);
-            this.gtcPharmacy.Location = new System.Drawing.Point(0, 0);
-            this.gtcPharmacy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gtcPharmacy.Name = "gtcPharmacy";
-            this.gtcPharmacy.SelectedIndex = 0;
-            this.gtcPharmacy.Size = new System.Drawing.Size(1084, 526);
-            this.gtcPharmacy.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
-            this.gtcPharmacy.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.gtcPharmacy.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gtcPharmacy.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
-            this.gtcPharmacy.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.gtcPharmacy.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
-            this.gtcPharmacy.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.gtcPharmacy.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gtcPharmacy.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
-            this.gtcPharmacy.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.gtcPharmacy.TabButtonSelectedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.gtcPharmacy.TabButtonSelectedState.FillColor = System.Drawing.Color.Gray;
-            this.gtcPharmacy.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gtcPharmacy.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
-            this.gtcPharmacy.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gtcPharmacy.TabButtonSize = new System.Drawing.Size(180, 40);
-            this.gtcPharmacy.TabIndex = 0;
-            this.gtcPharmacy.TabMenuBackColor = System.Drawing.Color.DarkGray;
-            this.gtcPharmacy.Selected += new System.Windows.Forms.TabControlEventHandler(this.gtcPharmacy_Selected);
+            gtcPharmacy.Alignment = TabAlignment.Left;
+            gtcPharmacy.Controls.Add(salesTab);
+            gtcPharmacy.Controls.Add(purchaseTab);
+            gtcPharmacy.Controls.Add(Stock);
+            gtcPharmacy.Controls.Add(addNewProduct);
+            gtcPharmacy.Controls.Add(customersTab);
+            gtcPharmacy.Controls.Add(reportsTab);
+            gtcPharmacy.Controls.Add(accountTab);
+            gtcPharmacy.Controls.Add(supplierTap);
+            gtcPharmacy.Dock = DockStyle.Fill;
+            gtcPharmacy.ItemSize = new Size(180, 40);
+            gtcPharmacy.Location = new Point(0, 0);
+            gtcPharmacy.Margin = new Padding(3, 4, 3, 4);
+            gtcPharmacy.Name = "gtcPharmacy";
+            gtcPharmacy.SelectedIndex = 0;
+            gtcPharmacy.Size = new Size(1084, 526);
+            gtcPharmacy.TabButtonHoverState.BorderColor = Color.Empty;
+            gtcPharmacy.TabButtonHoverState.FillColor = Color.FromArgb(40, 52, 70);
+            gtcPharmacy.TabButtonHoverState.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            gtcPharmacy.TabButtonHoverState.ForeColor = Color.White;
+            gtcPharmacy.TabButtonHoverState.InnerColor = Color.FromArgb(40, 52, 70);
+            gtcPharmacy.TabButtonIdleState.BorderColor = Color.Empty;
+            gtcPharmacy.TabButtonIdleState.FillColor = Color.FromArgb(33, 42, 57);
+            gtcPharmacy.TabButtonIdleState.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            gtcPharmacy.TabButtonIdleState.ForeColor = Color.FromArgb(156, 160, 167);
+            gtcPharmacy.TabButtonIdleState.InnerColor = Color.FromArgb(33, 42, 57);
+            gtcPharmacy.TabButtonSelectedState.BorderColor = Color.FromArgb(64, 64, 64);
+            gtcPharmacy.TabButtonSelectedState.FillColor = Color.Gray;
+            gtcPharmacy.TabButtonSelectedState.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            gtcPharmacy.TabButtonSelectedState.ForeColor = Color.White;
+            gtcPharmacy.TabButtonSelectedState.InnerColor = Color.FromArgb(224, 224, 224);
+            gtcPharmacy.TabButtonSize = new Size(180, 40);
+            gtcPharmacy.TabIndex = 0;
+            gtcPharmacy.TabMenuBackColor = Color.DarkGray;
+            gtcPharmacy.Selected += gtcPharmacy_Selected;
             // 
             // salesTab
             // 
-            this.salesTab.Controls.Add(this.saveInvoice);
-            this.salesTab.Controls.Add(this.groupBox4);
-            this.salesTab.Controls.Add(this.groupBox3);
-            this.salesTab.Controls.Add(this.label21);
-            this.salesTab.Controls.Add(this.discountInPercentage);
-            this.salesTab.Controls.Add(this.finalPrice);
-            this.salesTab.Controls.Add(this.totalPrice);
-            this.salesTab.Controls.Add(this.textBox19);
-            this.salesTab.Controls.Add(this.textBox20);
-            this.salesTab.Controls.Add(this.textBox17);
-            this.salesTab.Controls.Add(this.textBox18);
-            this.salesTab.Location = new System.Drawing.Point(184, 4);
-            this.salesTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.salesTab.Name = "salesTab";
-            this.salesTab.Padding = new System.Windows.Forms.Padding(3);
-            this.salesTab.Size = new System.Drawing.Size(896, 518);
-            this.salesTab.TabIndex = 1;
-            this.salesTab.Text = "Sales";
-            this.salesTab.UseVisualStyleBackColor = true;
+            salesTab.Controls.Add(DGVSales);
+            salesTab.Controls.Add(groupBox13);
+            salesTab.Controls.Add(groupBox4);
+            salesTab.Controls.Add(saveInvoice);
+            salesTab.Controls.Add(groupBox3);
+            salesTab.Location = new Point(184, 4);
+            salesTab.Margin = new Padding(3, 4, 3, 4);
+            salesTab.Name = "salesTab";
+            salesTab.Padding = new Padding(3);
+            salesTab.Size = new Size(896, 518);
+            salesTab.TabIndex = 1;
+            salesTab.Text = "Sales";
+            salesTab.UseVisualStyleBackColor = true;
             // 
-            // saveInvoice
+            // DGVSales
             // 
-            this.saveInvoice.Location = new System.Drawing.Point(724, 433);
-            this.saveInvoice.Name = "saveInvoice";
-            this.saveInvoice.Size = new System.Drawing.Size(118, 39);
-            this.saveInvoice.TabIndex = 4;
-            this.saveInvoice.Text = "Save";
-            this.saveInvoice.UseVisualStyleBackColor = true;
+            DGVSales.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVSales.Columns.AddRange(new DataGridViewColumn[] { salesPCodeDGV, salesProductName, salesUnitprice, salesUnitQuantity });
+            DGVSales.Location = new Point(6, 301);
+            DGVSales.Name = "DGVSales";
+            DGVSales.RowTemplate.Height = 25;
+            DGVSales.Size = new Size(884, 150);
+            DGVSales.TabIndex = 11;
+            // 
+            // salesPCodeDGV
+            // 
+            salesPCodeDGV.HeaderText = "Product Code";
+            salesPCodeDGV.Name = "salesPCodeDGV";
+            // 
+            // salesProductName
+            // 
+            salesProductName.HeaderText = "Product Name";
+            salesProductName.Name = "salesProductName";
+            salesProductName.Width = 220;
+            // 
+            // salesUnitprice
+            // 
+            salesUnitprice.HeaderText = "Price";
+            salesUnitprice.Name = "salesUnitprice";
+            // 
+            // salesUnitQuantity
+            // 
+            salesUnitQuantity.HeaderText = "Quantity";
+            salesUnitQuantity.Name = "salesUnitQuantity";
+            // 
+            // groupBox13
+            // 
+            groupBox13.Controls.Add(salesTotalPrice);
+            groupBox13.Controls.Add(SalesBillNo);
+            groupBox13.Controls.Add(salesTotalAmount);
+            groupBox13.Controls.Add(salesPay);
+            groupBox13.Controls.Add(label55);
+            groupBox13.Controls.Add(label58);
+            groupBox13.Controls.Add(label59);
+            groupBox13.Location = new Point(7, 218);
+            groupBox13.Name = "groupBox13";
+            groupBox13.Size = new Size(884, 77);
+            groupBox13.TabIndex = 9;
+            groupBox13.TabStop = false;
+            groupBox13.Text = "Product";
+            // 
+            // salesTotalPrice
+            // 
+            salesTotalPrice.Enabled = false;
+            salesTotalPrice.Location = new Point(343, 31);
+            salesTotalPrice.Name = "salesTotalPrice";
+            salesTotalPrice.Size = new Size(129, 23);
+            salesTotalPrice.TabIndex = 13;
+            // 
+            // SalesBillNo
+            // 
+            SalesBillNo.Enabled = false;
+            SalesBillNo.Location = new Point(74, 31);
+            SalesBillNo.Name = "SalesBillNo";
+            SalesBillNo.Size = new Size(74, 23);
+            SalesBillNo.TabIndex = 13;
+            // 
+            // salesTotalAmount
+            // 
+            salesTotalAmount.AutoSize = true;
+            salesTotalAmount.Enabled = false;
+            salesTotalAmount.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            salesTotalAmount.Location = new Point(233, 32);
+            salesTotalAmount.Name = "salesTotalAmount";
+            salesTotalAmount.Size = new Size(106, 20);
+            salesTotalAmount.TabIndex = 12;
+            salesTotalAmount.Text = "Total Amount";
+            // 
+            // salesPay
+            // 
+            salesPay.Location = new Point(625, 31);
+            salesPay.Name = "salesPay";
+            salesPay.Size = new Size(74, 23);
+            salesPay.TabIndex = 13;
+            // 
+            // label55
+            // 
+            label55.AutoSize = true;
+            label55.Enabled = false;
+            label55.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label55.Location = new Point(5, 32);
+            label55.Name = "label55";
+            label55.Size = new Size(58, 20);
+            label55.TabIndex = 12;
+            label55.Text = "Bill NO";
+            // 
+            // label58
+            // 
+            label58.AutoSize = true;
+            label58.Enabled = false;
+            label58.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label58.Location = new Point(575, 32);
+            label58.Name = "label58";
+            label58.Size = new Size(34, 20);
+            label58.TabIndex = 12;
+            label58.Text = "Pay";
+            // 
+            // label59
+            // 
+            label59.AutoSize = true;
+            label59.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label59.Location = new Point(190, 167);
+            label59.Name = "label59";
+            label59.Size = new Size(0, 20);
+            label59.TabIndex = 2;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.salesSearch);
-            this.groupBox4.Controls.Add(this.dataGridView3);
-            this.groupBox4.Controls.Add(this.label24);
-            this.groupBox4.Controls.Add(this.label20);
-            this.groupBox4.Controls.Add(this.label19);
-            this.groupBox4.Controls.Add(this.textBox16);
-            this.groupBox4.Controls.Add(this.textBox15);
-            this.groupBox4.Location = new System.Drawing.Point(7, 75);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(884, 336);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Product";
+            groupBox4.Controls.Add(comboPForm);
+            groupBox4.Controls.Add(comboPName);
+            groupBox4.Controls.Add(textsalesExpire);
+            groupBox4.Controls.Add(salesProductCode);
+            groupBox4.Controls.Add(textsalesBalance);
+            groupBox4.Controls.Add(PQty);
+            groupBox4.Controls.Add(label53);
+            groupBox4.Controls.Add(salesPPrice);
+            groupBox4.Controls.Add(label56);
+            groupBox4.Controls.Add(label9);
+            groupBox4.Controls.Add(label19);
+            groupBox4.Controls.Add(label16);
+            groupBox4.Controls.Add(label20);
+            groupBox4.Controls.Add(label24);
+            groupBox4.Controls.Add(label52);
+            groupBox4.Location = new Point(7, 85);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(884, 119);
+            groupBox4.TabIndex = 10;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Product";
             // 
-            // salesSearch
+            // comboPForm
             // 
-            this.salesSearch.Location = new System.Drawing.Point(755, 24);
-            this.salesSearch.Name = "salesSearch";
-            this.salesSearch.Size = new System.Drawing.Size(102, 32);
-            this.salesSearch.TabIndex = 5;
-            this.salesSearch.Text = "Search";
-            this.salesSearch.UseVisualStyleBackColor = true;
-            this.salesSearch.Click += new System.EventHandler(this.salesSearch_Click);
+            comboPForm.Enabled = false;
+            comboPForm.FormattingEnabled = true;
+            comboPForm.Location = new Point(720, 23);
+            comboPForm.Name = "comboPForm";
+            comboPForm.Size = new Size(121, 23);
+            comboPForm.TabIndex = 15;
             // 
-            // dataGridView3
+            // comboPName
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.P_Name,
-            this.qPack,
-            this.qUnit,
-            this.packPrice,
-            this.balance,
-            this.DPrice});
-            this.dataGridView3.Location = new System.Drawing.Point(6, 69);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.Size = new System.Drawing.Size(872, 362);
-            this.dataGridView3.TabIndex = 4;
+            comboPName.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboPName.FormattingEnabled = true;
+            comboPName.Location = new Point(280, 22);
+            comboPName.Name = "comboPName";
+            comboPName.Size = new Size(295, 23);
+            comboPName.TabIndex = 14;
             // 
-            // P_Name
+            // textsalesExpire
             // 
-            this.P_Name.HeaderText = "Name";
-            this.P_Name.MinimumWidth = 6;
-            this.P_Name.Name = "P_Name";
-            this.P_Name.Width = 400;
+            textsalesExpire.Enabled = false;
+            textsalesExpire.Location = new Point(532, 77);
+            textsalesExpire.Name = "textsalesExpire";
+            textsalesExpire.Size = new Size(129, 23);
+            textsalesExpire.TabIndex = 13;
             // 
-            // qPack
+            // salesProductCode
             // 
-            this.qPack.HeaderText = "Q Pack";
-            this.qPack.MinimumWidth = 6;
-            this.qPack.Name = "qPack";
-            this.qPack.Width = 80;
+            salesProductCode.Location = new Point(73, 21);
+            salesProductCode.Name = "salesProductCode";
+            salesProductCode.Size = new Size(74, 23);
+            salesProductCode.TabIndex = 13;
+            salesProductCode.KeyDown += salesProductCode_KeyDown;
             // 
-            // qUnit
+            // textsalesBalance
             // 
-            this.qUnit.HeaderText = "Q Unit";
-            this.qUnit.MinimumWidth = 6;
-            this.qUnit.Name = "qUnit";
-            this.qUnit.Width = 80;
+            textsalesBalance.Enabled = false;
+            textsalesBalance.Location = new Point(291, 77);
+            textsalesBalance.Name = "textsalesBalance";
+            textsalesBalance.Size = new Size(74, 23);
+            textsalesBalance.TabIndex = 13;
             // 
-            // packPrice
+            // PQty
             // 
-            this.packPrice.HeaderText = "Price";
-            this.packPrice.MinimumWidth = 6;
-            this.packPrice.Name = "packPrice";
-            this.packPrice.Width = 80;
+            PQty.Location = new Point(783, 77);
+            PQty.Name = "PQty";
+            PQty.Size = new Size(74, 23);
+            PQty.TabIndex = 13;
+            PQty.TextChanged += PQty_TextChanged;
+            PQty.KeyDown += PQty_KeyDown;
             // 
-            // balance
+            // label53
             // 
-            this.balance.HeaderText = "Balance";
-            this.balance.MinimumWidth = 6;
-            this.balance.Name = "balance";
-            this.balance.ReadOnly = true;
-            this.balance.Width = 125;
+            label53.AutoSize = true;
+            label53.Enabled = false;
+            label53.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label53.Location = new Point(439, 78);
+            label53.Name = "label53";
+            label53.Size = new Size(89, 20);
+            label53.TabIndex = 12;
+            label53.Text = "Expire Date";
             // 
-            // DPrice
+            // salesPPrice
             // 
-            this.DPrice.HeaderText = "Total Price";
-            this.DPrice.MinimumWidth = 6;
-            this.DPrice.Name = "DPrice";
-            this.DPrice.Width = 125;
+            salesPPrice.Enabled = false;
+            salesPPrice.Location = new Point(67, 75);
+            salesPPrice.Name = "salesPPrice";
+            salesPPrice.Size = new Size(74, 23);
+            salesPPrice.TabIndex = 13;
             // 
-            // label24
+            // label56
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label24.Location = new System.Drawing.Point(190, 167);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(0, 20);
-            this.label24.TabIndex = 2;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(181, 29);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(51, 20);
-            this.label20.TabIndex = 2;
-            this.label20.Text = "Name";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label19.Location = new System.Drawing.Point(6, 29);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(66, 20);
-            this.label19.TabIndex = 2;
-            this.label19.Text = "Barcode";
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(238, 28);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(161, 23);
-            this.textBox16.TabIndex = 3;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(73, 28);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(97, 23);
-            this.textBox15.TabIndex = 3;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.textBox13);
-            this.groupBox3.Controls.Add(this.textBox14);
-            this.groupBox3.Controls.Add(this.textBox8);
-            this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Controls.Add(this.textBox7);
-            this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Location = new System.Drawing.Point(7, 5);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(884, 62);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Customer";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(685, 19);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(161, 23);
-            this.textBox13.TabIndex = 3;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(457, 19);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(144, 23);
-            this.textBox14.TabIndex = 3;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(228, 20);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(161, 23);
-            this.textBox8.TabIndex = 3;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(616, 20);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(66, 20);
-            this.label18.TabIndex = 2;
-            this.label18.Text = "Address";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(400, 21);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(53, 20);
-            this.label17.TabIndex = 2;
-            this.label17.Text = "Phone";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(63, 20);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(97, 23);
-            this.textBox7.TabIndex = 3;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(402, 19);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(53, 20);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "Phone";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(171, 21);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 20);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Name";
+            label56.AutoSize = true;
+            label56.Enabled = false;
+            label56.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label56.Location = new Point(19, 22);
+            label56.Name = "label56";
+            label56.Size = new Size(44, 20);
+            label56.TabIndex = 12;
+            label56.Text = "Code";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(6, 21);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 20);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Code";
+            label9.AutoSize = true;
+            label9.Enabled = false;
+            label9.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.Location = new Point(222, 78);
+            label9.Name = "label9";
+            label9.Size = new Size(63, 20);
+            label9.TabIndex = 12;
+            label9.Text = "Balance";
             // 
-            // label21
+            // label19
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(409, 432);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(144, 20);
-            this.label21.TabIndex = 2;
-            this.label21.Text = "Discount by money";
+            label19.AutoSize = true;
+            label19.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label19.Location = new Point(710, 78);
+            label19.Name = "label19";
+            label19.Size = new Size(70, 20);
+            label19.TabIndex = 12;
+            label19.Text = "Quantity";
             // 
-            // discountInPercentage
+            // label16
             // 
-            this.discountInPercentage.AutoSize = true;
-            this.discountInPercentage.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.discountInPercentage.Location = new System.Drawing.Point(212, 432);
-            this.discountInPercentage.Name = "discountInPercentage";
-            this.discountInPercentage.Size = new System.Drawing.Size(105, 20);
-            this.discountInPercentage.TabIndex = 2;
-            this.discountInPercentage.Text = "Discount in %";
+            label16.AutoSize = true;
+            label16.Enabled = false;
+            label16.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label16.Location = new Point(666, 24);
+            label16.Name = "label16";
+            label16.Size = new Size(46, 20);
+            label16.TabIndex = 12;
+            label16.Text = "Form";
             // 
-            // finalPrice
+            // label20
             // 
-            this.finalPrice.AutoSize = true;
-            this.finalPrice.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.finalPrice.Location = new System.Drawing.Point(13, 481);
-            this.finalPrice.Name = "finalPrice";
-            this.finalPrice.Size = new System.Drawing.Size(80, 20);
-            this.finalPrice.TabIndex = 2;
-            this.finalPrice.Text = "Final Price";
+            label20.AutoSize = true;
+            label20.Enabled = false;
+            label20.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label20.Location = new Point(17, 76);
+            label20.Name = "label20";
+            label20.Size = new Size(43, 20);
+            label20.TabIndex = 12;
+            label20.Text = "Price";
             // 
-            // totalPrice
+            // label24
             // 
-            this.totalPrice.AutoSize = true;
-            this.totalPrice.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.totalPrice.Location = new System.Drawing.Point(13, 432);
-            this.totalPrice.Name = "totalPrice";
-            this.totalPrice.Size = new System.Drawing.Size(82, 20);
-            this.totalPrice.TabIndex = 2;
-            this.totalPrice.Text = "Total Price";
+            label24.AutoSize = true;
+            label24.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label24.Location = new Point(190, 167);
+            label24.Name = "label24";
+            label24.Size = new Size(0, 20);
+            label24.TabIndex = 2;
             // 
-            // textBox19
+            // label52
             // 
-            this.textBox19.Location = new System.Drawing.Point(557, 431);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(74, 23);
-            this.textBox19.TabIndex = 3;
+            label52.AutoSize = true;
+            label52.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label52.Location = new Point(223, 22);
+            label52.Name = "label52";
+            label52.Size = new Size(51, 20);
+            label52.TabIndex = 2;
+            label52.Text = "Name";
             // 
-            // textBox20
+            // saveInvoice
             // 
-            this.textBox20.Location = new System.Drawing.Point(98, 480);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.ReadOnly = true;
-            this.textBox20.Size = new System.Drawing.Size(97, 23);
-            this.textBox20.TabIndex = 3;
+            saveInvoice.Enabled = false;
+            saveInvoice.Location = new Point(757, 473);
+            saveInvoice.Name = "saveInvoice";
+            saveInvoice.Size = new Size(118, 39);
+            saveInvoice.TabIndex = 8;
+            saveInvoice.Text = "Save";
+            saveInvoice.UseVisualStyleBackColor = true;
             // 
-            // textBox17
+            // groupBox3
             // 
-            this.textBox17.Location = new System.Drawing.Point(98, 431);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(97, 23);
-            this.textBox17.TabIndex = 3;
+            groupBox3.Controls.Add(comboCustomerName);
+            groupBox3.Controls.Add(customerAddress);
+            groupBox3.Controls.Add(customerPhone);
+            groupBox3.Controls.Add(salesCustomerCode);
+            groupBox3.Controls.Add(label18);
+            groupBox3.Controls.Add(label17);
+            groupBox3.Controls.Add(label10);
+            groupBox3.Controls.Add(label54);
+            groupBox3.Location = new Point(7, 7);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(884, 62);
+            groupBox3.TabIndex = 7;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Customer";
             // 
-            // textBox18
+            // comboCustomerName
             // 
-            this.textBox18.Location = new System.Drawing.Point(321, 431);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(74, 23);
-            this.textBox18.TabIndex = 3;
+            comboCustomerName.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboCustomerName.DataSource = customerBindingSource;
+            comboCustomerName.Enabled = false;
+            comboCustomerName.FormattingEnabled = true;
+            comboCustomerName.Location = new Point(182, 20);
+            comboCustomerName.Name = "comboCustomerName";
+            comboCustomerName.Size = new Size(204, 23);
+            comboCustomerName.TabIndex = 4;
+            // 
+            // customerAddress
+            // 
+            customerAddress.Enabled = false;
+            customerAddress.Location = new Point(682, 21);
+            customerAddress.Name = "customerAddress";
+            customerAddress.Size = new Size(193, 23);
+            customerAddress.TabIndex = 3;
+            // 
+            // customerPhone
+            // 
+            customerPhone.Enabled = false;
+            customerPhone.Location = new Point(458, 21);
+            customerPhone.Name = "customerPhone";
+            customerPhone.Size = new Size(144, 23);
+            customerPhone.TabIndex = 3;
+            // 
+            // salesCustomerCode
+            // 
+            salesCustomerCode.Location = new Point(58, 20);
+            salesCustomerCode.Name = "salesCustomerCode";
+            salesCustomerCode.Size = new Size(53, 23);
+            salesCustomerCode.TabIndex = 13;
+            salesCustomerCode.TextChanged += salesCustomerCode_TextChanged;
+            salesCustomerCode.KeyDown += salesCustomerCode_KeyDown;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label18.Location = new Point(613, 22);
+            label18.Name = "label18";
+            label18.Size = new Size(66, 20);
+            label18.TabIndex = 2;
+            label18.Text = "Address";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label17.Location = new Point(401, 23);
+            label17.Name = "label17";
+            label17.Size = new Size(53, 20);
+            label17.TabIndex = 2;
+            label17.Text = "Phone";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.Location = new Point(121, 21);
+            label10.Name = "label10";
+            label10.Size = new Size(51, 20);
+            label10.TabIndex = 2;
+            label10.Text = "Name";
+            // 
+            // label54
+            // 
+            label54.AutoSize = true;
+            label54.Enabled = false;
+            label54.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label54.Location = new Point(8, 21);
+            label54.Name = "label54";
+            label54.Size = new Size(44, 20);
+            label54.TabIndex = 12;
+            label54.Text = "Code";
             // 
             // purchaseTab
             // 
-            this.purchaseTab.Controls.Add(this.button1);
-            this.purchaseTab.Controls.Add(this.label26);
-            this.purchaseTab.Controls.Add(this.textBox23);
-            this.purchaseTab.Controls.Add(this.groupBox5);
-            this.purchaseTab.Controls.Add(this.groupBox6);
-            this.purchaseTab.Location = new System.Drawing.Point(184, 4);
-            this.purchaseTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.purchaseTab.Name = "purchaseTab";
-            this.purchaseTab.Size = new System.Drawing.Size(896, 518);
-            this.purchaseTab.TabIndex = 2;
-            this.purchaseTab.Text = "Purchase";
-            this.purchaseTab.UseVisualStyleBackColor = true;
+            purchaseTab.Controls.Add(groupBox14);
+            purchaseTab.Controls.Add(groupBox6);
+            purchaseTab.Controls.Add(button1);
+            purchaseTab.Controls.Add(groupBox5);
+            purchaseTab.Controls.Add(DGVpurch);
+            purchaseTab.Location = new Point(184, 4);
+            purchaseTab.Margin = new Padding(3, 4, 3, 4);
+            purchaseTab.Name = "purchaseTab";
+            purchaseTab.Size = new Size(896, 518);
+            purchaseTab.TabIndex = 2;
+            purchaseTab.Text = "Purchase";
+            purchaseTab.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // groupBox14
             // 
-            this.button1.Location = new System.Drawing.Point(750, 456);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 39);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
+            groupBox14.Controls.Add(purchTotal);
+            groupBox14.Controls.Add(purchBillNo);
+            groupBox14.Controls.Add(label25);
+            groupBox14.Controls.Add(textBox34);
+            groupBox14.Controls.Add(label26);
+            groupBox14.Controls.Add(label68);
+            groupBox14.Controls.Add(label69);
+            groupBox14.Location = new Point(8, 222);
+            groupBox14.Name = "groupBox14";
+            groupBox14.Size = new Size(884, 77);
+            groupBox14.TabIndex = 13;
+            groupBox14.TabStop = false;
+            groupBox14.Text = "Product";
             // 
-            // label26
+            // purchTotal
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label26.Location = new System.Drawing.Point(16, 461);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(82, 20);
-            this.label26.TabIndex = 5;
-            this.label26.Text = "Total Price";
+            purchTotal.Enabled = false;
+            purchTotal.Location = new Point(343, 31);
+            purchTotal.Name = "purchTotal";
+            purchTotal.Size = new Size(129, 23);
+            purchTotal.TabIndex = 13;
             // 
-            // textBox23
+            // purchBillNo
             // 
-            this.textBox23.Location = new System.Drawing.Point(101, 460);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.ReadOnly = true;
-            this.textBox23.Size = new System.Drawing.Size(97, 23);
-            this.textBox23.TabIndex = 6;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.purchaseSearch);
-            this.groupBox5.Controls.Add(this.dataGridView4);
-            this.groupBox5.Controls.Add(this.label22);
-            this.groupBox5.Controls.Add(this.label23);
-            this.groupBox5.Controls.Add(this.label25);
-            this.groupBox5.Controls.Add(this.textBox21);
-            this.groupBox5.Controls.Add(this.textBox22);
-            this.groupBox5.Location = new System.Drawing.Point(7, 83);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(884, 336);
-            this.groupBox5.TabIndex = 3;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Product";
-            // 
-            // purchaseSearch
-            // 
-            this.purchaseSearch.Location = new System.Drawing.Point(760, 24);
-            this.purchaseSearch.Name = "purchaseSearch";
-            this.purchaseSearch.Size = new System.Drawing.Size(102, 32);
-            this.purchaseSearch.TabIndex = 6;
-            this.purchaseSearch.Text = "Search";
-            this.purchaseSearch.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn8,
-            this.purchasepackPrice,
-            this.dataGridViewTextBoxColumn9,
-            this.expire,
-            this.discount,
-            this.dataGridViewTextBoxColumn10});
-            this.dataGridView4.Location = new System.Drawing.Point(6, 69);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersWidth = 51;
-            this.dataGridView4.Size = new System.Drawing.Size(872, 298);
-            this.dataGridView4.TabIndex = 4;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 300;
-            // 
-            // purchasepackPrice
-            // 
-            this.purchasepackPrice.HeaderText = "Pack Price";
-            this.purchasepackPrice.MinimumWidth = 6;
-            this.purchasepackPrice.Name = "purchasepackPrice";
-            this.purchasepackPrice.Width = 80;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "Quantity";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 80;
-            // 
-            // expire
-            // 
-            this.expire.HeaderText = "Expire";
-            this.expire.MinimumWidth = 6;
-            this.expire.Name = "expire";
-            this.expire.Width = 150;
-            // 
-            // discount
-            // 
-            this.discount.HeaderText = "Discount";
-            this.discount.MinimumWidth = 6;
-            this.discount.Name = "discount";
-            this.discount.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.HeaderText = "Total Price";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 125;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label22.Location = new System.Drawing.Point(190, 167);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(0, 20);
-            this.label22.TabIndex = 2;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(181, 29);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(51, 20);
-            this.label23.TabIndex = 2;
-            this.label23.Text = "Name";
+            purchBillNo.Enabled = false;
+            purchBillNo.Location = new Point(74, 31);
+            purchBillNo.Name = "purchBillNo";
+            purchBillNo.Size = new Size(74, 23);
+            purchBillNo.TabIndex = 13;
             // 
             // label25
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label25.Location = new System.Drawing.Point(6, 29);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(66, 20);
-            this.label25.TabIndex = 2;
-            this.label25.Text = "Barcode";
+            label25.AutoSize = true;
+            label25.Enabled = false;
+            label25.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label25.Location = new Point(233, 32);
+            label25.Name = "label25";
+            label25.Size = new Size(106, 20);
+            label25.TabIndex = 12;
+            label25.Text = "Total Amount";
             // 
-            // textBox21
+            // textBox34
             // 
-            this.textBox21.Location = new System.Drawing.Point(238, 28);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(161, 23);
-            this.textBox21.TabIndex = 3;
+            textBox34.Enabled = false;
+            textBox34.Location = new Point(625, 31);
+            textBox34.Name = "textBox34";
+            textBox34.Size = new Size(74, 23);
+            textBox34.TabIndex = 13;
             // 
-            // textBox22
+            // label26
             // 
-            this.textBox22.Location = new System.Drawing.Point(73, 28);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(97, 23);
-            this.textBox22.TabIndex = 3;
+            label26.AutoSize = true;
+            label26.Enabled = false;
+            label26.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label26.Location = new Point(5, 32);
+            label26.Name = "label26";
+            label26.Size = new Size(58, 20);
+            label26.TabIndex = 12;
+            label26.Text = "Bill NO";
+            // 
+            // label68
+            // 
+            label68.AutoSize = true;
+            label68.Enabled = false;
+            label68.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label68.Location = new Point(575, 32);
+            label68.Name = "label68";
+            label68.Size = new Size(34, 20);
+            label68.TabIndex = 12;
+            label68.Text = "Pay";
+            // 
+            // label69
+            // 
+            label69.AutoSize = true;
+            label69.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label69.Location = new Point(190, 167);
+            label69.Name = "label69";
+            label69.Size = new Size(0, 20);
+            label69.TabIndex = 2;
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.comboBox2);
-            this.groupBox6.Controls.Add(this.label29);
-            this.groupBox6.Location = new System.Drawing.Point(7, 13);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(884, 62);
-            this.groupBox6.TabIndex = 2;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Supplier";
+            groupBox6.Controls.Add(purchSName);
+            groupBox6.Controls.Add(label29);
+            groupBox6.Controls.Add(label61);
+            groupBox6.Controls.Add(label60);
+            groupBox6.Controls.Add(purchSCode);
+            groupBox6.Controls.Add(PurchSPhone);
+            groupBox6.Controls.Add(label57);
+            groupBox6.Controls.Add(purchSAddress);
+            groupBox6.Location = new Point(9, 3);
+            groupBox6.Name = "groupBox6";
+            groupBox6.Size = new Size(884, 62);
+            groupBox6.TabIndex = 9;
+            groupBox6.TabStop = false;
+            groupBox6.Text = "Supplier";
             // 
-            // comboBox2
+            // purchSName
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(69, 23);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(184, 23);
-            this.comboBox2.TabIndex = 3;
+            purchSName.Enabled = false;
+            purchSName.FormattingEnabled = true;
+            purchSName.Location = new Point(232, 27);
+            purchSName.Name = "purchSName";
+            purchSName.Size = new Size(184, 23);
+            purchSName.TabIndex = 3;
             // 
             // label29
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label29.Location = new System.Drawing.Point(6, 24);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(51, 20);
-            this.label29.TabIndex = 2;
-            this.label29.Text = "Name";
+            label29.AutoSize = true;
+            label29.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label29.Location = new Point(169, 28);
+            label29.Name = "label29";
+            label29.Size = new Size(51, 20);
+            label29.TabIndex = 2;
+            label29.Text = "Name";
+            // 
+            // label61
+            // 
+            label61.AutoSize = true;
+            label61.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label61.Location = new Point(666, 26);
+            label61.Name = "label61";
+            label61.Size = new Size(53, 20);
+            label61.TabIndex = 2;
+            label61.Text = "Phone";
+            // 
+            // label60
+            // 
+            label60.AutoSize = true;
+            label60.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label60.Location = new Point(429, 27);
+            label60.Name = "label60";
+            label60.Size = new Size(66, 20);
+            label60.TabIndex = 2;
+            label60.Text = "Address";
+            // 
+            // purchSCode
+            // 
+            purchSCode.Location = new Point(63, 26);
+            purchSCode.Name = "purchSCode";
+            purchSCode.Size = new Size(97, 23);
+            purchSCode.TabIndex = 3;
+            purchSCode.KeyDown += purchSCode_KeyDown;
+            // 
+            // PurchSPhone
+            // 
+            PurchSPhone.Enabled = false;
+            PurchSPhone.Location = new Point(722, 25);
+            PurchSPhone.Name = "PurchSPhone";
+            PurchSPhone.Size = new Size(156, 23);
+            PurchSPhone.TabIndex = 3;
+            // 
+            // label57
+            // 
+            label57.AutoSize = true;
+            label57.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label57.Location = new Point(11, 27);
+            label57.Name = "label57";
+            label57.Size = new Size(44, 20);
+            label57.TabIndex = 2;
+            label57.Text = "Code";
+            // 
+            // purchSAddress
+            // 
+            purchSAddress.Enabled = false;
+            purchSAddress.Location = new Point(499, 26);
+            purchSAddress.Name = "purchSAddress";
+            purchSAddress.Size = new Size(161, 23);
+            purchSAddress.TabIndex = 3;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(764, 478);
+            button1.Name = "button1";
+            button1.Size = new Size(101, 33);
+            button1.TabIndex = 12;
+            button1.Text = "Save";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox5
+            // 
+            groupBox5.Controls.Add(purchPExpire);
+            groupBox5.Controls.Add(purchaseSearch);
+            groupBox5.Controls.Add(label22);
+            groupBox5.Controls.Add(label67);
+            groupBox5.Controls.Add(purchPCode);
+            groupBox5.Controls.Add(label65);
+            groupBox5.Controls.Add(label64);
+            groupBox5.Controls.Add(label70);
+            groupBox5.Controls.Add(label63);
+            groupBox5.Controls.Add(label62);
+            groupBox5.Controls.Add(label66);
+            groupBox5.Controls.Add(label23);
+            groupBox5.Controls.Add(purchPQty);
+            groupBox5.Controls.Add(purchPGeneric);
+            groupBox5.Controls.Add(purchPSize);
+            groupBox5.Controls.Add(purchPCompany);
+            groupBox5.Controls.Add(purchPForm);
+            groupBox5.Controls.Add(purchPName);
+            groupBox5.Location = new Point(9, 67);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Size = new Size(884, 151);
+            groupBox5.TabIndex = 10;
+            groupBox5.TabStop = false;
+            groupBox5.Text = "Product";
+            // 
+            // purchPExpire
+            // 
+            purchPExpire.Location = new Point(424, 72);
+            purchPExpire.Name = "purchPExpire";
+            purchPExpire.Size = new Size(194, 23);
+            purchPExpire.TabIndex = 7;
+            // 
+            // purchaseSearch
+            // 
+            purchaseSearch.Location = new Point(770, 110);
+            purchaseSearch.Name = "purchaseSearch";
+            purchaseSearch.Size = new Size(102, 32);
+            purchaseSearch.TabIndex = 6;
+            purchaseSearch.Text = "Add";
+            purchaseSearch.UseVisualStyleBackColor = true;
+            purchaseSearch.Click += purchaseSearch_Click;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label22.Location = new Point(190, 167);
+            label22.Name = "label22";
+            label22.Size = new Size(0, 20);
+            label22.TabIndex = 2;
+            // 
+            // label67
+            // 
+            label67.AutoSize = true;
+            label67.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label67.Location = new Point(648, 32);
+            label67.Name = "label67";
+            label67.Size = new Size(70, 20);
+            label67.TabIndex = 2;
+            label67.Text = "Quantity";
+            // 
+            // purchPCode
+            // 
+            purchPCode.Location = new Point(79, 31);
+            purchPCode.Name = "purchPCode";
+            purchPCode.Size = new Size(97, 23);
+            purchPCode.TabIndex = 3;
+            // 
+            // label65
+            // 
+            label65.AutoSize = true;
+            label65.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label65.Location = new Point(319, 72);
+            label65.Name = "label65";
+            label65.Size = new Size(89, 20);
+            label65.TabIndex = 2;
+            label65.Text = "Expire Date";
+            // 
+            // label64
+            // 
+            label64.AutoSize = true;
+            label64.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label64.Location = new Point(12, 115);
+            label64.Name = "label64";
+            label64.Size = new Size(62, 20);
+            label64.TabIndex = 2;
+            label64.Text = "Generic";
+            // 
+            // label70
+            // 
+            label70.AutoSize = true;
+            label70.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label70.Location = new Point(11, 32);
+            label70.Name = "label70";
+            label70.Size = new Size(66, 20);
+            label70.TabIndex = 2;
+            label70.Text = "Barcode";
+            // 
+            // label63
+            // 
+            label63.AutoSize = true;
+            label63.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label63.Location = new Point(676, 74);
+            label63.Name = "label63";
+            label63.Size = new Size(71, 20);
+            label63.TabIndex = 2;
+            label63.Text = "Pack size";
+            // 
+            // label62
+            // 
+            label62.AutoSize = true;
+            label62.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label62.Location = new Point(12, 71);
+            label62.Name = "label62";
+            label62.Size = new Size(121, 20);
+            label62.TabIndex = 2;
+            label62.Text = "Company Name";
+            // 
+            // label66
+            // 
+            label66.AutoSize = true;
+            label66.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label66.Location = new Point(420, 32);
+            label66.Name = "label66";
+            label66.Size = new Size(46, 20);
+            label66.TabIndex = 2;
+            label66.Text = "Form";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label23.Location = new Point(186, 32);
+            label23.Name = "label23";
+            label23.Size = new Size(51, 20);
+            label23.TabIndex = 2;
+            label23.Text = "Name";
+            // 
+            // purchPQty
+            // 
+            purchPQty.Location = new Point(724, 31);
+            purchPQty.Name = "purchPQty";
+            purchPQty.Size = new Size(119, 23);
+            purchPQty.TabIndex = 3;
+            // 
+            // purchPGeneric
+            // 
+            purchPGeneric.Location = new Point(80, 114);
+            purchPGeneric.Name = "purchPGeneric";
+            purchPGeneric.Size = new Size(157, 23);
+            purchPGeneric.TabIndex = 3;
+            // 
+            // purchPSize
+            // 
+            purchPSize.Location = new Point(753, 73);
+            purchPSize.Name = "purchPSize";
+            purchPSize.Size = new Size(79, 23);
+            purchPSize.TabIndex = 3;
+            // 
+            // purchPCompany
+            // 
+            purchPCompany.Location = new Point(139, 70);
+            purchPCompany.Name = "purchPCompany";
+            purchPCompany.Size = new Size(161, 23);
+            purchPCompany.TabIndex = 3;
+            // 
+            // purchPForm
+            // 
+            purchPForm.Location = new Point(477, 31);
+            purchPForm.Name = "purchPForm";
+            purchPForm.Size = new Size(161, 23);
+            purchPForm.TabIndex = 3;
+            // 
+            // purchPName
+            // 
+            purchPName.Location = new Point(243, 31);
+            purchPName.Name = "purchPName";
+            purchPName.Size = new Size(161, 23);
+            purchPName.TabIndex = 3;
+            // 
+            // DGVpurch
+            // 
+            DGVpurch.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVpurch.Columns.AddRange(new DataGridViewColumn[] { purchId, dataGridViewTextBoxColumn8, dataGridViewTextBoxColumn9, expire });
+            DGVpurch.Location = new Point(9, 312);
+            DGVpurch.Name = "DGVpurch";
+            DGVpurch.RowHeadersWidth = 51;
+            DGVpurch.Size = new Size(872, 155);
+            DGVpurch.TabIndex = 11;
+            // 
+            // purchId
+            // 
+            purchId.HeaderText = "Purchase ID";
+            purchId.Name = "purchId";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            dataGridViewTextBoxColumn8.HeaderText = "Name";
+            dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            dataGridViewTextBoxColumn8.Width = 300;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            dataGridViewTextBoxColumn9.HeaderText = "Quantity";
+            dataGridViewTextBoxColumn9.MinimumWidth = 6;
+            dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            dataGridViewTextBoxColumn9.Width = 80;
+            // 
+            // expire
+            // 
+            expire.HeaderText = "Expire";
+            expire.MinimumWidth = 6;
+            expire.Name = "expire";
+            expire.Width = 150;
             // 
             // Stock
             // 
-            this.Stock.Controls.Add(this.groupBox2);
-            this.Stock.Controls.Add(this.dataGridView2);
-            this.Stock.Location = new System.Drawing.Point(184, 4);
-            this.Stock.Name = "Stock";
-            this.Stock.Size = new System.Drawing.Size(896, 518);
-            this.Stock.TabIndex = 10;
-            this.Stock.Text = "Stock";
-            this.Stock.UseVisualStyleBackColor = true;
+            Stock.Controls.Add(groupBox2);
+            Stock.Controls.Add(dataGridView2);
+            Stock.Location = new Point(184, 4);
+            Stock.Name = "Stock";
+            Stock.Size = new Size(896, 518);
+            Stock.TabIndex = 10;
+            Stock.Text = "Stock";
+            Stock.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.search);
-            this.groupBox2.Controls.Add(this.textBox10);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.textBox11);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.textBox12);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Location = new System.Drawing.Point(10, 16);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(874, 111);
-            this.groupBox2.TabIndex = 15;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Product";
+            groupBox2.Controls.Add(search);
+            groupBox2.Controls.Add(textBox10);
+            groupBox2.Controls.Add(label12);
+            groupBox2.Controls.Add(label13);
+            groupBox2.Controls.Add(textBox11);
+            groupBox2.Controls.Add(label14);
+            groupBox2.Controls.Add(textBox12);
+            groupBox2.Controls.Add(label15);
+            groupBox2.Location = new Point(10, 16);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(874, 111);
+            groupBox2.TabIndex = 15;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Product";
             // 
             // search
             // 
-            this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.search.Location = new System.Drawing.Point(346, 68);
-            this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(90, 37);
-            this.search.TabIndex = 12;
-            this.search.Text = "Search";
-            this.search.UseVisualStyleBackColor = true;
+            search.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            search.Location = new Point(346, 68);
+            search.Name = "search";
+            search.Size = new Size(90, 37);
+            search.TabIndex = 12;
+            search.Text = "Search";
+            search.UseVisualStyleBackColor = true;
+            search.Click += search_Click;
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(360, 30);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(161, 23);
-            this.textBox10.TabIndex = 7;
+            textBox10.Location = new Point(360, 30);
+            textBox10.Name = "textBox10";
+            textBox10.Size = new Size(161, 23);
+            textBox10.TabIndex = 7;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(273, 31);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 20);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "Company";
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.Location = new Point(273, 31);
+            label12.Name = "label12";
+            label12.Size = new Size(75, 20);
+            label12.TabIndex = 6;
+            label12.Text = "Company";
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(43, 28);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(0, 20);
-            this.label13.TabIndex = 4;
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label13.Location = new Point(43, 28);
+            label13.Name = "label13";
+            label13.Size = new Size(0, 20);
+            label13.TabIndex = 4;
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(654, 28);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(161, 23);
-            this.textBox11.TabIndex = 3;
+            textBox11.Location = new Point(654, 28);
+            textBox11.Name = "textBox11";
+            textBox11.Size = new Size(161, 23);
+            textBox11.TabIndex = 3;
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(541, 29);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(105, 20);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Generic name";
+            label14.AutoSize = true;
+            label14.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label14.Location = new Point(541, 29);
+            label14.Name = "label14";
+            label14.Size = new Size(105, 20);
+            label14.TabIndex = 2;
+            label14.Text = "Generic name";
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(93, 28);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(161, 23);
-            this.textBox12.TabIndex = 1;
+            textBox12.Location = new Point(93, 28);
+            textBox12.Name = "textBox12";
+            textBox12.Size = new Size(161, 23);
+            textBox12.TabIndex = 1;
+            textBox12.TextChanged += textBox12_TextChanged;
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(36, 29);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(51, 20);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Name";
+            label15.AutoSize = true;
+            label15.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label15.Location = new Point(36, 29);
+            label15.Name = "label15";
+            label15.Size = new Size(51, 20);
+            label15.TabIndex = 0;
+            label15.Text = "Name";
             // 
             // dataGridView2
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn3,
-            this.stockQPack,
-            this.stockQUnit,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn7});
-            this.dataGridView2.Location = new System.Drawing.Point(10, 133);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(874, 379);
-            this.dataGridView2.TabIndex = 14;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn6, dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn3, stockQPack, stockQUnit, dataGridViewTextBoxColumn5, dataGridViewTextBoxColumn7 });
+            dataGridView2.Location = new Point(10, 133);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersWidth = 51;
+            dataGridView2.Size = new Size(874, 379);
+            dataGridView2.TabIndex = 14;
+            dataGridView2.CellContentClick += dataGridView2_CellContentClick;
             // 
             // dataGridViewTextBoxColumn6
             // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Barcode";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 125;
+            dataGridViewTextBoxColumn6.HeaderText = "Barcode";
+            dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            dataGridViewTextBoxColumn6.ReadOnly = true;
+            dataGridViewTextBoxColumn6.Width = 125;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 260;
+            dataGridViewTextBoxColumn1.HeaderText = "Name";
+            dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.ReadOnly = true;
+            dataGridViewTextBoxColumn1.Width = 260;
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Generic Name";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 125;
+            dataGridViewTextBoxColumn3.HeaderText = "Generic Name";
+            dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            dataGridViewTextBoxColumn3.ReadOnly = true;
+            dataGridViewTextBoxColumn3.Width = 125;
             // 
             // stockQPack
             // 
-            this.stockQPack.HeaderText = "Q Pack";
-            this.stockQPack.MinimumWidth = 6;
-            this.stockQPack.Name = "stockQPack";
-            this.stockQPack.ReadOnly = true;
-            this.stockQPack.Width = 80;
+            stockQPack.HeaderText = "Q Pack";
+            stockQPack.MinimumWidth = 6;
+            stockQPack.Name = "stockQPack";
+            stockQPack.ReadOnly = true;
+            stockQPack.Width = 80;
             // 
             // stockQUnit
             // 
-            this.stockQUnit.HeaderText = "Q Unit";
-            this.stockQUnit.MinimumWidth = 6;
-            this.stockQUnit.Name = "stockQUnit";
-            this.stockQUnit.ReadOnly = true;
-            this.stockQUnit.Width = 80;
+            stockQUnit.HeaderText = "Q Unit";
+            stockQUnit.MinimumWidth = 6;
+            stockQUnit.Name = "stockQUnit";
+            stockQUnit.ReadOnly = true;
+            stockQUnit.Width = 80;
             // 
             // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Company";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 120;
+            dataGridViewTextBoxColumn5.HeaderText = "Company";
+            dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            dataGridViewTextBoxColumn5.ReadOnly = true;
+            dataGridViewTextBoxColumn5.Width = 120;
             // 
             // dataGridViewTextBoxColumn7
             // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "Price";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 125;
+            dataGridViewTextBoxColumn7.HeaderText = "Price";
+            dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            dataGridViewTextBoxColumn7.ReadOnly = true;
+            dataGridViewTextBoxColumn7.Width = 125;
             // 
             // addNewProduct
             // 
-            this.addNewProduct.Controls.Add(this.dataGridView1);
-            this.addNewProduct.Controls.Add(this.groupBox1);
-            this.addNewProduct.Location = new System.Drawing.Point(184, 4);
-            this.addNewProduct.Name = "addNewProduct";
-            this.addNewProduct.Size = new System.Drawing.Size(896, 518);
-            this.addNewProduct.TabIndex = 3;
-            this.addNewProduct.Text = "Add New Product";
-            this.addNewProduct.UseVisualStyleBackColor = true;
-            this.addNewProduct.Click += new System.EventHandler(this.addNewProduct_Click);
+            addNewProduct.Controls.Add(dataGridView1);
+            addNewProduct.Controls.Add(groupBox1);
+            addNewProduct.Location = new Point(184, 4);
+            addNewProduct.Name = "addNewProduct";
+            addNewProduct.Size = new Size(896, 518);
+            addNewProduct.TabIndex = 3;
+            addNewProduct.Text = "Add New Product";
+            addNewProduct.UseVisualStyleBackColor = true;
+            addNewProduct.Click += addNewProduct_Click;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.nameDataGridViewTextBoxColumn2,
-            this.genericNameDataGridViewTextBoxColumn,
-            this.typeDataGridViewTextBoxColumn,
-            this.quantityDataGridViewTextBoxColumn,
-            this.expireDateDataGridViewTextBoxColumn,
-            this.companyDataGridViewTextBoxColumn,
-            this.packSizeDataGridViewTextBoxColumn,
-            this.priceDataGridViewTextBoxColumn,
-            this.categoryIDDataGridViewTextBoxColumn,
-            this.categoryDataGridViewTextBoxColumn,
-            this.saleItemsDataGridViewTextBoxColumn,
-            this.purchaseItemsDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.productBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 179);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(874, 231);
-            this.dataGridView1.TabIndex = 13;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // nameDataGridViewTextBoxColumn2
-            // 
-            this.nameDataGridViewTextBoxColumn2.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn2.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn2.Name = "nameDataGridViewTextBoxColumn2";
-            // 
-            // genericNameDataGridViewTextBoxColumn
-            // 
-            this.genericNameDataGridViewTextBoxColumn.DataPropertyName = "Generic_Name";
-            this.genericNameDataGridViewTextBoxColumn.HeaderText = "Generic_Name";
-            this.genericNameDataGridViewTextBoxColumn.Name = "genericNameDataGridViewTextBoxColumn";
-            // 
-            // typeDataGridViewTextBoxColumn
-            // 
-            this.typeDataGridViewTextBoxColumn.DataPropertyName = "Type";
-            this.typeDataGridViewTextBoxColumn.HeaderText = "Type";
-            this.typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
-            // 
-            // quantityDataGridViewTextBoxColumn
-            // 
-            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
-            this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
-            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
-            // 
-            // expireDateDataGridViewTextBoxColumn
-            // 
-            this.expireDateDataGridViewTextBoxColumn.DataPropertyName = "Expire_Date";
-            this.expireDateDataGridViewTextBoxColumn.HeaderText = "Expire_Date";
-            this.expireDateDataGridViewTextBoxColumn.Name = "expireDateDataGridViewTextBoxColumn";
-            // 
-            // companyDataGridViewTextBoxColumn
-            // 
-            this.companyDataGridViewTextBoxColumn.DataPropertyName = "Company";
-            this.companyDataGridViewTextBoxColumn.HeaderText = "Company";
-            this.companyDataGridViewTextBoxColumn.Name = "companyDataGridViewTextBoxColumn";
-            // 
-            // packSizeDataGridViewTextBoxColumn
-            // 
-            this.packSizeDataGridViewTextBoxColumn.DataPropertyName = "Pack_Size";
-            this.packSizeDataGridViewTextBoxColumn.HeaderText = "Pack_Size";
-            this.packSizeDataGridViewTextBoxColumn.Name = "packSizeDataGridViewTextBoxColumn";
-            // 
-            // priceDataGridViewTextBoxColumn
-            // 
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "price";
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            // 
-            // categoryIDDataGridViewTextBoxColumn
-            // 
-            this.categoryIDDataGridViewTextBoxColumn.DataPropertyName = "Category_ID";
-            this.categoryIDDataGridViewTextBoxColumn.HeaderText = "Category_ID";
-            this.categoryIDDataGridViewTextBoxColumn.Name = "categoryIDDataGridViewTextBoxColumn";
-            // 
-            // categoryDataGridViewTextBoxColumn
-            // 
-            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "Category";
-            this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
-            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
-            // 
-            // saleItemsDataGridViewTextBoxColumn
-            // 
-            this.saleItemsDataGridViewTextBoxColumn.DataPropertyName = "SaleItems";
-            this.saleItemsDataGridViewTextBoxColumn.HeaderText = "SaleItems";
-            this.saleItemsDataGridViewTextBoxColumn.Name = "saleItemsDataGridViewTextBoxColumn";
-            // 
-            // purchaseItemsDataGridViewTextBoxColumn
-            // 
-            this.purchaseItemsDataGridViewTextBoxColumn.DataPropertyName = "PurchaseItems";
-            this.purchaseItemsDataGridViewTextBoxColumn.HeaderText = "PurchaseItems";
-            this.purchaseItemsDataGridViewTextBoxColumn.Name = "purchaseItemsDataGridViewTextBoxColumn";
-            // 
-            // productBindingSource
-            // 
-            this.productBindingSource.DataSource = typeof(PharmacyManagementSystem.DAL.Models.Product);
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.DataSource = productBindingSource;
+            dataGridView1.Location = new Point(17, 179);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(874, 231);
+            dataGridView1.TabIndex = 13;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.txtCategory);
-            this.groupBox1.Controls.Add(this.cmpny);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.addBtn);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.quantity);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(17, 16);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(874, 157);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Add Product";
+            groupBox1.Controls.Add(button2);
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(txtCategory);
+            groupBox1.Controls.Add(cmpny);
+            groupBox1.Controls.Add(dateTimePicker1);
+            groupBox1.Controls.Add(addBtn);
+            groupBox1.Controls.Add(textBox6);
+            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(textBox5);
+            groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(textBox4);
+            groupBox1.Controls.Add(quantity);
+            groupBox1.Controls.Add(textBox3);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(comboBox1);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Location = new Point(17, 16);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(874, 157);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Add Product";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(564, 122);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 23);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Add Category";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Location = new Point(564, 122);
+            button2.Name = "button2";
+            button2.Size = new Size(130, 23);
+            button2.TabIndex = 17;
+            button2.Text = "Add Category";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(346, 123);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 20);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Categoty";
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(346, 123);
+            label6.Name = "label6";
+            label6.Size = new Size(72, 20);
+            label6.TabIndex = 16;
+            label6.Text = "Categoty";
             // 
             // txtCategory
             // 
-            this.txtCategory.Location = new System.Drawing.Point(437, 123);
-            this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(100, 23);
-            this.txtCategory.TabIndex = 15;
+            txtCategory.Location = new Point(437, 123);
+            txtCategory.Name = "txtCategory";
+            txtCategory.Size = new Size(100, 23);
+            txtCategory.TabIndex = 15;
             // 
             // cmpny
             // 
-            this.cmpny.AutoSize = true;
-            this.cmpny.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cmpny.Location = new System.Drawing.Point(6, 122);
-            this.cmpny.Name = "cmpny";
-            this.cmpny.Size = new System.Drawing.Size(85, 20);
-            this.cmpny.TabIndex = 14;
-            this.cmpny.Text = "ExpireDate";
+            cmpny.AutoSize = true;
+            cmpny.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            cmpny.Location = new Point(6, 122);
+            cmpny.Name = "cmpny";
+            cmpny.Size = new Size(85, 20);
+            cmpny.TabIndex = 14;
+            cmpny.Text = "ExpireDate";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(93, 119);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(146, 23);
-            this.dateTimePicker1.TabIndex = 13;
+            dateTimePicker1.Location = new Point(93, 119);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(146, 23);
+            dateTimePicker1.TabIndex = 13;
             // 
             // addBtn
             // 
-            this.addBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.addBtn.Location = new System.Drawing.Point(721, 64);
-            this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(104, 36);
-            this.addBtn.TabIndex = 12;
-            this.addBtn.Text = "Add";
-            this.addBtn.UseVisualStyleBackColor = true;
-            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
+            addBtn.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            addBtn.Location = new Point(721, 64);
+            addBtn.Name = "addBtn";
+            addBtn.Size = new Size(104, 36);
+            addBtn.TabIndex = 12;
+            addBtn.Text = "Add";
+            addBtn.UseVisualStyleBackColor = true;
+            addBtn.Click += addBtn_Click;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(510, 70);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(156, 23);
-            this.textBox6.TabIndex = 11;
+            textBox6.Location = new Point(510, 70);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(156, 23);
+            textBox6.TabIndex = 11;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(461, 70);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 20);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Price";
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(461, 70);
+            label8.Name = "label8";
+            label8.Size = new Size(43, 20);
+            label8.TabIndex = 10;
+            label8.Text = "Price";
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(735, 25);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(55, 23);
-            this.textBox5.TabIndex = 9;
+            textBox5.Location = new Point(735, 25);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(55, 23);
+            textBox5.TabIndex = 9;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(683, 29);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 20);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Units";
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(683, 29);
+            label7.Name = "label7";
+            label7.Size = new Size(46, 20);
+            label7.TabIndex = 8;
+            label7.Text = "Units";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(315, 70);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(140, 23);
-            this.textBox4.TabIndex = 9;
+            textBox4.Location = new Point(315, 70);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(140, 23);
+            textBox4.TabIndex = 9;
             // 
             // quantity
             // 
-            this.quantity.AutoSize = true;
-            this.quantity.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.quantity.Location = new System.Drawing.Point(243, 71);
-            this.quantity.Name = "quantity";
-            this.quantity.Size = new System.Drawing.Size(70, 20);
-            this.quantity.TabIndex = 8;
-            this.quantity.Text = "Quantity";
-            this.quantity.Click += new System.EventHandler(this.label6_Click);
+            quantity.AutoSize = true;
+            quantity.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            quantity.Location = new Point(243, 71);
+            quantity.Name = "quantity";
+            quantity.Size = new Size(70, 20);
+            quantity.TabIndex = 8;
+            quantity.Text = "Quantity";
+            quantity.Click += label6_Click;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(93, 70);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(131, 23);
-            this.textBox3.TabIndex = 7;
+            textBox3.Location = new Point(93, 70);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(131, 23);
+            textBox3.TabIndex = 7;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(6, 71);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 20);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Company";
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(6, 71);
+            label5.Name = "label5";
+            label5.Size = new Size(75, 20);
+            label5.TabIndex = 6;
+            label5.Text = "Company";
             // 
             // comboBox1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Tablet",
-            "Capsule",
-            "Injection",
-            "Syrup",
-            "",
-            "Suspension",
-            "",
-            "Solution",
-            "Oral Powder",
-            "",
-            "Effervescent Granules",
-            "Cream",
-            "",
-            "Ointment",
-            "",
-            "Gel",
-            "",
-            "Lotion",
-            "Suppository",
-            "",
-            "Enemas",
-            "Eye Drop",
-            "",
-            "Eye Ointment",
-            "Ear Drop",
-            "",
-            "Ear Ointment"});
-            this.comboBox1.Location = new System.Drawing.Point(295, 27);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(91, 23);
-            this.comboBox1.TabIndex = 5;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Tablet", "Capsule", "Injection", "Syrup", "", "Suspension", "", "Solution", "Oral Powder", "", "Effervescent Granules", "Cream", "", "Ointment", "", "Gel", "", "Lotion", "Suppository", "", "Enemas", "Eye Drop", "", "Eye Ointment", "Ear Drop", "", "Ear Ointment" });
+            comboBox1.Location = new Point(295, 27);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(91, 23);
+            comboBox1.TabIndex = 5;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(243, 29);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 20);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Form";
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(243, 29);
+            label4.Name = "label4";
+            label4.Size = new Size(46, 20);
+            label4.TabIndex = 4;
+            label4.Text = "Form";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(505, 26);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(161, 23);
-            this.textBox2.TabIndex = 3;
+            textBox2.Location = new Point(505, 26);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(161, 23);
+            textBox2.TabIndex = 3;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(392, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Generic name";
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(392, 28);
+            label3.Name = "label3";
+            label3.Size = new Size(105, 20);
+            label3.TabIndex = 2;
+            label3.Text = "Generic name";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(63, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(161, 23);
-            this.textBox1.TabIndex = 1;
+            textBox1.Location = new Point(63, 28);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(161, 23);
+            textBox1.TabIndex = 1;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(6, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Name";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(6, 29);
+            label2.Name = "label2";
+            label2.Size = new Size(51, 20);
+            label2.TabIndex = 0;
+            label2.Text = "Name";
             // 
             // customersTab
             // 
-            this.customersTab.Controls.Add(this.groupBox10);
-            this.customersTab.Controls.Add(this.groupBox11);
-            this.customersTab.Controls.Add(this.groupBox12);
-            this.customersTab.Controls.Add(this.dgvCustomer);
-            this.customersTab.Location = new System.Drawing.Point(184, 4);
-            this.customersTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.customersTab.Name = "customersTab";
-            this.customersTab.Size = new System.Drawing.Size(896, 518);
-            this.customersTab.TabIndex = 8;
-            this.customersTab.Text = "Customers";
-            this.customersTab.UseVisualStyleBackColor = true;
+            customersTab.Controls.Add(groupBox10);
+            customersTab.Controls.Add(groupBox11);
+            customersTab.Controls.Add(groupBox12);
+            customersTab.Controls.Add(dgvCustomer);
+            customersTab.Location = new Point(184, 4);
+            customersTab.Margin = new Padding(3, 4, 3, 4);
+            customersTab.Name = "customersTab";
+            customersTab.Size = new Size(896, 518);
+            customersTab.TabIndex = 8;
+            customersTab.Text = "Customers";
+            customersTab.UseVisualStyleBackColor = true;
             // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.label40);
-            this.groupBox10.Controls.Add(this.btnCSearch);
-            this.groupBox10.Controls.Add(this.txtCSearch);
-            this.groupBox10.Location = new System.Drawing.Point(7, 430);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(904, 66);
-            this.groupBox10.TabIndex = 14;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Remove Customer";
+            groupBox10.Controls.Add(label40);
+            groupBox10.Controls.Add(btnCSearch);
+            groupBox10.Controls.Add(txtCSearch);
+            groupBox10.Location = new Point(7, 430);
+            groupBox10.Name = "groupBox10";
+            groupBox10.Size = new Size(904, 66);
+            groupBox10.TabIndex = 14;
+            groupBox10.TabStop = false;
+            groupBox10.Text = "Remove Customer";
             // 
             // label40
             // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label40.Location = new System.Drawing.Point(14, 27);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(123, 20);
-            this.label40.TabIndex = 9;
-            this.label40.Text = "Customer Name";
+            label40.AutoSize = true;
+            label40.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label40.Location = new Point(14, 27);
+            label40.Name = "label40";
+            label40.Size = new Size(123, 20);
+            label40.TabIndex = 9;
+            label40.Text = "Customer Name";
             // 
             // btnCSearch
             // 
-            this.btnCSearch.Location = new System.Drawing.Point(363, 26);
-            this.btnCSearch.Name = "btnCSearch";
-            this.btnCSearch.Size = new System.Drawing.Size(88, 22);
-            this.btnCSearch.TabIndex = 16;
-            this.btnCSearch.Text = "Search";
-            this.btnCSearch.UseVisualStyleBackColor = true;
-            this.btnCSearch.Click += new System.EventHandler(this.btnCSearch_Click);
+            btnCSearch.Location = new Point(363, 26);
+            btnCSearch.Name = "btnCSearch";
+            btnCSearch.Size = new Size(88, 22);
+            btnCSearch.TabIndex = 16;
+            btnCSearch.Text = "Search";
+            btnCSearch.UseVisualStyleBackColor = true;
+            btnCSearch.Click += btnCSearch_Click;
             // 
             // txtCSearch
             // 
-            this.txtCSearch.Location = new System.Drawing.Point(155, 28);
-            this.txtCSearch.Name = "txtCSearch";
-            this.txtCSearch.Size = new System.Drawing.Size(192, 23);
-            this.txtCSearch.TabIndex = 15;
+            txtCSearch.Location = new Point(155, 28);
+            txtCSearch.Name = "txtCSearch";
+            txtCSearch.Size = new Size(192, 23);
+            txtCSearch.TabIndex = 15;
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.btnCRemove);
-            this.groupBox11.Controls.Add(this.label41);
-            this.groupBox11.Controls.Add(this.txtECPhone);
-            this.groupBox11.Controls.Add(this.btnCEdit);
-            this.groupBox11.Controls.Add(this.txtECAddress);
-            this.groupBox11.Controls.Add(this.txtECID);
-            this.groupBox11.Controls.Add(this.txtECName);
-            this.groupBox11.Controls.Add(this.label47);
-            this.groupBox11.Controls.Add(this.label42);
-            this.groupBox11.Controls.Add(this.label43);
-            this.groupBox11.Location = new System.Drawing.Point(7, 315);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(904, 109);
-            this.groupBox11.TabIndex = 7;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Edit Or Remove Customer";
+            groupBox11.Controls.Add(btnCRemove);
+            groupBox11.Controls.Add(label41);
+            groupBox11.Controls.Add(txtECPhone);
+            groupBox11.Controls.Add(btnCEdit);
+            groupBox11.Controls.Add(txtECAddress);
+            groupBox11.Controls.Add(txtECID);
+            groupBox11.Controls.Add(txtECName);
+            groupBox11.Controls.Add(label47);
+            groupBox11.Controls.Add(label42);
+            groupBox11.Controls.Add(label43);
+            groupBox11.Location = new Point(7, 315);
+            groupBox11.Name = "groupBox11";
+            groupBox11.Size = new Size(904, 109);
+            groupBox11.TabIndex = 7;
+            groupBox11.TabStop = false;
+            groupBox11.Text = "Edit Or Remove Customer";
             // 
             // btnCRemove
             // 
-            this.btnCRemove.Location = new System.Drawing.Point(788, 65);
-            this.btnCRemove.Name = "btnCRemove";
-            this.btnCRemove.Size = new System.Drawing.Size(100, 25);
-            this.btnCRemove.TabIndex = 13;
-            this.btnCRemove.Text = "Remove";
-            this.btnCRemove.UseVisualStyleBackColor = true;
-            this.btnCRemove.Click += new System.EventHandler(this.btnCRemove_Click);
+            btnCRemove.Location = new Point(788, 65);
+            btnCRemove.Name = "btnCRemove";
+            btnCRemove.Size = new Size(100, 25);
+            btnCRemove.TabIndex = 13;
+            btnCRemove.Text = "Remove";
+            btnCRemove.UseVisualStyleBackColor = true;
+            btnCRemove.Click += btnCRemove_Click;
             // 
             // label41
             // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label41.Location = new System.Drawing.Point(14, 28);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(97, 20);
-            this.label41.TabIndex = 9;
-            this.label41.Text = "Customer ID";
+            label41.AutoSize = true;
+            label41.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label41.Location = new Point(14, 28);
+            label41.Name = "label41";
+            label41.Size = new Size(97, 20);
+            label41.TabIndex = 9;
+            label41.Text = "Customer ID";
             // 
             // txtECPhone
             // 
-            this.txtECPhone.Location = new System.Drawing.Point(522, 68);
-            this.txtECPhone.Name = "txtECPhone";
-            this.txtECPhone.ReadOnly = true;
-            this.txtECPhone.Size = new System.Drawing.Size(144, 23);
-            this.txtECPhone.TabIndex = 11;
+            txtECPhone.Location = new Point(522, 68);
+            txtECPhone.Name = "txtECPhone";
+            txtECPhone.ReadOnly = true;
+            txtECPhone.Size = new Size(144, 23);
+            txtECPhone.TabIndex = 11;
             // 
             // btnCEdit
             // 
-            this.btnCEdit.Location = new System.Drawing.Point(695, 65);
-            this.btnCEdit.Name = "btnCEdit";
-            this.btnCEdit.Size = new System.Drawing.Size(88, 25);
-            this.btnCEdit.TabIndex = 12;
-            this.btnCEdit.Text = "Edit";
-            this.btnCEdit.UseVisualStyleBackColor = true;
-            this.btnCEdit.Click += new System.EventHandler(this.btnCEdit_Click_1);
+            btnCEdit.Location = new Point(695, 65);
+            btnCEdit.Name = "btnCEdit";
+            btnCEdit.Size = new Size(88, 25);
+            btnCEdit.TabIndex = 12;
+            btnCEdit.Text = "Edit";
+            btnCEdit.UseVisualStyleBackColor = true;
+            btnCEdit.Click += btnCEdit_Click_1;
             // 
             // txtECAddress
             // 
-            this.txtECAddress.Location = new System.Drawing.Point(313, 68);
-            this.txtECAddress.Name = "txtECAddress";
-            this.txtECAddress.ReadOnly = true;
-            this.txtECAddress.Size = new System.Drawing.Size(144, 23);
-            this.txtECAddress.TabIndex = 10;
+            txtECAddress.Location = new Point(313, 68);
+            txtECAddress.Name = "txtECAddress";
+            txtECAddress.ReadOnly = true;
+            txtECAddress.Size = new Size(144, 23);
+            txtECAddress.TabIndex = 10;
             // 
             // txtECID
             // 
-            this.txtECID.Location = new System.Drawing.Point(122, 27);
-            this.txtECID.Name = "txtECID";
-            this.txtECID.ReadOnly = true;
-            this.txtECID.Size = new System.Drawing.Size(55, 23);
-            this.txtECID.TabIndex = 8;
+            txtECID.Location = new Point(122, 27);
+            txtECID.Name = "txtECID";
+            txtECID.ReadOnly = true;
+            txtECID.Size = new Size(55, 23);
+            txtECID.TabIndex = 8;
             // 
             // txtECName
             // 
-            this.txtECName.Location = new System.Drawing.Point(73, 68);
-            this.txtECName.Name = "txtECName";
-            this.txtECName.ReadOnly = true;
-            this.txtECName.Size = new System.Drawing.Size(161, 23);
-            this.txtECName.TabIndex = 9;
+            txtECName.Location = new Point(73, 68);
+            txtECName.Name = "txtECName";
+            txtECName.ReadOnly = true;
+            txtECName.Size = new Size(161, 23);
+            txtECName.TabIndex = 9;
             // 
             // label47
             // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label47.Location = new System.Drawing.Point(462, 67);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(53, 20);
-            this.label47.TabIndex = 4;
-            this.label47.Text = "Phone";
+            label47.AutoSize = true;
+            label47.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label47.Location = new Point(462, 67);
+            label47.Name = "label47";
+            label47.Size = new Size(53, 20);
+            label47.TabIndex = 4;
+            label47.Text = "Phone";
             // 
             // label42
             // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label42.Location = new System.Drawing.Point(238, 67);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(66, 20);
-            this.label42.TabIndex = 4;
-            this.label42.Text = "Address";
+            label42.AutoSize = true;
+            label42.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label42.Location = new Point(238, 67);
+            label42.Name = "label42";
+            label42.Size = new Size(66, 20);
+            label42.TabIndex = 4;
+            label42.Text = "Address";
             // 
             // label43
             // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label43.Location = new System.Drawing.Point(14, 67);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(51, 20);
-            this.label43.TabIndex = 5;
-            this.label43.Text = "Name";
+            label43.AutoSize = true;
+            label43.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label43.Location = new Point(14, 67);
+            label43.Name = "label43";
+            label43.Size = new Size(51, 20);
+            label43.TabIndex = 5;
+            label43.Text = "Name";
             // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.btnCAdd);
-            this.groupBox12.Controls.Add(this.txtCPhone);
-            this.groupBox12.Controls.Add(this.txtCAddress);
-            this.groupBox12.Controls.Add(this.txtCName);
-            this.groupBox12.Controls.Add(this.label46);
-            this.groupBox12.Controls.Add(this.label44);
-            this.groupBox12.Controls.Add(this.label45);
-            this.groupBox12.Location = new System.Drawing.Point(7, 233);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(904, 76);
-            this.groupBox12.TabIndex = 2;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Add Customer";
+            groupBox12.Controls.Add(btnCAdd);
+            groupBox12.Controls.Add(txtCPhone);
+            groupBox12.Controls.Add(txtCAddress);
+            groupBox12.Controls.Add(txtCName);
+            groupBox12.Controls.Add(label46);
+            groupBox12.Controls.Add(label44);
+            groupBox12.Controls.Add(label45);
+            groupBox12.Location = new Point(7, 233);
+            groupBox12.Name = "groupBox12";
+            groupBox12.Size = new Size(904, 76);
+            groupBox12.TabIndex = 2;
+            groupBox12.TabStop = false;
+            groupBox12.Text = "Add Customer";
             // 
             // btnCAdd
             // 
-            this.btnCAdd.Location = new System.Drawing.Point(800, 25);
-            this.btnCAdd.Name = "btnCAdd";
-            this.btnCAdd.Size = new System.Drawing.Size(88, 29);
-            this.btnCAdd.TabIndex = 6;
-            this.btnCAdd.Text = "Add";
-            this.btnCAdd.UseVisualStyleBackColor = true;
-            this.btnCAdd.Click += new System.EventHandler(this.btnCAdd_Click);
+            btnCAdd.Location = new Point(774, 34);
+            btnCAdd.Name = "btnCAdd";
+            btnCAdd.Size = new Size(88, 29);
+            btnCAdd.TabIndex = 6;
+            btnCAdd.Text = "Add";
+            btnCAdd.UseVisualStyleBackColor = true;
+            btnCAdd.Click += btnCAdd_Click;
             // 
             // txtCPhone
             // 
-            this.txtCPhone.Location = new System.Drawing.Point(522, 34);
-            this.txtCPhone.Name = "txtCPhone";
-            this.txtCPhone.Size = new System.Drawing.Size(144, 23);
-            this.txtCPhone.TabIndex = 5;
+            txtCPhone.Location = new Point(522, 34);
+            txtCPhone.Name = "txtCPhone";
+            txtCPhone.Size = new Size(144, 23);
+            txtCPhone.TabIndex = 5;
             // 
             // txtCAddress
             // 
-            this.txtCAddress.Location = new System.Drawing.Point(308, 34);
-            this.txtCAddress.Name = "txtCAddress";
-            this.txtCAddress.Size = new System.Drawing.Size(144, 23);
-            this.txtCAddress.TabIndex = 4;
+            txtCAddress.Location = new Point(308, 34);
+            txtCAddress.Name = "txtCAddress";
+            txtCAddress.Size = new Size(144, 23);
+            txtCAddress.TabIndex = 4;
             // 
             // txtCName
             // 
-            this.txtCName.Location = new System.Drawing.Point(71, 34);
-            this.txtCName.Name = "txtCName";
-            this.txtCName.Size = new System.Drawing.Size(161, 23);
-            this.txtCName.TabIndex = 3;
+            txtCName.Location = new Point(71, 34);
+            txtCName.Name = "txtCName";
+            txtCName.Size = new Size(161, 23);
+            txtCName.TabIndex = 3;
             // 
             // label46
             // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label46.Location = new System.Drawing.Point(457, 32);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(53, 20);
-            this.label46.TabIndex = 4;
-            this.label46.Text = "Phone";
+            label46.AutoSize = true;
+            label46.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label46.Location = new Point(457, 32);
+            label46.Name = "label46";
+            label46.Size = new Size(53, 20);
+            label46.TabIndex = 4;
+            label46.Text = "Phone";
             // 
             // label44
             // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label44.Location = new System.Drawing.Point(236, 32);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(66, 20);
-            this.label44.TabIndex = 4;
-            this.label44.Text = "Address";
+            label44.AutoSize = true;
+            label44.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label44.Location = new Point(236, 32);
+            label44.Name = "label44";
+            label44.Size = new Size(66, 20);
+            label44.TabIndex = 4;
+            label44.Text = "Address";
             // 
             // label45
             // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label45.Location = new System.Drawing.Point(14, 32);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(51, 20);
-            this.label45.TabIndex = 5;
-            this.label45.Text = "Name";
+            label45.AutoSize = true;
+            label45.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label45.Location = new Point(14, 32);
+            label45.Name = "label45";
+            label45.Size = new Size(51, 20);
+            label45.TabIndex = 5;
+            label45.Text = "Name";
             // 
             // dgvCustomer
             // 
-            this.dgvCustomer.AllowUserToAddRows = false;
-            this.dgvCustomer.AllowUserToDeleteRows = false;
-            this.dgvCustomer.AutoGenerateColumns = false;
-            this.dgvCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nameDataGridViewTextBoxColumn,
-            this.addressDataGridViewTextBoxColumn,
-            this.phoneNumDataGridViewTextBoxColumn});
-            this.dgvCustomer.DataSource = this.customerBindingSource;
-            this.dgvCustomer.Location = new System.Drawing.Point(7, 9);
-            this.dgvCustomer.Name = "dgvCustomer";
-            this.dgvCustomer.ReadOnly = true;
-            this.dgvCustomer.RowHeadersWidth = 51;
-            this.dgvCustomer.Size = new System.Drawing.Size(904, 218);
-            this.dgvCustomer.TabIndex = 1;
-            this.dgvCustomer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomer_CellClick);
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
-            this.addressDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            this.addressDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // phoneNumDataGridViewTextBoxColumn
-            // 
-            this.phoneNumDataGridViewTextBoxColumn.DataPropertyName = "Phone_Num";
-            this.phoneNumDataGridViewTextBoxColumn.HeaderText = "Phone_Num";
-            this.phoneNumDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.phoneNumDataGridViewTextBoxColumn.Name = "phoneNumDataGridViewTextBoxColumn";
-            this.phoneNumDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // customerBindingSource
-            // 
-            this.customerBindingSource.DataSource = typeof(PharmacyManagementSystem.DAL.Models.Customer);
+            dgvCustomer.AllowUserToAddRows = false;
+            dgvCustomer.AllowUserToDeleteRows = false;
+            dgvCustomer.AutoGenerateColumns = false;
+            dgvCustomer.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvCustomer.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCustomer.DataSource = customerBindingSource;
+            dgvCustomer.Location = new Point(7, 9);
+            dgvCustomer.Name = "dgvCustomer";
+            dgvCustomer.ReadOnly = true;
+            dgvCustomer.RowHeadersWidth = 51;
+            dgvCustomer.Size = new Size(904, 218);
+            dgvCustomer.TabIndex = 1;
+            dgvCustomer.CellClick += dgvCustomer_CellClick;
             // 
             // reportsTab
             // 
-            this.reportsTab.Controls.Add(this.customerReport);
-            this.reportsTab.Controls.Add(this.purchaseReport);
-            this.reportsTab.Controls.Add(this.salesReport);
-            this.reportsTab.Controls.Add(this.shortageReport);
-            this.reportsTab.Location = new System.Drawing.Point(184, 4);
-            this.reportsTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.reportsTab.Name = "reportsTab";
-            this.reportsTab.Size = new System.Drawing.Size(896, 518);
-            this.reportsTab.TabIndex = 7;
-            this.reportsTab.Text = "Reports";
-            this.reportsTab.UseVisualStyleBackColor = true;
+            reportsTab.Controls.Add(customerReport);
+            reportsTab.Controls.Add(purchaseReport);
+            reportsTab.Controls.Add(salesReport);
+            reportsTab.Controls.Add(shortageReport);
+            reportsTab.Location = new Point(184, 4);
+            reportsTab.Margin = new Padding(3, 4, 3, 4);
+            reportsTab.Name = "reportsTab";
+            reportsTab.Size = new Size(896, 518);
+            reportsTab.TabIndex = 7;
+            reportsTab.Text = "Reports";
+            reportsTab.UseVisualStyleBackColor = true;
             // 
             // customerReport
             // 
-            this.customerReport.Location = new System.Drawing.Point(308, 259);
-            this.customerReport.Name = "customerReport";
-            this.customerReport.Size = new System.Drawing.Size(234, 38);
-            this.customerReport.TabIndex = 0;
-            this.customerReport.Text = "Customers Report";
-            this.customerReport.UseVisualStyleBackColor = true;
+            customerReport.Location = new Point(308, 259);
+            customerReport.Name = "customerReport";
+            customerReport.Size = new Size(234, 38);
+            customerReport.TabIndex = 0;
+            customerReport.Text = "Customers Report";
+            customerReport.UseVisualStyleBackColor = true;
             // 
             // purchaseReport
             // 
-            this.purchaseReport.Location = new System.Drawing.Point(308, 215);
-            this.purchaseReport.Name = "purchaseReport";
-            this.purchaseReport.Size = new System.Drawing.Size(234, 38);
-            this.purchaseReport.TabIndex = 0;
-            this.purchaseReport.Text = "Purchase Report";
-            this.purchaseReport.UseVisualStyleBackColor = true;
-            this.purchaseReport.Click += new System.EventHandler(this.purchaseReport_Click);
+            purchaseReport.Location = new Point(308, 215);
+            purchaseReport.Name = "purchaseReport";
+            purchaseReport.Size = new Size(234, 38);
+            purchaseReport.TabIndex = 0;
+            purchaseReport.Text = "Purchase Report";
+            purchaseReport.UseVisualStyleBackColor = true;
+            purchaseReport.Click += purchaseReport_Click;
             // 
             // salesReport
             // 
-            this.salesReport.Location = new System.Drawing.Point(308, 171);
-            this.salesReport.Name = "salesReport";
-            this.salesReport.Size = new System.Drawing.Size(234, 38);
-            this.salesReport.TabIndex = 0;
-            this.salesReport.Text = "Sales Report";
-            this.salesReport.UseVisualStyleBackColor = true;
-            this.salesReport.Click += new System.EventHandler(this.salesReport_Click);
+            salesReport.Location = new Point(308, 171);
+            salesReport.Name = "salesReport";
+            salesReport.Size = new Size(234, 38);
+            salesReport.TabIndex = 0;
+            salesReport.Text = "Sales Report";
+            salesReport.UseVisualStyleBackColor = true;
+            salesReport.Click += salesReport_Click;
             // 
             // shortageReport
             // 
-            this.shortageReport.Location = new System.Drawing.Point(308, 127);
-            this.shortageReport.Name = "shortageReport";
-            this.shortageReport.Size = new System.Drawing.Size(234, 38);
-            this.shortageReport.TabIndex = 0;
-            this.shortageReport.Text = "Shortage and Expire Report";
-            this.shortageReport.UseVisualStyleBackColor = true;
+            shortageReport.Location = new Point(308, 127);
+            shortageReport.Name = "shortageReport";
+            shortageReport.Size = new Size(234, 38);
+            shortageReport.TabIndex = 0;
+            shortageReport.Text = "Shortage and Expire Report";
+            shortageReport.UseVisualStyleBackColor = true;
             // 
             // accountTab
             // 
-            this.accountTab.Controls.Add(this.dgvAccounts);
-            this.accountTab.Controls.Add(this.userData);
-            this.accountTab.Location = new System.Drawing.Point(184, 4);
-            this.accountTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.accountTab.Name = "accountTab";
-            this.accountTab.Padding = new System.Windows.Forms.Padding(3);
-            this.accountTab.Size = new System.Drawing.Size(896, 518);
-            this.accountTab.TabIndex = 0;
-            this.accountTab.Text = "Account";
-            this.accountTab.UseVisualStyleBackColor = true;
+            accountTab.Controls.Add(dgvAccounts);
+            accountTab.Controls.Add(userData);
+            accountTab.Location = new Point(184, 4);
+            accountTab.Margin = new Padding(3, 4, 3, 4);
+            accountTab.Name = "accountTab";
+            accountTab.Padding = new Padding(3);
+            accountTab.Size = new Size(896, 518);
+            accountTab.TabIndex = 0;
+            accountTab.Text = "Account";
+            accountTab.UseVisualStyleBackColor = true;
             // 
             // dgvAccounts
             // 
-            this.dgvAccounts.AutoGenerateColumns = false;
-            this.dgvAccounts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvAccounts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.userNameDataGridViewTextBoxColumn1,
-            this.roleDataGridViewTextBoxColumn1,
-            this.isActiveDataGridViewCheckBoxColumn});
-            this.dgvAccounts.DataSource = this.usersBindingSource1;
-            this.dgvAccounts.Location = new System.Drawing.Point(0, 0);
-            this.dgvAccounts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgvAccounts.Name = "dgvAccounts";
-            this.dgvAccounts.Size = new System.Drawing.Size(350, 112);
-            this.dgvAccounts.TabIndex = 0;
-            // 
-            // userNameDataGridViewTextBoxColumn1
-            // 
-            this.userNameDataGridViewTextBoxColumn1.DataPropertyName = "UserName";
-            this.userNameDataGridViewTextBoxColumn1.HeaderText = "UserName";
-            this.userNameDataGridViewTextBoxColumn1.Name = "userNameDataGridViewTextBoxColumn1";
-            // 
-            // roleDataGridViewTextBoxColumn1
-            // 
-            this.roleDataGridViewTextBoxColumn1.DataPropertyName = "Role";
-            this.roleDataGridViewTextBoxColumn1.HeaderText = "Role";
-            this.roleDataGridViewTextBoxColumn1.Name = "roleDataGridViewTextBoxColumn1";
-            // 
-            // isActiveDataGridViewCheckBoxColumn
-            // 
-            this.isActiveDataGridViewCheckBoxColumn.DataPropertyName = "IsActive";
-            this.isActiveDataGridViewCheckBoxColumn.HeaderText = "IsActive";
-            this.isActiveDataGridViewCheckBoxColumn.Name = "isActiveDataGridViewCheckBoxColumn";
-            // 
-            // usersBindingSource1
-            // 
-            this.usersBindingSource1.DataSource = typeof(PharmacyManagementSystem.DAL.Models.Users);
+            dgvAccounts.AutoGenerateColumns = false;
+            dgvAccounts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvAccounts.DataSource = usersBindingSource1;
+            dgvAccounts.Location = new Point(0, 0);
+            dgvAccounts.Margin = new Padding(3, 2, 3, 2);
+            dgvAccounts.Name = "dgvAccounts";
+            dgvAccounts.Size = new Size(350, 112);
+            dgvAccounts.TabIndex = 0;
             // 
             // userData
             // 
-            this.userData.Controls.Add(this.label27);
-            this.userData.Controls.Add(this.btnAddAccount);
-            this.userData.Controls.Add(this.itemAcRole);
-            this.userData.Controls.Add(this.txtAcPassword);
-            this.userData.Controls.Add(this.txtAcUserName);
-            this.userData.Controls.Add(this.label33);
-            this.userData.Controls.Add(this.label32);
-            this.userData.Controls.Add(this.label28);
-            this.userData.Location = new System.Drawing.Point(527, 120);
-            this.userData.Name = "userData";
-            this.userData.Size = new System.Drawing.Size(282, 185);
-            this.userData.TabIndex = 1;
-            this.userData.TabStop = false;
-            this.userData.Text = "User Data";
+            userData.Controls.Add(label27);
+            userData.Controls.Add(btnAddAccount);
+            userData.Controls.Add(itemAcRole);
+            userData.Controls.Add(txtAcPassword);
+            userData.Controls.Add(txtAcUserName);
+            userData.Controls.Add(label33);
+            userData.Controls.Add(label32);
+            userData.Controls.Add(label28);
+            userData.Location = new Point(527, 120);
+            userData.Name = "userData";
+            userData.Size = new Size(282, 185);
+            userData.TabIndex = 1;
+            userData.TabStop = false;
+            userData.Text = "User Data";
             // 
             // label27
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label27.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label27.Location = new System.Drawing.Point(220, 61);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(35, 13);
-            this.label27.TabIndex = 4;
-            this.label27.Text = "show";
-            this.label27.Click += new System.EventHandler(this.label27_Click);
+            label27.AutoSize = true;
+            label27.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label27.ForeColor = SystemColors.ButtonShadow;
+            label27.Location = new Point(220, 61);
+            label27.Name = "label27";
+            label27.Size = new Size(35, 13);
+            label27.TabIndex = 4;
+            label27.Text = "show";
+            label27.Click += label27_Click;
             // 
             // btnAddAccount
             // 
-            this.btnAddAccount.Location = new System.Drawing.Point(101, 131);
-            this.btnAddAccount.Name = "btnAddAccount";
-            this.btnAddAccount.Size = new System.Drawing.Size(105, 25);
-            this.btnAddAccount.TabIndex = 5;
-            this.btnAddAccount.Text = "Add User";
-            this.btnAddAccount.UseVisualStyleBackColor = true;
-            this.btnAddAccount.Click += new System.EventHandler(this.btnAddAccount_Click);
+            btnAddAccount.Location = new Point(101, 131);
+            btnAddAccount.Name = "btnAddAccount";
+            btnAddAccount.Size = new Size(105, 25);
+            btnAddAccount.TabIndex = 5;
+            btnAddAccount.Text = "Add User";
+            btnAddAccount.UseVisualStyleBackColor = true;
+            btnAddAccount.Click += btnAddAccount_Click;
             // 
             // itemAcRole
             // 
-            this.itemAcRole.FormattingEnabled = true;
-            this.itemAcRole.Items.AddRange(new object[] {
-            "Admin",
-            "Pharmacist",
-            "Manager"});
-            this.itemAcRole.Location = new System.Drawing.Point(101, 92);
-            this.itemAcRole.Name = "itemAcRole";
-            this.itemAcRole.Size = new System.Drawing.Size(161, 23);
-            this.itemAcRole.TabIndex = 4;
+            itemAcRole.FormattingEnabled = true;
+            itemAcRole.Items.AddRange(new object[] { "Admin", "Pharmacist", "Manager" });
+            itemAcRole.Location = new Point(101, 92);
+            itemAcRole.Name = "itemAcRole";
+            itemAcRole.Size = new Size(161, 23);
+            itemAcRole.TabIndex = 4;
             // 
             // txtAcPassword
             // 
-            this.txtAcPassword.Location = new System.Drawing.Point(101, 58);
-            this.txtAcPassword.Name = "txtAcPassword";
-            this.txtAcPassword.Size = new System.Drawing.Size(161, 23);
-            this.txtAcPassword.TabIndex = 3;
-            this.txtAcPassword.UseSystemPasswordChar = true;
+            txtAcPassword.Location = new Point(101, 58);
+            txtAcPassword.Name = "txtAcPassword";
+            txtAcPassword.Size = new Size(161, 23);
+            txtAcPassword.TabIndex = 3;
+            txtAcPassword.UseSystemPasswordChar = true;
             // 
             // txtAcUserName
             // 
-            this.txtAcUserName.Location = new System.Drawing.Point(101, 25);
-            this.txtAcUserName.Name = "txtAcUserName";
-            this.txtAcUserName.Size = new System.Drawing.Size(161, 23);
-            this.txtAcUserName.TabIndex = 2;
+            txtAcUserName.Location = new Point(101, 25);
+            txtAcUserName.Name = "txtAcUserName";
+            txtAcUserName.Size = new Size(161, 23);
+            txtAcUserName.TabIndex = 2;
             // 
             // label33
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label33.Location = new System.Drawing.Point(14, 91);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(40, 20);
-            this.label33.TabIndex = 4;
-            this.label33.Text = "Role";
+            label33.AutoSize = true;
+            label33.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label33.Location = new Point(14, 91);
+            label33.Name = "label33";
+            label33.Size = new Size(40, 20);
+            label33.TabIndex = 4;
+            label33.Text = "Role";
             // 
             // label32
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label32.Location = new System.Drawing.Point(14, 58);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(76, 20);
-            this.label32.TabIndex = 5;
-            this.label32.Text = "Password";
+            label32.AutoSize = true;
+            label32.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label32.Location = new Point(14, 58);
+            label32.Name = "label32";
+            label32.Size = new Size(76, 20);
+            label32.TabIndex = 5;
+            label32.Text = "Password";
             // 
             // label28
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label28.Location = new System.Drawing.Point(14, 26);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(80, 20);
-            this.label28.TabIndex = 5;
-            this.label28.Text = "Username";
+            label28.AutoSize = true;
+            label28.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label28.Location = new Point(14, 26);
+            label28.Name = "label28";
+            label28.Size = new Size(80, 20);
+            label28.TabIndex = 5;
+            label28.Text = "Username";
             // 
             // supplierTap
             // 
-            this.supplierTap.Controls.Add(this.groupBox9);
-            this.supplierTap.Controls.Add(this.groupBox8);
-            this.supplierTap.Controls.Add(this.groupBox7);
-            this.supplierTap.Controls.Add(this.dgvSupplier);
-            this.supplierTap.Location = new System.Drawing.Point(184, 4);
-            this.supplierTap.Name = "supplierTap";
-            this.supplierTap.Padding = new System.Windows.Forms.Padding(3);
-            this.supplierTap.Size = new System.Drawing.Size(896, 518);
-            this.supplierTap.TabIndex = 11;
-            this.supplierTap.Text = "Supplier";
-            this.supplierTap.UseVisualStyleBackColor = true;
+            supplierTap.Controls.Add(groupBox9);
+            supplierTap.Controls.Add(groupBox8);
+            supplierTap.Controls.Add(groupBox7);
+            supplierTap.Controls.Add(dgvSupplier);
+            supplierTap.Location = new Point(184, 4);
+            supplierTap.Name = "supplierTap";
+            supplierTap.Padding = new Padding(3);
+            supplierTap.Size = new Size(896, 518);
+            supplierTap.TabIndex = 11;
+            supplierTap.Text = "Supplier";
+            supplierTap.UseVisualStyleBackColor = true;
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.label39);
-            this.groupBox9.Controls.Add(this.btnSuSearch);
-            this.groupBox9.Controls.Add(this.txtSuSearch);
-            this.groupBox9.Location = new System.Drawing.Point(232, 206);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(437, 74);
-            this.groupBox9.TabIndex = 13;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Search Supplier";
+            groupBox9.Controls.Add(label39);
+            groupBox9.Controls.Add(btnSuSearch);
+            groupBox9.Controls.Add(txtSuSearch);
+            groupBox9.Location = new Point(232, 206);
+            groupBox9.Name = "groupBox9";
+            groupBox9.Size = new Size(437, 74);
+            groupBox9.TabIndex = 13;
+            groupBox9.TabStop = false;
+            groupBox9.Text = "Search Supplier";
             // 
             // label39
             // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label39.Location = new System.Drawing.Point(14, 34);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(66, 20);
-            this.label39.TabIndex = 9;
-            this.label39.Text = "Supplier";
+            label39.AutoSize = true;
+            label39.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label39.Location = new Point(14, 34);
+            label39.Name = "label39";
+            label39.Size = new Size(66, 20);
+            label39.TabIndex = 9;
+            label39.Text = "Supplier";
             // 
             // btnSuSearch
             // 
-            this.btnSuSearch.Location = new System.Drawing.Point(327, 31);
-            this.btnSuSearch.Name = "btnSuSearch";
-            this.btnSuSearch.Size = new System.Drawing.Size(88, 24);
-            this.btnSuSearch.TabIndex = 15;
-            this.btnSuSearch.Text = "Search";
-            this.btnSuSearch.UseVisualStyleBackColor = true;
-            this.btnSuSearch.Click += new System.EventHandler(this.btnSuSearch_Click);
+            btnSuSearch.Location = new Point(327, 31);
+            btnSuSearch.Name = "btnSuSearch";
+            btnSuSearch.Size = new Size(88, 24);
+            btnSuSearch.TabIndex = 15;
+            btnSuSearch.Text = "Search";
+            btnSuSearch.UseVisualStyleBackColor = true;
+            btnSuSearch.Click += btnSuSearch_Click;
             // 
             // txtSuSearch
             // 
-            this.txtSuSearch.Location = new System.Drawing.Point(95, 33);
-            this.txtSuSearch.Name = "txtSuSearch";
-            this.txtSuSearch.Size = new System.Drawing.Size(227, 23);
-            this.txtSuSearch.TabIndex = 14;
+            txtSuSearch.Location = new Point(95, 33);
+            txtSuSearch.Name = "txtSuSearch";
+            txtSuSearch.Size = new Size(227, 23);
+            txtSuSearch.TabIndex = 14;
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.btnSuRemove);
-            this.groupBox8.Controls.Add(this.txtESuEmail);
-            this.groupBox8.Controls.Add(this.txtESuPhone);
-            this.groupBox8.Controls.Add(this.label36);
-            this.groupBox8.Controls.Add(this.label37);
-            this.groupBox8.Controls.Add(this.btnSuEdit);
-            this.groupBox8.Controls.Add(this.txtESuAddress);
-            this.groupBox8.Controls.Add(this.txtESuName);
-            this.groupBox8.Controls.Add(this.label50);
-            this.groupBox8.Controls.Add(this.label51);
-            this.groupBox8.Location = new System.Drawing.Point(472, 9);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(438, 191);
-            this.groupBox8.TabIndex = 7;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Edit Supplier";
+            groupBox8.Controls.Add(btnSuRemove);
+            groupBox8.Controls.Add(txtESuEmail);
+            groupBox8.Controls.Add(txtESuPhone);
+            groupBox8.Controls.Add(label36);
+            groupBox8.Controls.Add(label37);
+            groupBox8.Controls.Add(btnSuEdit);
+            groupBox8.Controls.Add(txtESuAddress);
+            groupBox8.Controls.Add(txtESuName);
+            groupBox8.Controls.Add(label50);
+            groupBox8.Controls.Add(label51);
+            groupBox8.Location = new Point(472, 9);
+            groupBox8.Name = "groupBox8";
+            groupBox8.Size = new Size(438, 191);
+            groupBox8.TabIndex = 7;
+            groupBox8.TabStop = false;
+            groupBox8.Text = "Edit Supplier";
             // 
             // btnSuRemove
             // 
-            this.btnSuRemove.Location = new System.Drawing.Point(247, 130);
-            this.btnSuRemove.Name = "btnSuRemove";
-            this.btnSuRemove.Size = new System.Drawing.Size(88, 22);
-            this.btnSuRemove.TabIndex = 12;
-            this.btnSuRemove.Text = "Remove";
-            this.btnSuRemove.UseVisualStyleBackColor = true;
-            this.btnSuRemove.Click += new System.EventHandler(this.btnSuRemove_Click);
+            btnSuRemove.Location = new Point(247, 130);
+            btnSuRemove.Name = "btnSuRemove";
+            btnSuRemove.Size = new Size(88, 22);
+            btnSuRemove.TabIndex = 12;
+            btnSuRemove.Text = "Remove";
+            btnSuRemove.UseVisualStyleBackColor = true;
+            btnSuRemove.Click += btnSuRemove_Click;
             // 
             // txtESuEmail
             // 
-            this.txtESuEmail.Location = new System.Drawing.Point(275, 88);
-            this.txtESuEmail.Name = "txtESuEmail";
-            this.txtESuEmail.ReadOnly = true;
-            this.txtESuEmail.Size = new System.Drawing.Size(157, 23);
-            this.txtESuEmail.TabIndex = 10;
+            txtESuEmail.Location = new Point(275, 88);
+            txtESuEmail.Name = "txtESuEmail";
+            txtESuEmail.ReadOnly = true;
+            txtESuEmail.Size = new Size(157, 23);
+            txtESuEmail.TabIndex = 10;
             // 
             // txtESuPhone
             // 
-            this.txtESuPhone.Location = new System.Drawing.Point(76, 88);
-            this.txtESuPhone.Name = "txtESuPhone";
-            this.txtESuPhone.ReadOnly = true;
-            this.txtESuPhone.Size = new System.Drawing.Size(137, 23);
-            this.txtESuPhone.TabIndex = 9;
+            txtESuPhone.Location = new Point(76, 88);
+            txtESuPhone.Name = "txtESuPhone";
+            txtESuPhone.ReadOnly = true;
+            txtESuPhone.Size = new Size(137, 23);
+            txtESuPhone.TabIndex = 9;
             // 
             // label36
             // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label36.Location = new System.Drawing.Point(218, 90);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(47, 20);
-            this.label36.TabIndex = 18;
-            this.label36.Text = "Email";
+            label36.AutoSize = true;
+            label36.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label36.Location = new Point(218, 90);
+            label36.Name = "label36";
+            label36.Size = new Size(47, 20);
+            label36.TabIndex = 18;
+            label36.Text = "Email";
             // 
             // label37
             // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label37.Location = new System.Drawing.Point(13, 90);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(53, 20);
-            this.label37.TabIndex = 19;
-            this.label37.Text = "Phone";
+            label37.AutoSize = true;
+            label37.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label37.Location = new Point(13, 90);
+            label37.Name = "label37";
+            label37.Size = new Size(53, 20);
+            label37.TabIndex = 19;
+            label37.Text = "Phone";
             // 
             // btnSuEdit
             // 
-            this.btnSuEdit.Location = new System.Drawing.Point(153, 130);
-            this.btnSuEdit.Name = "btnSuEdit";
-            this.btnSuEdit.Size = new System.Drawing.Size(88, 22);
-            this.btnSuEdit.TabIndex = 11;
-            this.btnSuEdit.Text = "Edit";
-            this.btnSuEdit.UseVisualStyleBackColor = true;
-            this.btnSuEdit.Click += new System.EventHandler(this.btnSuEdit_Click);
+            btnSuEdit.Location = new Point(153, 130);
+            btnSuEdit.Name = "btnSuEdit";
+            btnSuEdit.Size = new Size(88, 22);
+            btnSuEdit.TabIndex = 11;
+            btnSuEdit.Text = "Edit";
+            btnSuEdit.UseVisualStyleBackColor = true;
+            btnSuEdit.Click += btnSuEdit_Click;
             // 
             // txtESuAddress
             // 
-            this.txtESuAddress.Location = new System.Drawing.Point(290, 41);
-            this.txtESuAddress.Name = "txtESuAddress";
-            this.txtESuAddress.ReadOnly = true;
-            this.txtESuAddress.Size = new System.Drawing.Size(142, 23);
-            this.txtESuAddress.TabIndex = 9;
+            txtESuAddress.Location = new Point(290, 41);
+            txtESuAddress.Name = "txtESuAddress";
+            txtESuAddress.ReadOnly = true;
+            txtESuAddress.Size = new Size(142, 23);
+            txtESuAddress.TabIndex = 9;
             // 
             // txtESuName
             // 
-            this.txtESuName.Location = new System.Drawing.Point(74, 41);
-            this.txtESuName.Name = "txtESuName";
-            this.txtESuName.ReadOnly = true;
-            this.txtESuName.Size = new System.Drawing.Size(137, 23);
-            this.txtESuName.TabIndex = 8;
+            txtESuName.Location = new Point(74, 41);
+            txtESuName.Name = "txtESuName";
+            txtESuName.ReadOnly = true;
+            txtESuName.Size = new Size(137, 23);
+            txtESuName.TabIndex = 8;
             // 
             // label50
             // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label50.Location = new System.Drawing.Point(218, 43);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(66, 20);
-            this.label50.TabIndex = 13;
-            this.label50.Text = "Address";
+            label50.AutoSize = true;
+            label50.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label50.Location = new Point(218, 43);
+            label50.Name = "label50";
+            label50.Size = new Size(66, 20);
+            label50.TabIndex = 13;
+            label50.Text = "Address";
             // 
             // label51
             // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label51.Location = new System.Drawing.Point(13, 40);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(51, 20);
-            this.label51.TabIndex = 14;
-            this.label51.Text = "Name";
+            label51.AutoSize = true;
+            label51.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label51.Location = new Point(13, 40);
+            label51.Name = "label51";
+            label51.Size = new Size(51, 20);
+            label51.TabIndex = 14;
+            label51.Text = "Name";
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.txtSuEmail);
-            this.groupBox7.Controls.Add(this.txtSuAddress);
-            this.groupBox7.Controls.Add(this.txtSuName);
-            this.groupBox7.Controls.Add(this.txtSuPhone);
-            this.groupBox7.Controls.Add(this.label48);
-            this.groupBox7.Controls.Add(this.label49);
-            this.groupBox7.Controls.Add(this.btnAddSpplier);
-            this.groupBox7.Controls.Add(this.label30);
-            this.groupBox7.Controls.Add(this.label35);
-            this.groupBox7.Location = new System.Drawing.Point(12, 9);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(455, 191);
-            this.groupBox7.TabIndex = 1;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Add Supplier";
+            groupBox7.Controls.Add(txtSuEmail);
+            groupBox7.Controls.Add(txtSuAddress);
+            groupBox7.Controls.Add(txtSuName);
+            groupBox7.Controls.Add(txtSuPhone);
+            groupBox7.Controls.Add(label48);
+            groupBox7.Controls.Add(label49);
+            groupBox7.Controls.Add(btnAddSpplier);
+            groupBox7.Controls.Add(label30);
+            groupBox7.Controls.Add(label35);
+            groupBox7.Location = new Point(12, 9);
+            groupBox7.Name = "groupBox7";
+            groupBox7.Size = new Size(455, 191);
+            groupBox7.TabIndex = 1;
+            groupBox7.TabStop = false;
+            groupBox7.Text = "Add Supplier";
             // 
             // txtSuEmail
             // 
-            this.txtSuEmail.Location = new System.Drawing.Point(298, 90);
-            this.txtSuEmail.Name = "txtSuEmail";
-            this.txtSuEmail.Size = new System.Drawing.Size(137, 23);
-            this.txtSuEmail.TabIndex = 5;
+            txtSuEmail.Location = new Point(298, 90);
+            txtSuEmail.Name = "txtSuEmail";
+            txtSuEmail.Size = new Size(137, 23);
+            txtSuEmail.TabIndex = 5;
             // 
             // txtSuAddress
             // 
-            this.txtSuAddress.Location = new System.Drawing.Point(298, 41);
-            this.txtSuAddress.Name = "txtSuAddress";
-            this.txtSuAddress.Size = new System.Drawing.Size(137, 23);
-            this.txtSuAddress.TabIndex = 3;
+            txtSuAddress.Location = new Point(298, 41);
+            txtSuAddress.Name = "txtSuAddress";
+            txtSuAddress.Size = new Size(137, 23);
+            txtSuAddress.TabIndex = 3;
             // 
             // txtSuName
             // 
-            this.txtSuName.Location = new System.Drawing.Point(71, 40);
-            this.txtSuName.Name = "txtSuName";
-            this.txtSuName.Size = new System.Drawing.Size(137, 23);
-            this.txtSuName.TabIndex = 2;
+            txtSuName.Location = new Point(71, 40);
+            txtSuName.Name = "txtSuName";
+            txtSuName.Size = new Size(137, 23);
+            txtSuName.TabIndex = 2;
             // 
             // txtSuPhone
             // 
-            this.txtSuPhone.Location = new System.Drawing.Point(71, 90);
-            this.txtSuPhone.Name = "txtSuPhone";
-            this.txtSuPhone.Size = new System.Drawing.Size(137, 23);
-            this.txtSuPhone.TabIndex = 4;
+            txtSuPhone.Location = new Point(71, 90);
+            txtSuPhone.Name = "txtSuPhone";
+            txtSuPhone.Size = new Size(137, 23);
+            txtSuPhone.TabIndex = 4;
             // 
             // label48
             // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label48.Location = new System.Drawing.Point(220, 89);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(47, 20);
-            this.label48.TabIndex = 9;
-            this.label48.Text = "Email";
+            label48.AutoSize = true;
+            label48.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label48.Location = new Point(220, 89);
+            label48.Name = "label48";
+            label48.Size = new Size(47, 20);
+            label48.TabIndex = 9;
+            label48.Text = "Email";
             // 
             // label49
             // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label49.Location = new System.Drawing.Point(10, 89);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(53, 20);
-            this.label49.TabIndex = 10;
-            this.label49.Text = "Phone";
+            label49.AutoSize = true;
+            label49.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label49.Location = new Point(10, 89);
+            label49.Name = "label49";
+            label49.Size = new Size(53, 20);
+            label49.TabIndex = 10;
+            label49.Text = "Phone";
             // 
             // btnAddSpplier
             // 
-            this.btnAddSpplier.Location = new System.Drawing.Point(199, 130);
-            this.btnAddSpplier.Name = "btnAddSpplier";
-            this.btnAddSpplier.Size = new System.Drawing.Size(99, 22);
-            this.btnAddSpplier.TabIndex = 6;
-            this.btnAddSpplier.Text = "Add";
-            this.btnAddSpplier.UseVisualStyleBackColor = true;
-            this.btnAddSpplier.Click += new System.EventHandler(this.btnAddSupplier_Click);
+            btnAddSpplier.Location = new Point(199, 130);
+            btnAddSpplier.Name = "btnAddSpplier";
+            btnAddSpplier.Size = new Size(99, 22);
+            btnAddSpplier.TabIndex = 6;
+            btnAddSpplier.Text = "Add";
+            btnAddSpplier.UseVisualStyleBackColor = true;
+            btnAddSpplier.Click += btnAddSupplier_Click;
             // 
             // label30
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label30.Location = new System.Drawing.Point(220, 40);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(66, 20);
-            this.label30.TabIndex = 4;
-            this.label30.Text = "Address";
+            label30.AutoSize = true;
+            label30.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label30.Location = new Point(220, 40);
+            label30.Name = "label30";
+            label30.Size = new Size(66, 20);
+            label30.TabIndex = 4;
+            label30.Text = "Address";
             // 
             // label35
             // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label35.Location = new System.Drawing.Point(10, 40);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(51, 20);
-            this.label35.TabIndex = 5;
-            this.label35.Text = "Name";
+            label35.AutoSize = true;
+            label35.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label35.Location = new Point(10, 40);
+            label35.Name = "label35";
+            label35.Size = new Size(51, 20);
+            label35.TabIndex = 5;
+            label35.Text = "Name";
             // 
             // dgvSupplier
             // 
-            this.dgvSupplier.AllowUserToAddRows = false;
-            this.dgvSupplier.AllowUserToDeleteRows = false;
-            this.dgvSupplier.AutoGenerateColumns = false;
-            this.dgvSupplier.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nameDataGridViewTextBoxColumn1,
-            this.addressDataGridViewTextBoxColumn1,
-            this.phoneNumDataGridViewTextBoxColumn1,
-            this.emailDataGridViewTextBoxColumn});
-            this.dgvSupplier.DataSource = this.supplierBindingSource;
-            this.dgvSupplier.Location = new System.Drawing.Point(5, 286);
-            this.dgvSupplier.Name = "dgvSupplier";
-            this.dgvSupplier.ReadOnly = true;
-            this.dgvSupplier.RowHeadersWidth = 51;
-            this.dgvSupplier.Size = new System.Drawing.Size(906, 221);
-            this.dgvSupplier.TabIndex = 16;
-            this.dgvSupplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSupplier_CellClick);
-            // 
-            // nameDataGridViewTextBoxColumn1
-            // 
-            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn1.HeaderText = "Supplier Name";
-            this.nameDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
-            this.nameDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // addressDataGridViewTextBoxColumn1
-            // 
-            this.addressDataGridViewTextBoxColumn1.DataPropertyName = "Address";
-            this.addressDataGridViewTextBoxColumn1.HeaderText = "Supplier Address";
-            this.addressDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.addressDataGridViewTextBoxColumn1.Name = "addressDataGridViewTextBoxColumn1";
-            this.addressDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // phoneNumDataGridViewTextBoxColumn1
-            // 
-            this.phoneNumDataGridViewTextBoxColumn1.DataPropertyName = "Phone_Num";
-            this.phoneNumDataGridViewTextBoxColumn1.HeaderText = "Supplier Phone";
-            this.phoneNumDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.phoneNumDataGridViewTextBoxColumn1.Name = "phoneNumDataGridViewTextBoxColumn1";
-            this.phoneNumDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Supplier Email";
-            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // supplierBindingSource
-            // 
-            this.supplierBindingSource.DataSource = typeof(PharmacyManagementSystem.DAL.Models.Supplier);
+            dgvSupplier.AllowUserToAddRows = false;
+            dgvSupplier.AllowUserToDeleteRows = false;
+            dgvSupplier.AutoGenerateColumns = false;
+            dgvSupplier.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvSupplier.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvSupplier.DataSource = supplierBindingSource;
+            dgvSupplier.Location = new Point(5, 286);
+            dgvSupplier.Name = "dgvSupplier";
+            dgvSupplier.ReadOnly = true;
+            dgvSupplier.RowHeadersWidth = 51;
+            dgvSupplier.Size = new Size(906, 221);
+            dgvSupplier.TabIndex = 16;
+            dgvSupplier.CellClick += dgvSupplier_CellClick;
             // 
             // userNameDataGridViewTextBoxColumn
             // 
-            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
+            userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
             // 
             // roleDataGridViewTextBoxColumn
             // 
-            this.roleDataGridViewTextBoxColumn.Name = "roleDataGridViewTextBoxColumn";
+            roleDataGridViewTextBoxColumn.Name = "roleDataGridViewTextBoxColumn";
             // 
             // PMSWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1084, 584);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.MaximumSize = new System.Drawing.Size(1100, 623);
-            this.MinimumSize = new System.Drawing.Size(1100, 623);
-            this.Name = "PMSWindow";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.gtcPharmacy.ResumeLayout(false);
-            this.salesTab.ResumeLayout(false);
-            this.salesTab.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.purchaseTab.ResumeLayout(false);
-            this.purchaseTab.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.Stock.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.addNewProduct.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.customersTab.ResumeLayout(false);
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
-            this.reportsTab.ResumeLayout(false);
-            this.accountTab.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAccounts)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).EndInit();
-            this.userData.ResumeLayout(false);
-            this.userData.PerformLayout();
-            this.supplierTap.ResumeLayout(false);
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1084, 584);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            MaximumSize = new Size(1100, 623);
+            MinimumSize = new Size(1100, 623);
+            Name = "PMSWindow";
+            WindowState = FormWindowState.Maximized;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            gtcPharmacy.ResumeLayout(false);
+            salesTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)DGVSales).EndInit();
+            groupBox13.ResumeLayout(false);
+            groupBox13.PerformLayout();
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)customerBindingSource).EndInit();
+            purchaseTab.ResumeLayout(false);
+            groupBox14.ResumeLayout(false);
+            groupBox14.PerformLayout();
+            groupBox6.ResumeLayout(false);
+            groupBox6.PerformLayout();
+            groupBox5.ResumeLayout(false);
+            groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DGVpurch).EndInit();
+            Stock.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            addNewProduct.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)productBindingSource).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            customersTab.ResumeLayout(false);
+            groupBox10.ResumeLayout(false);
+            groupBox10.PerformLayout();
+            groupBox11.ResumeLayout(false);
+            groupBox11.PerformLayout();
+            groupBox12.ResumeLayout(false);
+            groupBox12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvCustomer).EndInit();
+            reportsTab.ResumeLayout(false);
+            accountTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvAccounts).EndInit();
+            ((System.ComponentModel.ISupportInitialize)usersBindingSource1).EndInit();
+            userData.ResumeLayout(false);
+            userData.PerformLayout();
+            supplierTap.ResumeLayout(false);
+            groupBox9.ResumeLayout(false);
+            groupBox9.PerformLayout();
+            groupBox8.ResumeLayout(false);
+            groupBox8.PerformLayout();
+            groupBox7.ResumeLayout(false);
+            groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvSupplier).EndInit();
+            ((System.ComponentModel.ISupportInitialize)supplierBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)usersBindingSource).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -2303,7 +2372,6 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2TabControl gtcPharmacy;
         private TabPage accountTab;
-        private TabPage salesTab;
         private TabPage purchaseTab;
         private TabPage addNewProduct;
         private TabPage customersTab;
@@ -2337,54 +2405,10 @@
         private Label label14;
         private TextBox textBox12;
         private Label label15;
-        private GroupBox groupBox3;
-        private TextBox textBox8;
-        private TextBox textBox7;
-        private Label label16;
-        private Label label10;
-        private Label label9;
-        private TextBox textBox13;
-        private TextBox textBox14;
-        private Label label18;
-        private Label label17;
-        private GroupBox groupBox4;
-        private Label label24;
-        private Label label20;
-        private Label label19;
-        private TextBox textBox16;
-        private TextBox textBox15;
-        private DataGridView dataGridView3;
-        private Label label21;
-        private Label discountInPercentage;
-        private Label totalPrice;
-        private TextBox textBox19;
-        private TextBox textBox17;
-        private TextBox textBox18;
-        private Button saveInvoice;
-        private Label finalPrice;
-        private TextBox textBox20;
-        private GroupBox groupBox5;
-        private DataGridView dataGridView4;
-        private Label label22;
-        private Label label23;
-        private Label label25;
-        private TextBox textBox21;
-        private TextBox textBox22;
-        private GroupBox groupBox6;
-        private Label label29;
-        private Button button1;
-        private Label label26;
-        private TextBox textBox23;
         private Button customerReport;
         private Button purchaseReport;
         private Button salesReport;
         private Button shortageReport;
-        private DataGridViewTextBoxColumn P_Name;
-        private DataGridViewTextBoxColumn qPack;
-        private DataGridViewTextBoxColumn qUnit;
-        private DataGridViewTextBoxColumn packPrice;
-        private DataGridViewTextBoxColumn balance;
-        private DataGridViewTextBoxColumn DPrice;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -2392,8 +2416,6 @@
         private DataGridViewTextBoxColumn stockQUnit;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private Button salesSearch;
-        private Button purchaseSearch;
         private DataGridView dgvAccounts;
         private GroupBox userData;
         private TextBox txtAcUserName;
@@ -2403,13 +2425,6 @@
         private Label label33;
         private Label label32;
         private Button btnAddAccount;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private DataGridViewTextBoxColumn purchasepackPrice;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private DataGridViewTextBoxColumn expire;
-        private DataGridViewTextBoxColumn discount;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private ComboBox comboBox2;
         private TabPage supplierTap;
         private DataGridView dgvSupplier;
         private GroupBox groupBox7;
@@ -2503,5 +2518,87 @@
         private Button button2;
         private Label label6;
         private TextBox txtCategory;
+        private TabPage salesTab;
+        private DataGridView DGVSales;
+        private GroupBox groupBox13;
+        private TextBox salesTotalPrice;
+        private TextBox SalesBillNo;
+        private Label salesTotalAmount;
+        private TextBox salesPay;
+        private Label label55;
+        private Label label58;
+        private Label label59;
+        private GroupBox groupBox4;
+        private ComboBox comboPForm;
+        private ComboBox comboPName;
+        private TextBox textsalesExpire;
+        private TextBox salesProductCode;
+        private TextBox textsalesBalance;
+        private TextBox PQty;
+        private Label label53;
+        private TextBox salesPPrice;
+        private Label label56;
+        private Label label9;
+        private Label label19;
+        private Label label16;
+        private Label label20;
+        private Label label24;
+        private Label label52;
+        private Button saveInvoice;
+        private GroupBox groupBox3;
+        private ComboBox comboCustomerName;
+        private TextBox customerAddress;
+        private TextBox customerPhone;
+        private TextBox salesCustomerCode;
+        private Label label18;
+        private Label label17;
+        private Label label10;
+        private Label label54;
+        private DataGridViewTextBoxColumn salesPCodeDGV;
+        private DataGridViewTextBoxColumn salesProductName;
+        private DataGridViewTextBoxColumn salesUnitprice;
+        private DataGridViewTextBoxColumn salesUnitQuantity;
+        private GroupBox groupBox14;
+        private TextBox purchTotal;
+        private TextBox purchBillNo;
+        private Label label25;
+        private TextBox textBox34;
+        private Label label26;
+        private Label label68;
+        private Label label69;
+        private GroupBox groupBox6;
+        private ComboBox purchSName;
+        private Label label29;
+        private Label label61;
+        private Label label60;
+        private TextBox purchSCode;
+        private TextBox PurchSPhone;
+        private Label label57;
+        private TextBox purchSAddress;
+        private Button button1;
+        private GroupBox groupBox5;
+        private DateTimePicker purchPExpire;
+        private Button purchaseSearch;
+        private Label label22;
+        private Label label67;
+        private TextBox purchPCode;
+        private Label label65;
+        private Label label64;
+        private Label label70;
+        private Label label63;
+        private Label label62;
+        private Label label66;
+        private Label label23;
+        private TextBox purchPQty;
+        private TextBox purchPGeneric;
+        private TextBox purchPSize;
+        private TextBox purchPCompany;
+        private TextBox purchPForm;
+        private TextBox purchPName;
+        private DataGridView DGVpurch;
+        private DataGridViewTextBoxColumn purchId;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private DataGridViewTextBoxColumn expire;
     }
 }

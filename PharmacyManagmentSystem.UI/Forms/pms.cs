@@ -15,6 +15,7 @@ using System.Net;
 using System.Text.RegularExpressions;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using CrystalDecisions.ReportAppServer.Prompting;
+using iTextSharp.text;
 
 namespace PharmacyManagmentSystem.UI.Forms
 {
@@ -37,8 +38,8 @@ namespace PharmacyManagmentSystem.UI.Forms
         Purchase_Report purchase_Report;
 
         public PMSWindow(CustomerService customerService, SupplierService supplierService
-            ,UsersService usersService, SaleItemService saleItemService , PurchaseItemService purchaseItemService
-            ,PurchaseService purchaseService , CategoryService categoryService , ProductService productService)
+            , UsersService usersService, SaleItemService saleItemService, PurchaseItemService purchaseItemService
+            , PurchaseService purchaseService, CategoryService categoryService, ProductService productService)
         {
             InitializeComponent();
             _customerService = customerService;
@@ -695,8 +696,8 @@ namespace PharmacyManagmentSystem.UI.Forms
 
         private void Logoutbtn_Click(object sender, EventArgs e)
         {
-            Landing LD = new(_usersService, _customerService, _supplierService , saleItemService
-                , purchaseItemService , purchaseService , categoryService , productService);
+            Landing LD = new(_usersService, _customerService, _supplierService, saleItemService
+                , purchaseItemService, purchaseService, categoryService, productService);
 
             LD.Show();
             this.Hide();
@@ -727,7 +728,7 @@ namespace PharmacyManagmentSystem.UI.Forms
 
         private void addBtn_Click(object sender, EventArgs e)
         {
-            var newProduct = productService.AddProduct(textBox1.Text, textBox2.Text, " " , int.Parse(textBox4.Text), dateTimePicker1.Value , textBox3.Text, textBox5.Text, int.Parse(textBox6.Text), comboBox1.SelectedIndex);
+            var newProduct = productService.AddProduct(textBox1.Text, textBox2.Text, " ", int.Parse(textBox4.Text), dateTimePicker1.Value, textBox3.Text, textBox5.Text, int.Parse(textBox6.Text), comboBox1.SelectedIndex);
 
             if (newProduct == true)
             {
@@ -750,7 +751,7 @@ namespace PharmacyManagmentSystem.UI.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-           bool res =  categoryService.AddCategory(txtCategory.Text);
+            bool res = categoryService.AddCategory(txtCategory.Text);
 
 
             if (res)
@@ -771,14 +772,222 @@ namespace PharmacyManagmentSystem.UI.Forms
                        select Product;
 
 
-            dataGridView3.DataSource = data.ToList();
+            // dataGridView3.DataSource = data.ToList();
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+
+        private void salesCustomerCode_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void salesCustomerCode_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                var customer = _customerService.GetCustomerById(int.Parse(this.salesCustomerCode.Text));
+                if (customer != null)
+                {
+                    comboCustomerName.Text = customer.Name;
+                    customerPhone.Text = customer.Phone_Num;
+                    customerAddress.Text = customer.Address;
+                    salesCustomerCode.Text = customer.Id.ToString();
+                }
+
+            }
+        }
+
+        private void salesProductCode_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+
+
+                var PId = productService.GetProductById(Convert.ToInt32(this.salesProductCode.Text));
+                if (PId != null)
+                {
+
+                    comboPName.Text = PId.Name;
+                    salesPPrice.Text = PId.price.ToString();
+                    comboPForm.Text = PId.Type;
+                    textsalesExpire.Text = PId.Expire_Date.ToString();
+                    textsalesBalance.Text = PId.Quantity.ToString();
+                }
+            }
+        }
+
+        private void PQty_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                var product = productService.GetProductById(Convert.ToInt32(salesProductCode.Text));
+                if (product != null)
+                {
+                    DataGridViewRow row = (DataGridViewRow)DGVSales.Rows[0].Clone();
+                    row.Cells[0].Value = salesProductCode.Text;
+                    row.Cells[1].Value = comboPName.Text;
+                    row.Cells[2].Value = salesPPrice.Text;
+                    row.Cells[3].Value = PQty.Text;
+                    DGVSales.Rows.Add(row);
+                }
+
+
+                salesProductCode.Text = "";
+                comboPName.Text = "";
+                salesPPrice.Text = "";
+                PQty.Text = "";
+                textsalesExpire.Text = "";
+                textsalesBalance.Text = "";
+                saveInvoice.Enabled = true;
+
+
+
+                // bill.Sale_ID = Convert.ToInt32(sale.Id);
+                //  bill.Id = Convert.ToInt32(SalesBillNo.Text);
+                //saleItemService.AddSaleItem(saleID, sale);
+
+                //if (salesTotalPrice.Text != "")
+                //{
+                //    int total = (int)Convert.ToDecimal(salesTotalPrice.Text);
+                //    salesTotalAmount.Text = (Convert.ToInt32(salesPPrice.Text) * Convert.ToInt32(PQty.Text) + total).ToString();
+                //}
+                //else
+                //{
+                //    salesTotalAmount.Text = (Convert.ToInt32(salesPPrice.Text) * Convert.ToInt32(PQty.Text)).ToString();
+
+                //}
+
+
+                //stock
+                //var prod = _AppDbContext.products.Where(x => x.Id == Convert.ToInt32(salesProductCode.Text)).FirstOrDefault();
+                //prod.Quantity = prod.Quantity - Convert.ToInt32(PQty.Text);
+                //_AppDbContext.products.Append(prod);
+                //_AppDbContext.SaveChanges();
+            }
+        }
+
+        private void PQty_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void search_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void purchSCode_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                var supplier = _supplierService.GetSupplierById(int.Parse(this.purchSCode.Text));
+                if (supplier != null)
+                {
+                    purchSCode.Text = supplier.Id.ToString();
+                    purchSAddress.Text = supplier.Address.ToString();
+                    PurchSPhone.Text = supplier.Phone_Num.ToString();
+                }
+
+            }
+        }
+
+        private void purchaseSearch_Click(object sender, EventArgs e)
+        {
+            var product = productService.GetProductById(Convert.ToInt32(purchPCode.Text));
+            DataGridViewRow row = (DataGridViewRow)DGVpurch.Rows[0].Clone();
+            row.Cells[0].Value = purchPCode.Text;
+            row.Cells[1].Value = purchPName.Text;
+            row.Cells[2].Value = purchPQty.Text;
+            row.Cells[3].Value = purchPExpire.Text;
+            DGVpurch.Rows.Add(row);
+            if (product != null)
+            {
+               
+            }
+
+
+
+            //var prod 
+            //    //_AppDbContext.products.Where(x => x.Name == purchPName.Text).FirstOrDefault();
+            //if (prod != null)
+            //{
+            //    //int prodQty = Convert.ToInt32(prod.Quantity);
+            //    //prod.Quantity = Convert.ToInt32(purchPQty.Text) + prodQty;
+            //    //prod.Generic_Name = purchPGeneric.Text;
+            //    //prod.Company = purchPCompany.Text;
+            //    //prod.Type = purchPForm.Text;
+            //    //prod.Expire_Date = purchPExpire.Value;
+            //    //prod.Pack_Size = purchPSize.Text;
+
+                
+            //    MessageBox.Show("Succeccfuly added!");
+
+            //    if (purchTotal.Text != "")
+            //    {
+            //        int total = Convert.ToInt32(purchTotal.Text);
+            //        purchTotal.Text = (Convert.ToInt32(purchPQty.Text) + total).ToString();
+            //    }
+            //    else
+            //    {
+            //        purchTotal.Text = (Convert.ToInt32(purchPQty.Text)).ToString();
+            //    }
+
+
+            //}
+            //else
+            //{
+
+            //    Product newProduct = new Product();
+            //    newProduct.Name = purchPName.Text;
+            //    newProduct.Company = purchPCompany.Text;
+            //    newProduct.Type = purchPForm.Text;
+            //    newProduct.Generic_Name = purchPGeneric.Text;
+            //    newProduct.Quantity = Convert.ToInt32(purchPQty.Text);
+            //    newProduct.Pack_Size = purchPSize.Text;
+
+            //    //productService.AddProduct(newProduct.Name,newProduct.Generic_Name,newProduct.Type,newProduct.Expire_Date,newProduct.Company,newProduct.Pack_Size,newProduct.price,newProduct.Category)
+            //   // _AppDbContext.products.Append(newProduct);
+
+            //    if (purchTotal.Text != "")
+            //    {
+            //        int total = Convert.ToInt32(purchTotal.Text);
+            //        purchTotal.Text = (Convert.ToInt32(purchPQty.Text) + total).ToString();
+            //    }
+            //    else
+            //    {
+            //        purchTotal.Text = (Convert.ToInt32(purchPQty.Text)).ToString();
+            //    }
+
+            //    var purchDate = DateTime.Now;
+            //    purchaseService.AddPurchase(Convert.ToInt32(purchSCode.Text), purchDate);
+
+            //    DataGridViewRow row = (DataGridViewRow)DGVpurch.Rows[0].Clone();
+            //    row.Cells[0].Value = purchBillNo.Text;
+            //    row.Cells[1].Value = purchPName.Text;
+            //    row.Cells[2].Value = purchPQty.Text;
+            //    row.Cells[3].Value = purchPExpire.Value;
+            //    DGVpurch.Rows.Add(row);
+
+            //    purchPName.Text = "";
+
+            //    purchPCompany.Text = "";
+            //    purchPForm.Text = "";
+            //    purchPGeneric.Text = "";
+            //    purchPQty.Text = "";
+            //    purchPSize.Text = "";
+              
+            }
+        }
     }
-}
+
 
 
