@@ -27,8 +27,8 @@ namespace PharmacyManagmentSystem.UI.Forms
         {
 
         }
-        public Landing(UsersService userservice , CustomerService customerService , SupplierService supplierservice , SaleItemService saleItemService, PurchaseItemService purchaseItemService
-             , PurchaseService purchaseService, CategoryService categoryService, ProductService productService)
+        public Landing(UsersService userservice , CustomerService customerService , SupplierService supplierservice //, SaleItemService saleItemService, PurchaseItemService purchaseItemService
+, SaleItemService saleItemService, PurchaseItemService purchaseItemService, PurchaseService purchaseService, CategoryService categoryService, ProductService productService)
         {
             InitializeComponent();
             this._userService = userservice;
@@ -48,8 +48,8 @@ namespace PharmacyManagmentSystem.UI.Forms
             string username = txtUserName.Text;
             string password = txtPassword.Text;
 
-            var mainForm = new PMSWindow(_customerService, _supplierService , _userService , saleItemService , purchaseItemService , purchaseService
-                 ,categoryService , productService);
+            var mainForm = new PMSWindow(_customerService, _supplierService, _userService , saleItemService , purchaseItemService , purchaseService
+                  ,categoryService , productService);
 
             mainForm.Login(username, password);
 

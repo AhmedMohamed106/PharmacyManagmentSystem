@@ -10,11 +10,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PharmacyManagementSystem.DAL.DataContext;
-using PharmacyManagementSystem.BLL.Services;
 using static System.Runtime.InteropServices.JavaScript.JSType;
-using PharmacyManagementSystem.DAL.Models;
 using System.Net;
 using System.Text.RegularExpressions;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using CrystalDecisions.ReportAppServer.Prompting;
 
 namespace PharmacyManagmentSystem.UI.Forms
 {
@@ -36,9 +36,9 @@ namespace PharmacyManagmentSystem.UI.Forms
         Sales_Report Sales_Report;
         Purchase_Report purchase_Report;
 
-        public PMSWindow(CustomerService customerService, SupplierService supplierService,
-            UsersService usersService , SaleItemService saleItemService , PurchaseItemService purchaseItemService
-             ,PurchaseService purchaseService , CategoryService categoryService , ProductService productService)
+        public PMSWindow(CustomerService customerService, SupplierService supplierService
+            ,UsersService usersService, SaleItemService saleItemService , PurchaseItemService purchaseItemService
+            ,PurchaseService purchaseService , CategoryService categoryService , ProductService productService)
         {
             InitializeComponent();
             _customerService = customerService;
@@ -49,6 +49,12 @@ namespace PharmacyManagmentSystem.UI.Forms
             this.purchaseService = purchaseService;
             this.categoryService = categoryService;
             this.productService = productService;
+
+            comboBox1.DataSource = null;
+            comboBox1.DataSource = this.categoryService.GetAllCategories().ToList();
+            //comboBox1.SelectedIndex = 0;
+            comboBox1.DisplayMember = "Name";
+            comboBox1.ValueMember = "Id";
 
         }
 
@@ -167,6 +173,8 @@ namespace PharmacyManagmentSystem.UI.Forms
             //dgvAccounts.DataSource = null;
             //dgvAccounts.DataSource = _usersService.GetAllUsers();
 
+            var data = productService.GetAllProducts().ToList();
+            dataGridView2.DataSource = data;
 
             try
             {
@@ -701,6 +709,76 @@ namespace PharmacyManagmentSystem.UI.Forms
             purchase_Report = new Purchase_Report();
             purchase_Report.ShowDialog();
         }
+
+        private void addNewProduct_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            var newProduct = productService.AddProduct(textBox1.Text, textBox2.Text, " " , int.Parse(textBox4.Text), dateTimePicker1.Value , textBox3.Text, textBox5.Text, int.Parse(textBox6.Text), comboBox1.SelectedIndex);
+
+            if (newProduct == true)
+            {
+                MessageBox.Show("Product Added Successfully");
+
+                //var product = from products
+                //              in _productService.GetAllProducts().ToList()
+                //              select products;
+
+
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = productService.GetAllProducts();
+            }
+            else
+            {
+                MessageBox.Show("Failed to Add Product");
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           bool res =  categoryService.AddCategory(txtCategory.Text);
+
+
+            if (res)
+            {
+                MessageBox.Show("Category added");
+            }
+
+            else
+            {
+
+            }
+        }
+
+        private void salesSearch_Click(object sender, EventArgs e)
+        {
+            var data = from Product in productService.GetAllProducts()
+                       where Product.Name == textBox12.Text || Product.Generic_Name == textBox11.Text || Product.Company == textBox10.Text
+                       select Product;
+
+
+            dataGridView3.DataSource = data.ToList();
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
+
 

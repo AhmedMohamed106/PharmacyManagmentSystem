@@ -28,203 +28,181 @@
         /// </summary>
         private void InitializeComponent()
         {
-            groupBox1 = new GroupBox();
-            dateTimePicker2 = new DateTimePicker();
-            dateTimePicker1 = new DateTimePicker();
-            label1 = new Label();
-            search = new Button();
-            label19 = new Label();
-            dataGridView1 = new DataGridView();
-            invoiceNo = new DataGridViewTextBoxColumn();
-            date = new DataGridViewTextBoxColumn();
-            customer = new DataGridViewTextBoxColumn();
-            items = new DataGridViewTextBoxColumn();
-            discount = new DataGridViewTextBoxColumn();
-            totalPrice = new DataGridViewTextBoxColumn();
-            dataGridView2 = new DataGridView();
-            drugName = new DataGridViewTextBoxColumn();
-            packQt = new DataGridViewTextBoxColumn();
-            unitQt = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
-            button1 = new Button();
-            groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
-            SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.search = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.saleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.saleBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.purchaseBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.saleBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.saleBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Customer_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sale_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SaleItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saleBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saleBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchaseBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saleBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saleBindingSource3)).BeginInit();
+            this.SuspendLayout();
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(dateTimePicker2);
-            groupBox1.Controls.Add(dateTimePicker1);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(search);
-            groupBox1.Controls.Add(label19);
-            groupBox1.Location = new Point(9, 12);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(779, 78);
-            groupBox1.TabIndex = 1;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Select Date";
+            this.groupBox1.Controls.Add(this.dateTimePicker2);
+            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.search);
+            this.groupBox1.Controls.Add(this.label19);
+            this.groupBox1.Location = new System.Drawing.Point(9, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(779, 78);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Select Date";
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Location = new Point(361, 32);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(200, 23);
-            dateTimePicker2.TabIndex = 16;
+            this.dateTimePicker2.Location = new System.Drawing.Point(361, 32);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker2.TabIndex = 16;
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(97, 31);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
-            dateTimePicker1.TabIndex = 16;
+            this.dateTimePicker1.Location = new System.Drawing.Point(97, 31);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker1.TabIndex = 16;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(328, 33);
-            label1.Name = "label1";
-            label1.Size = new Size(26, 20);
-            label1.TabIndex = 5;
-            label1.Text = "To";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(328, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(26, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "To";
             // 
             // search
             // 
-            search.Location = new Point(644, 28);
-            search.Name = "search";
-            search.Size = new Size(110, 32);
-            search.TabIndex = 15;
-            search.Text = "Search";
-            search.UseVisualStyleBackColor = true;
+            this.search.Location = new System.Drawing.Point(644, 28);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(110, 32);
+            this.search.TabIndex = 15;
+            this.search.Text = "Search";
+            this.search.UseVisualStyleBackColor = true;
             // 
             // label19
             // 
-            label19.AutoSize = true;
-            label19.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            label19.Location = new Point(8, 32);
-            label19.Name = "label19";
-            label19.Size = new Size(83, 20);
-            label19.TabIndex = 5;
-            label19.Text = "Sales from";
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label19.Location = new System.Drawing.Point(8, 32);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(83, 20);
+            this.label19.TabIndex = 5;
+            this.label19.Text = "Sales from";
             // 
             // dataGridView1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { invoiceNo, date, customer, items, discount, totalPrice });
-            dataGridView1.Location = new Point(9, 101);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(779, 208);
-            dataGridView1.TabIndex = 2;
-            // 
-            // invoiceNo
-            // 
-            invoiceNo.HeaderText = "Invoice NO.";
-            invoiceNo.Name = "invoiceNo";
-            invoiceNo.ReadOnly = true;
-            // 
-            // date
-            // 
-            date.HeaderText = "Date";
-            date.Name = "date";
-            date.ReadOnly = true;
-            date.Width = 120;
-            // 
-            // customer
-            // 
-            customer.HeaderText = "Customer";
-            customer.Name = "customer";
-            customer.ReadOnly = true;
-            customer.Width = 220;
-            // 
-            // items
-            // 
-            items.HeaderText = "Items";
-            items.Name = "items";
-            items.ReadOnly = true;
-            // 
-            // discount
-            // 
-            discount.HeaderText = "Discount";
-            discount.Name = "discount";
-            discount.ReadOnly = true;
-            // 
-            // totalPrice
-            // 
-            totalPrice.HeaderText = "Total Price";
-            totalPrice.Name = "totalPrice";
-            totalPrice.ReadOnly = true;
-            // 
-            // dataGridView2
-            // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { drugName, packQt, unitQt, dataGridViewTextBoxColumn5, dataGridViewTextBoxColumn6 });
-            dataGridView2.Location = new Point(10, 319);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(779, 140);
-            dataGridView2.TabIndex = 3;
-            // 
-            // drugName
-            // 
-            drugName.HeaderText = "Drug Name";
-            drugName.Name = "drugName";
-            drugName.ReadOnly = true;
-            drugName.Width = 350;
-            // 
-            // packQt
-            // 
-            packQt.HeaderText = "Pack Qt.";
-            packQt.Name = "packQt";
-            packQt.ReadOnly = true;
-            // 
-            // unitQt
-            // 
-            unitQt.HeaderText = "Unit Qt.";
-            unitQt.Name = "unitQt";
-            unitQt.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            dataGridViewTextBoxColumn5.HeaderText = "Discount";
-            dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            dataGridViewTextBoxColumn6.HeaderText = "Total Price";
-            dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.Customer_ID,
+            this.Sale_Date,
+            this.SaleItems});
+            this.dataGridView1.DataSource = this.saleBindingSource3;
+            this.dataGridView1.Location = new System.Drawing.Point(9, 101);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(779, 208);
+            this.dataGridView1.TabIndex = 2;
             // 
             // button1
             // 
-            button1.Location = new Point(337, 479);
-            button1.Name = "button1";
-            button1.Size = new Size(122, 23);
-            button1.TabIndex = 4;
-            button1.Text = "Print Report";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            this.button1.Location = new System.Drawing.Point(337, 479);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Print Report";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // saleBindingSource
+            // 
+            this.saleBindingSource.DataSource = typeof(PharmacyManagementSystem.DAL.Models.Sale);
+            // 
+            // saleBindingSource1
+            // 
+            this.saleBindingSource1.DataSource = typeof(PharmacyManagementSystem.DAL.Models.Sale);
+            // 
+            // purchaseBindingSource
+            // 
+            this.purchaseBindingSource.DataSource = typeof(PharmacyManagementSystem.DAL.Models.Purchase);
+            // 
+            // saleBindingSource2
+            // 
+            this.saleBindingSource2.DataSource = typeof(PharmacyManagementSystem.DAL.Models.Sale);
+            // 
+            // saleBindingSource3
+            // 
+            this.saleBindingSource3.DataSource = typeof(PharmacyManagementSystem.DAL.Models.Sale);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // Customer_ID
+            // 
+            this.Customer_ID.DataPropertyName = "Customer_ID";
+            this.Customer_ID.HeaderText = "Customer_ID";
+            this.Customer_ID.Name = "Customer_ID";
+            // 
+            // Sale_Date
+            // 
+            this.Sale_Date.DataPropertyName = "Sale_Date";
+            this.Sale_Date.HeaderText = "Sale_Date";
+            this.Sale_Date.Name = "Sale_Date";
+            // 
+            // SaleItems
+            // 
+            this.SaleItems.DataPropertyName = "SaleItems";
+            this.SaleItems.HeaderText = "SaleItems";
+            this.SaleItems.Name = "SaleItems";
             // 
             // Sales_Report
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 514);
-            Controls.Add(button1);
-            Controls.Add(dataGridView2);
-            Controls.Add(dataGridView1);
-            Controls.Add(groupBox1);
-            MaximumSize = new Size(816, 553);
-            MinimumSize = new Size(816, 553);
-            Name = "Sales_Report";
-            Text = "Sales_Report";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 514);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.groupBox1);
+            this.MaximumSize = new System.Drawing.Size(816, 553);
+            this.MinimumSize = new System.Drawing.Size(816, 553);
+            this.Name = "Sales_Report";
+            this.Text = "Sales_Report";
+            this.Load += new System.EventHandler(this.Sales_Report_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saleBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saleBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchaseBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saleBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saleBindingSource3)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -236,18 +214,15 @@
         private Button search;
         private Label label19;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn invoiceNo;
-        private DataGridViewTextBoxColumn date;
-        private DataGridViewTextBoxColumn customer;
-        private DataGridViewTextBoxColumn items;
-        private DataGridViewTextBoxColumn discount;
-        private DataGridViewTextBoxColumn totalPrice;
-        private DataGridView dataGridView2;
-        private DataGridViewTextBoxColumn drugName;
-        private DataGridViewTextBoxColumn packQt;
-        private DataGridViewTextBoxColumn unitQt;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private Button button1;
+        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn Customer_ID;
+        private DataGridViewTextBoxColumn Sale_Date;
+        private DataGridViewTextBoxColumn SaleItems;
+        private BindingSource saleBindingSource3;
+        private BindingSource saleBindingSource;
+        private BindingSource saleBindingSource1;
+        private BindingSource purchaseBindingSource;
+        private BindingSource saleBindingSource2;
     }
 }

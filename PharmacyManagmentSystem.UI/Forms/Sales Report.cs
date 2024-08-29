@@ -14,21 +14,15 @@ namespace PharmacyManagmentSystem.UI.Forms
 {
     public partial class Sales_Report : Form
     {
+
+        private readonly SaleService _saleService;
         public Sales_Report()
         {
             InitializeComponent();
+            _saleService = new SaleService();
+
         }
-
-        private readonly SaleService _saleService;
-
-        public Sales_Report(SaleService saleService)
-        {
-            InitializeComponent();
-            _saleService = saleService;
-        }
-
-       
-
+   
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -51,6 +45,11 @@ namespace PharmacyManagmentSystem.UI.Forms
             {
                 MessageBox.Show($"An error occurred: {ex.Message}");
             }
+        }
+
+        private void Sales_Report_Load(object sender, EventArgs e)
+        {
+           // dataGridView1.DataSource = _saleService.GetAllSales().ToList();
         }
     }
 }

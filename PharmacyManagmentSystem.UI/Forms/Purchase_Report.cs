@@ -55,6 +55,11 @@ namespace PharmacyManagmentSystem.UI.Forms
 
             dataGridView2.DataSource = purchasesReport;
         }
+
+        private void purchaseBindingSource3_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }    
     
     

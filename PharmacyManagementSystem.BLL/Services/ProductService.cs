@@ -16,7 +16,7 @@ namespace PharmacyManagementSystem.BLL.Services
 
         public bool AddProduct(string name, string genericName, string type, int quantity, DateTime expireDate, string company, string packSize, decimal price, int categoryId)
         {
-            if (string.IsNullOrWhiteSpace(name) || price <= 0 || categoryId <= 0)
+            if (string.IsNullOrWhiteSpace(name) || price <= 0)
             {
                 return false;
             }
@@ -25,7 +25,7 @@ namespace PharmacyManagementSystem.BLL.Services
             {
                 Name = name,
                 Generic_Name = genericName,
-                Type = type,
+                Type = " ",
                 Quantity = quantity,
                 Expire_Date = expireDate,
                 Company = company,

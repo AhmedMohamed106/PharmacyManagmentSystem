@@ -26,11 +26,11 @@ namespace PharmacyManagmentSystem.UI
             // Build the service provider and run the main form
             using (var serviceProvider = services.BuildServiceProvider())
             {
-                //var mainform = serviceProvider.GetRequiredService<Landing>();
-                //Application.Run(mainform);
+                var mainform = serviceProvider.GetRequiredService<Landing>();
+                Application.Run(mainform);
 
-                var mainForm = serviceProvider.GetRequiredService<PMSWindow>();
-                Application.Run(mainForm);
+                //var mainForm = serviceProvider.GetRequiredService<PMSWindow>();
+                //Application.Run(mainForm);
             }
         }
 

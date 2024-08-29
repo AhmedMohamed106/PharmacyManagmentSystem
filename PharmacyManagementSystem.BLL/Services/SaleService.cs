@@ -22,6 +22,10 @@ namespace PharmacyManagementSystem.BLL.Services
             _unitOfWork = unitOfWork;
         }
 
+        public SaleService()
+        {
+        }
+
         public bool AddSale(int customerId, DateTime saleDate)
         {
             if (customerId <= 0 || saleDate == default)
