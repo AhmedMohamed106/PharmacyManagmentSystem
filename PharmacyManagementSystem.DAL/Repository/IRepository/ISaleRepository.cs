@@ -10,6 +10,7 @@ namespace PharmacyManagementSystem.DAL.Repository.IRepository
     public interface ISaleRepository : IRepository<Sale>
     {
         void Update(Sale entity);
-        
+        IEnumerable<Sale> GetSalesBetweenDates(DateTime startDate, DateTime endDate);
+
     }
 }

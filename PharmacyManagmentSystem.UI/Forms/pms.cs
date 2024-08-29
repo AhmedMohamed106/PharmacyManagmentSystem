@@ -12,49 +12,29 @@ namespace PharmacyManagmentSystem.UI.Forms
 {
     public partial class PMSWindow : Form
     {
+        Sales_Report Sales_Report;
+        Purchase_Report purchase_Report;
+       
         public PMSWindow()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void saveInvoice_Click(object sender, EventArgs e)
         {
-
+           
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void salesReport_Click(object sender, EventArgs e)
         {
-
+            Sales_Report = new Sales_Report();
+            Sales_Report.ShowDialog();
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
+        private void purchaseReport_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void purchaseTab_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox15_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox10_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox12_Enter(object sender, EventArgs e)
-        {
-
+            purchase_Report = new Purchase_Report();
+            purchase_Report.ShowDialog();
         }
     }
 }

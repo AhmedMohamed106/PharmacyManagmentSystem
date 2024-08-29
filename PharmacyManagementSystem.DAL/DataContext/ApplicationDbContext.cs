@@ -13,11 +13,11 @@ namespace PharmacyManagementSystem.DAL.DataContext
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=PharmacyManagementDb;Integrated Security=True ;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Server=Enas;Database=PharmacyManagementDb;Integrated Security=True ;TrustServerCertificate=True");
         }
 
         public DbSet<Product> products { get; set; }
-        public DbSet<Category> Categories { get; set; }
+        public DbSet<Category> Categories { get; set;}
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Purchase> Purchases { get; set; }
         public DbSet<Sale> Sales { get; set; }

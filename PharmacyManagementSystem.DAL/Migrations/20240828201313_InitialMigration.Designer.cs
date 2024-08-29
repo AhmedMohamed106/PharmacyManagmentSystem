@@ -12,8 +12,8 @@ using PharmacyManagementSystem.DAL.DataContext;
 namespace PharmacyManagementSystem.DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240827212417_SetNullReferential")]
-    partial class SetNullReferential
+    [Migration("20240828201313_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

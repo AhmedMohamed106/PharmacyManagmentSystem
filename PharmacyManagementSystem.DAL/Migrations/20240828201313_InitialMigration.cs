@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace PharmacyManagementSystem.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class PriceAddingwithdatabase : Migration
+    public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -96,7 +96,7 @@ namespace PharmacyManagementSystem.DAL.Migrations
                         column: x => x.Category_ID,
                         principalTable: "Categories",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.SetNull);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -116,7 +116,7 @@ namespace PharmacyManagementSystem.DAL.Migrations
                         column: x => x.Customer_ID,
                         principalTable: "Customers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.SetNull);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -136,7 +136,7 @@ namespace PharmacyManagementSystem.DAL.Migrations
                         column: x => x.Supplier_ID,
                         principalTable: "Suppliers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.SetNull);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -158,13 +158,13 @@ namespace PharmacyManagementSystem.DAL.Migrations
                         column: x => x.Sale_ID,
                         principalTable: "Sales",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.SetNull);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_saleItems_products_Product_ID",
                         column: x => x.Product_ID,
                         principalTable: "products",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.SetNull);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -186,13 +186,13 @@ namespace PharmacyManagementSystem.DAL.Migrations
                         column: x => x.Purchase_ID,
                         principalTable: "Purchases",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.SetNull);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_purchaseItems_products_Product_ID",
                         column: x => x.Product_ID,
                         principalTable: "products",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.SetNull);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
