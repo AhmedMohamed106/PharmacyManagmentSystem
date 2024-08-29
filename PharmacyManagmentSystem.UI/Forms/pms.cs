@@ -25,16 +25,40 @@ namespace PharmacyManagmentSystem.UI.Forms
         private CustomerService _customerService;
         private SupplierService _supplierService;
         private UsersService _usersService;
+        private SaleItemService saleItemService;
+        private PurchaseItemService purchaseItemService;
+        private PurchaseService purchaseService;
+        private CategoryService categoryService;
+        private ProductService productService;
         int _supplierId = 0;
         bool _showpass = true;
 
-        public PMSWindow(CustomerService customerService, SupplierService supplierService, UsersService usersService)
+        Sales_Report Sales_Report;
+        Purchase_Report purchase_Report;
+
+        public PMSWindow(CustomerService customerService, SupplierService supplierService,
+            UsersService usersService , SaleItemService saleItemService , PurchaseItemService purchaseItemService
+             ,PurchaseService purchaseService , CategoryService categoryService , ProductService productService)
         {
             InitializeComponent();
             _customerService = customerService;
             _supplierService = supplierService;
             _usersService = usersService;
+            this.saleItemService = saleItemService;
+            this.purchaseItemService = purchaseItemService;
+            this.purchaseService = purchaseService;
+            this.categoryService = categoryService;
+            this.productService = productService;
+
         }
+
+        //public PMSWindow()
+        //{
+        //    InitializeComponent();
+        //    _customerService = customerService;
+        //    _supplierService = supplierService;
+        //    _usersService = usersService;
+        //}
 
         //public PMSWindow(UsersService _usersService)
         //{
@@ -82,7 +106,7 @@ namespace PharmacyManagmentSystem.UI.Forms
                 }
             }
 
-            
+
 
             // Check if _userRole is set
             if (string.IsNullOrEmpty(_userRole))
@@ -278,10 +302,10 @@ namespace PharmacyManagmentSystem.UI.Forms
 
             }
 
-           
+
         }
 
-        
+
 
 
         private void btnCRemove_Click(object sender, EventArgs e)
@@ -441,6 +465,11 @@ namespace PharmacyManagmentSystem.UI.Forms
                 dgvSupplier.DataSource = null;
                 dgvSupplier.DataSource = _supplierService.GetAllSuppliers();
             }
+        }
+        private void salesReport_Click(object sender, EventArgs e)
+        {
+            Sales_Report = new Sales_Report();
+            Sales_Report.ShowDialog();
         }
 
         private void dgvSupplier_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -658,10 +687,20 @@ namespace PharmacyManagmentSystem.UI.Forms
 
         private void Logoutbtn_Click(object sender, EventArgs e)
         {
-            Landing LD = new(_usersService ,_customerService , _supplierService);
+            Landing LD = new(_usersService, _customerService, _supplierService , saleItemService
+                , purchaseItemService , purchaseService , categoryService , productService);
 
             LD.Show();
             this.Hide();
+
+
+        }
+
+        private void purchaseReport_Click(object sender, EventArgs e)
+        {
+            purchase_Report = new Purchase_Report();
+            purchase_Report.ShowDialog();
         }
     }
 }
+

@@ -17,7 +17,7 @@ namespace PharmacyManagementSystem.DAL.DataContext
         }
 
         public DbSet<Product> products { get; set; }
-        public DbSet<Category> Categories { get; set; }
+        public DbSet<Category> Categories { get; set;}
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Purchase> Purchases { get; set; }
         public DbSet<Sale> Sales { get; set; }

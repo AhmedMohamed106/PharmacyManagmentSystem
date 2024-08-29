@@ -11,10 +11,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CrystalReports.Engine" Version="13.0.4003" />
+    <PackageReference Include="CrystalReports.ReportAppServer.ReportDefModel" Version="13.0.4003" />
     <PackageReference Include="Guna.Charts.WinForms" Version="1.0.9" />
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.6" />
-    <PackageReference Include="Guna.Charts.WinForms" Version="1.0.9" />
-    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.6" />
+    <PackageReference Include="iTextSharp-LGPL" Version="4.1.6" />
   </ItemGroup>
 
   <ItemGroup>

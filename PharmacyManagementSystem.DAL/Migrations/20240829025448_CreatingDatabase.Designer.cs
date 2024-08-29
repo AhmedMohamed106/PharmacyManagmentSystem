@@ -12,7 +12,7 @@ using PharmacyManagementSystem.DAL.DataContext;
 namespace PharmacyManagementSystem.DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240828214315_CreatingDatabase")]
+    [Migration("20240829025448_CreatingDatabase")]
     partial class CreatingDatabase
     {
         /// <inheritdoc />

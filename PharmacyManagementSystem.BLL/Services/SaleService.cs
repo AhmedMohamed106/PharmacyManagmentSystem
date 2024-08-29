@@ -1,10 +1,15 @@
-﻿using PharmacyManagementSystem.DAL.Models;
+﻿using iTextSharp.text.pdf;
+using iTextSharp.text;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using PharmacyManagementSystem.DAL.Models;
 using PharmacyManagementSystem.DAL.Repository.IRepository;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
-using System.Text;
+using System.Reflection.Metadata;
 using System.Threading.Tasks;
+using Document = iTextSharp.text.Document;
 
 namespace PharmacyManagementSystem.BLL.Services
 {
@@ -130,5 +135,79 @@ namespace PharmacyManagementSystem.BLL.Services
                 return false;
             }
         }
+
+        public List<Sale> GetSalesReportData(DateTime startDate, DateTime endDate)
+        {
+            return _unitOfWork.saleRepository.GetSalesBetweenDates(startDate, endDate).ToList();
+        }
+
+
+
+        public void GenerateSalesReportPdf(DateTime startDate, DateTime endDate, string filePath)
+        {
+            var sales = GetSalesReportData(startDate, endDate);
+
+            if (sales == null || sales.Count == 0)
+            {
+                throw new InvalidOperationException("No sales data available for the selected date range.");
+            }
+
+            Document doc = new Document(PageSize.A4);
+            PdfWriter.GetInstance(doc, new FileStream(filePath, FileMode.Create));
+            doc.Open();
+
+            // Add title
+            Paragraph title = new Paragraph("Sales Report")
+            {
+                Alignment = Element.ALIGN_CENTER
+            };
+            doc.Add(title);
+            doc.Add(new Paragraph($"Date Range: {startDate.ToShortDateString()} - {endDate.ToShortDateString()}"));
+            doc.Add(new Paragraph("\n"));
+
+
+
+
+            // Create table for sales data
+            PdfPTable table = new PdfPTable(5); // Adjust the number of columns based on data
+            table.WidthPercentage = 100;
+            table.AddCell("Sale ID");
+            table.AddCell("Customer Name");
+            table.AddCell("Sale Date");
+            table.AddCell("Total Items");
+            table.AddCell("Total Amount");
+
+            foreach (var sale in sales)
+            {
+                table.AddCell(sale.Id.ToString());
+                table.AddCell(sale.Customer.Name);
+                table.AddCell(sale.Sale_Date.ToShortDateString());
+                table.AddCell(sale.SaleItems.Count.ToString());
+                table.AddCell(sale.SaleItems.Sum(si => si.Total).ToString("C"));
+            }
+
+            doc.Add(table);
+            doc.Close();
+        }
+
+        public void PrintPdf(string filePath)
+        {
+            if (!File.Exists(filePath))
+            {
+                throw new FileNotFoundException("The specified PDF file does not exist.");
+            }
+
+            // Using the system's default PDF viewer to print the document
+            Process process = new Process();
+            process.StartInfo.FileName = filePath;
+            process.StartInfo.Verb = "print";
+            process.StartInfo.CreateNoWindow = true;
+            process.Start();
+
+        }
     }
 }
+        
+
+      
+

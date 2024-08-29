@@ -73,11 +73,12 @@
             search.TabIndex = 15;
             search.Text = "Search";
             search.UseVisualStyleBackColor = true;
+            search.Click += search_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            label1.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(426, 32);
             label1.Name = "label1";
             label1.Size = new Size(108, 20);
@@ -94,7 +95,7 @@
             // label20
             // 
             label20.AutoSize = true;
-            label20.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            label20.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
             label20.Location = new Point(188, 32);
             label20.Name = "label20";
             label20.Size = new Size(51, 20);
@@ -104,7 +105,7 @@
             // label19
             // 
             label19.AutoSize = true;
-            label19.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            label19.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
             label19.Location = new Point(8, 32);
             label19.Name = "label19";
             label19.Size = new Size(66, 20);

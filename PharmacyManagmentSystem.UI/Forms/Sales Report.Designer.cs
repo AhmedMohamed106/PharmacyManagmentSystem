@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            search = new Button();
-            label19 = new Label();
+            dateTimePicker2 = new DateTimePicker();
             dateTimePicker1 = new DateTimePicker();
             label1 = new Label();
-            dateTimePicker2 = new DateTimePicker();
+            search = new Button();
+            label19 = new Label();
             dataGridView1 = new DataGridView();
             invoiceNo = new DataGridViewTextBoxColumn();
             date = new DataGridViewTextBoxColumn();
@@ -47,6 +47,7 @@
             unitQt = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
+            button1 = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
@@ -66,6 +67,30 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Select Date";
             // 
+            // dateTimePicker2
+            // 
+            dateTimePicker2.Location = new Point(361, 32);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new Size(200, 23);
+            dateTimePicker2.TabIndex = 16;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(97, 31);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(200, 23);
+            dateTimePicker1.TabIndex = 16;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(328, 33);
+            label1.Name = "label1";
+            label1.Size = new Size(26, 20);
+            label1.TabIndex = 5;
+            label1.Text = "To";
+            // 
             // search
             // 
             search.Location = new Point(644, 28);
@@ -78,36 +103,12 @@
             // label19
             // 
             label19.AutoSize = true;
-            label19.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            label19.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
             label19.Location = new Point(8, 32);
             label19.Name = "label19";
             label19.Size = new Size(83, 20);
             label19.TabIndex = 5;
             label19.Text = "Sales from";
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(97, 31);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
-            dateTimePicker1.TabIndex = 16;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            label1.Location = new Point(328, 33);
-            label1.Name = "label1";
-            label1.Size = new Size(26, 20);
-            label1.TabIndex = 5;
-            label1.Text = "To";
-            // 
-            // dateTimePicker2
-            // 
-            dateTimePicker2.Location = new Point(361, 32);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(200, 23);
-            dateTimePicker2.TabIndex = 16;
             // 
             // dataGridView1
             // 
@@ -162,7 +163,7 @@
             dataGridView2.Columns.AddRange(new DataGridViewColumn[] { drugName, packQt, unitQt, dataGridViewTextBoxColumn5, dataGridViewTextBoxColumn6 });
             dataGridView2.Location = new Point(10, 319);
             dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(779, 187);
+            dataGridView2.Size = new Size(779, 140);
             dataGridView2.TabIndex = 3;
             // 
             // drugName
@@ -196,11 +197,22 @@
             dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
+            // button1
+            // 
+            button1.Location = new Point(337, 479);
+            button1.Name = "button1";
+            button1.Size = new Size(122, 23);
+            button1.TabIndex = 4;
+            button1.Text = "Print Report";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Sales_Report
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 514);
+            Controls.Add(button1);
             Controls.Add(dataGridView2);
             Controls.Add(dataGridView1);
             Controls.Add(groupBox1);
@@ -208,7 +220,6 @@
             MinimumSize = new Size(816, 553);
             Name = "Sales_Report";
             Text = "Sales_Report";
-            Load += Sales_Report_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -237,5 +248,6 @@
         private DataGridViewTextBoxColumn unitQt;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private Button button1;
     }
 }

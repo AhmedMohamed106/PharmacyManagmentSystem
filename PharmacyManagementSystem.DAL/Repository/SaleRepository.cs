@@ -16,6 +16,12 @@ namespace PharmacyManagementSystem.DAL.Repository
         {
             _dbContext = dbContext;
         }
+
+        public IEnumerable<Sale> GetSalesBetweenDates(DateTime startDate, DateTime endDate)
+        {
+            return _dbContext.Sales.Where(s => s.Sale_Date >= startDate && s.Sale_Date <= endDate).ToList();
+        }
+
         public void Update(Sale entity)
         {
            _dbContext.Sales.Update(entity);
