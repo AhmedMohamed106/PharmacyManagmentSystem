@@ -1,10 +1,8 @@
+using PharmacyManagmentSystem.UI.Forms;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.VisualBasic.ApplicationServices;
 using PharmacyManagementSystem.BLL.Services;
 using PharmacyManagementSystem.DAL.DataContext;
 using PharmacyManagementSystem.DAL.Repository.IRepository;
-
-using PharmacyManagmentSystem.UI.Forms;
 
 namespace PharmacyManagmentSystem.UI
 {
@@ -16,23 +14,24 @@ namespace PharmacyManagmentSystem.UI
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-
+            // Initialize application settings before creating any forms
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            ApplicationConfiguration.Initialize();
 
+            // Set up dependency injection
             var services = new ServiceCollection();
             ConfigureServices(services);
 
-            using (var context = services.BuildServiceProvider())
+            // Build the service provider and run the main form
+            using (var serviceProvider = services.BuildServiceProvider())
             {
-                var mainform = context.GetRequiredService<Landing>();
+                var mainform = serviceProvider.GetRequiredService<Landing>();
                 Application.Run(mainform);
+
+                //var mainForm = serviceProvider.GetRequiredService<PMSWindow>();
+                //Application.Run(mainForm);
             }
-
-
         }
 
         private static void ConfigureServices(ServiceCollection services)
@@ -60,6 +59,8 @@ namespace PharmacyManagmentSystem.UI
 
             // You can add other forms here as needed
             // services.AddTransient<OtherForm>();
+
+           
         }
     }
 }

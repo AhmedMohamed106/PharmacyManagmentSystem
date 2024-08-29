@@ -23,7 +23,12 @@ namespace PharmacyManagementSystem.BLL.Services
             {
                 return false;
             }
+            var existingSupplier = _unitOfWork.supplierRepository.Get(c => c.Phone_Num == phoneNum);
 
+            if (existingSupplier != null)
+            {
+                return false;
+            }
             var supplier = new Supplier
             {
                 Name = name,
@@ -133,6 +138,18 @@ namespace PharmacyManagementSystem.BLL.Services
                 // Log exception
                 return false;
             }
+        }
+        public List<Supplier> SearchSupplier(string searchTerm)
+        {
+            // Convert the search term to lowercase for case-insensitive matching
+            string lowerSearchTerm = searchTerm.ToLower();
+
+            // Perform a case-insensitive search for entries that start with the search term
+            return _unitOfWork.supplierRepository.GetAll()
+                .Where(c => c.Name.ToLower().StartsWith(lowerSearchTerm) ||
+                            c.Address.ToLower().StartsWith(lowerSearchTerm) ||
+                            c.Phone_Num.ToLower().StartsWith(lowerSearchTerm) ||
+                            c.Email.ToLower().StartsWith(lowerSearchTerm)).ToList();
         }
     }
 }

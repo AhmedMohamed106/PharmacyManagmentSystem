@@ -24,7 +24,12 @@ namespace PharmacyManagementSystem.BLL.Services
             {
                 return false;
             }
+            var existingUser = _unitOfWork.userRepository.Get(c => c.UserName == userName);
 
+            if (existingUser != null)
+            {
+                return false;
+            }
             var user = new Users
             {
                 UserName = userName,

@@ -1,4 +1,5 @@
 ﻿using PharmacyManagementSystem.DAL.Models;
+using PharmacyManagementSystem.DAL.Repository;
 using PharmacyManagementSystem.DAL.Repository.IRepository;
 using System;
 using System.Collections.Generic;
@@ -19,11 +20,22 @@ namespace PharmacyManagementSystem.BLL.Services
 
         public bool AddCustomer(string name, string address, string phoneNum, string email)
         {
-            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(phoneNum) || string.IsNullOrWhiteSpace(email))
+            // Validate required fields
+            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(phoneNum))
             {
                 return false;
             }
 
+            // Check if a customer with the same name and phone number already exists
+            var existingCustomer = _unitOfWork.customerRepository.Get(c => c.Phone_Num == phoneNum);
+
+            // If the customer exists, do not add them again
+            if (existingCustomer != null)
+            {
+                return false;
+            }
+
+            // Create a new customer
             Customer customer = new Customer
             {
                 Name = name,
@@ -32,11 +44,13 @@ namespace PharmacyManagementSystem.BLL.Services
                 Email = email
             };
 
+            // Add the customer to the repository
             _unitOfWork.customerRepository.Add(customer);
             _unitOfWork.Save();
 
             return true;
         }
+
 
         public IEnumerable<Customer> GetAllCustomers()
         {
@@ -74,5 +88,19 @@ namespace PharmacyManagementSystem.BLL.Services
 
             return true;
         }
+
+        public List<Customer> SearchCustomers(string searchTerm)
+        {
+            // Convert the search term to lowercase for case-insensitive matching
+            string lowerSearchTerm = searchTerm.ToLower();
+
+            // Perform a case-insensitive search for entries that start with the search term
+            return _unitOfWork.customerRepository.GetAll()
+                .Where(c => c.Name.ToLower().StartsWith(lowerSearchTerm) ||
+                            c.Address.ToLower().StartsWith(lowerSearchTerm) ||
+                            c.Phone_Num.ToLower().StartsWith(lowerSearchTerm))
+                .ToList();
+        }
+
     }
 }

@@ -13,11 +13,21 @@ namespace PharmacyManagmentSystem.UI.Forms
 {
     public partial class Landing : Form
     {
-        private readonly UsersService _userservice;
-        public Landing(UsersService userservice)
+        private readonly UsersService _userService;
+        private readonly CustomerService _customerService;
+        private readonly SupplierService _supplierService;
+
+
+        public Landing()
+        {
+
+        }
+        public Landing(UsersService userservice , CustomerService customerService , SupplierService supplierservice)
         {
             InitializeComponent();
-            this._userservice = userservice;
+            this._userService = userservice;
+            this._customerService= customerService;
+            this._supplierService = supplierservice;
         }
 
        
@@ -27,7 +37,7 @@ namespace PharmacyManagmentSystem.UI.Forms
             string username = txtUserName.Text;
             string password = txtPassword.Text;
 
-            var mainForm = new PMSWindow(_userservice);
+            var mainForm = new PMSWindow(_customerService, _supplierService , _userService);
             mainForm.Login(username, password);
 
             if (mainForm.Visible)
