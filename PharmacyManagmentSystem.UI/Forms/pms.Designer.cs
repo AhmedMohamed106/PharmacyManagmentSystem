@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             Logoutbtn = new Button();
             guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -70,7 +70,6 @@
             saveInvoice = new Button();
             groupBox3 = new GroupBox();
             comboCustomerName = new ComboBox();
-            customerBindingSource = new BindingSource(components);
             customerAddress = new TextBox();
             customerPhone = new TextBox();
             salesCustomerCode = new TextBox();
@@ -132,15 +131,15 @@
             textBox12 = new TextBox();
             label15 = new Label();
             dataGridView2 = new DataGridView();
-            dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
-            stockQPack = new DataGridViewTextBoxColumn();
-            stockQUnit = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn7 = new DataGridViewTextBoxColumn();
             addNewProduct = new TabPage();
             dataGridView1 = new DataGridView();
+            nameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            genericNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            quantityDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            expireDateDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            companyDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            packSizeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            priceDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             productBindingSource = new BindingSource(components);
             groupBox1 = new GroupBox();
             button2 = new Button();
@@ -188,6 +187,10 @@
             label44 = new Label();
             label45 = new Label();
             dgvCustomer = new DataGridView();
+            dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn10 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn11 = new DataGridViewTextBoxColumn();
+            customerBindingSource = new BindingSource(components);
             reportsTab = new TabPage();
             customerReport = new Button();
             purchaseReport = new Button();
@@ -195,7 +198,10 @@
             shortageReport = new Button();
             accountTab = new TabPage();
             dgvAccounts = new DataGridView();
-            usersBindingSource1 = new BindingSource(components);
+            userNameDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            roleDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            isActiveDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
+            usersBindingSource = new BindingSource(components);
             userData = new GroupBox();
             label27 = new Label();
             btnAddAccount = new Button();
@@ -232,10 +238,22 @@
             label30 = new Label();
             label35 = new Label();
             dgvSupplier = new DataGridView();
+            dataGridViewTextBoxColumn12 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn13 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn14 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn15 = new DataGridViewTextBoxColumn();
             supplierBindingSource = new BindingSource(components);
             userNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             roleDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            usersBindingSource = new BindingSource(components);
+            productBindingSource1 = new BindingSource(components);
+            nameDataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
+            genericNameDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            typeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            quantityDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            expireDateDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            companyDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            packSizeDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            priceDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             gtcPharmacy.SuspendLayout();
@@ -244,7 +262,6 @@
             groupBox13.SuspendLayout();
             groupBox4.SuspendLayout();
             groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)customerBindingSource).BeginInit();
             purchaseTab.SuspendLayout();
             groupBox14.SuspendLayout();
             groupBox6.SuspendLayout();
@@ -262,10 +279,11 @@
             groupBox11.SuspendLayout();
             groupBox12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvCustomer).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)customerBindingSource).BeginInit();
             reportsTab.SuspendLayout();
             accountTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvAccounts).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)usersBindingSource1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)usersBindingSource).BeginInit();
             userData.SuspendLayout();
             supplierTap.SuspendLayout();
             groupBox9.SuspendLayout();
@@ -273,7 +291,7 @@
             groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvSupplier).BeginInit();
             ((System.ComponentModel.ISupportInitialize)supplierBindingSource).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)usersBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)productBindingSource1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -305,14 +323,14 @@
             guna2ControlBox1.Anchor = AnchorStyles.Right;
             guna2ControlBox1.BackColor = Color.Gray;
             guna2ControlBox1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            guna2ControlBox1.CustomizableEdges = customizableEdges1;
+            guna2ControlBox1.CustomizableEdges = customizableEdges3;
             guna2ControlBox1.FillColor = Color.FromArgb(0, 0, 0, 0);
             guna2ControlBox1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
             guna2ControlBox1.IconColor = Color.White;
             guna2ControlBox1.Location = new Point(1531, 15);
             guna2ControlBox1.Margin = new Padding(3, 4, 3, 4);
             guna2ControlBox1.Name = "guna2ControlBox1";
-            guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2ControlBox1.Size = new Size(35, 49);
             guna2ControlBox1.TabIndex = 1;
             // 
@@ -701,13 +719,13 @@
             // comboCustomerName
             // 
             comboCustomerName.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            comboCustomerName.DataSource = customerBindingSource;
             comboCustomerName.Enabled = false;
             comboCustomerName.FormattingEnabled = true;
             comboCustomerName.Location = new Point(182, 20);
             comboCustomerName.Name = "comboCustomerName";
             comboCustomerName.Size = new Size(204, 23);
             comboCustomerName.TabIndex = 4;
+            comboCustomerName.SelectedIndexChanged += comboCustomerName_SelectedIndexChanged;
             // 
             // customerAddress
             // 
@@ -1291,70 +1309,16 @@
             // 
             // dataGridView2
             // 
+            dataGridView2.AutoGenerateColumns = false;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn6, dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn3, stockQPack, stockQUnit, dataGridViewTextBoxColumn5, dataGridViewTextBoxColumn7 });
+            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { nameDataGridViewTextBoxColumn3, genericNameDataGridViewTextBoxColumn1, typeDataGridViewTextBoxColumn, quantityDataGridViewTextBoxColumn1, expireDateDataGridViewTextBoxColumn1, companyDataGridViewTextBoxColumn1, packSizeDataGridViewTextBoxColumn1, priceDataGridViewTextBoxColumn1 });
+            dataGridView2.DataSource = productBindingSource1;
             dataGridView2.Location = new Point(10, 133);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 51;
             dataGridView2.Size = new Size(874, 379);
             dataGridView2.TabIndex = 14;
             dataGridView2.CellContentClick += dataGridView2_CellContentClick;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            dataGridViewTextBoxColumn6.HeaderText = "Barcode";
-            dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            dataGridViewTextBoxColumn6.ReadOnly = true;
-            dataGridViewTextBoxColumn6.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewTextBoxColumn1.HeaderText = "Name";
-            dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.ReadOnly = true;
-            dataGridViewTextBoxColumn1.Width = 260;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            dataGridViewTextBoxColumn3.HeaderText = "Generic Name";
-            dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            dataGridViewTextBoxColumn3.ReadOnly = true;
-            dataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // stockQPack
-            // 
-            stockQPack.HeaderText = "Q Pack";
-            stockQPack.MinimumWidth = 6;
-            stockQPack.Name = "stockQPack";
-            stockQPack.ReadOnly = true;
-            stockQPack.Width = 80;
-            // 
-            // stockQUnit
-            // 
-            stockQUnit.HeaderText = "Q Unit";
-            stockQUnit.MinimumWidth = 6;
-            stockQUnit.Name = "stockQUnit";
-            stockQUnit.ReadOnly = true;
-            stockQUnit.Width = 80;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            dataGridViewTextBoxColumn5.HeaderText = "Company";
-            dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            dataGridViewTextBoxColumn5.ReadOnly = true;
-            dataGridViewTextBoxColumn5.Width = 120;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            dataGridViewTextBoxColumn7.HeaderText = "Price";
-            dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            dataGridViewTextBoxColumn7.ReadOnly = true;
-            dataGridViewTextBoxColumn7.Width = 125;
             // 
             // addNewProduct
             // 
@@ -1372,6 +1336,7 @@
             // 
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { nameDataGridViewTextBoxColumn, genericNameDataGridViewTextBoxColumn, quantityDataGridViewTextBoxColumn, expireDateDataGridViewTextBoxColumn, companyDataGridViewTextBoxColumn, packSizeDataGridViewTextBoxColumn, priceDataGridViewTextBoxColumn });
             dataGridView1.DataSource = productBindingSource;
             dataGridView1.Location = new Point(17, 179);
             dataGridView1.Name = "dataGridView1";
@@ -1379,6 +1344,52 @@
             dataGridView1.Size = new Size(874, 231);
             dataGridView1.TabIndex = 13;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // genericNameDataGridViewTextBoxColumn
+            // 
+            genericNameDataGridViewTextBoxColumn.DataPropertyName = "Generic_Name";
+            genericNameDataGridViewTextBoxColumn.HeaderText = "Generic_Name";
+            genericNameDataGridViewTextBoxColumn.Name = "genericNameDataGridViewTextBoxColumn";
+            // 
+            // quantityDataGridViewTextBoxColumn
+            // 
+            quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
+            quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
+            quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
+            // 
+            // expireDateDataGridViewTextBoxColumn
+            // 
+            expireDateDataGridViewTextBoxColumn.DataPropertyName = "Expire_Date";
+            expireDateDataGridViewTextBoxColumn.HeaderText = "Expire_Date";
+            expireDateDataGridViewTextBoxColumn.Name = "expireDateDataGridViewTextBoxColumn";
+            // 
+            // companyDataGridViewTextBoxColumn
+            // 
+            companyDataGridViewTextBoxColumn.DataPropertyName = "Company";
+            companyDataGridViewTextBoxColumn.HeaderText = "Company";
+            companyDataGridViewTextBoxColumn.Name = "companyDataGridViewTextBoxColumn";
+            // 
+            // packSizeDataGridViewTextBoxColumn
+            // 
+            packSizeDataGridViewTextBoxColumn.DataPropertyName = "Pack_Size";
+            packSizeDataGridViewTextBoxColumn.HeaderText = "Pack_Size";
+            packSizeDataGridViewTextBoxColumn.Name = "packSizeDataGridViewTextBoxColumn";
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            priceDataGridViewTextBoxColumn.DataPropertyName = "price";
+            priceDataGridViewTextBoxColumn.HeaderText = "price";
+            priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            // 
+            // productBindingSource
+            // 
+            productBindingSource.DataSource = typeof(PharmacyManagementSystem.DAL.Models.Product);
             // 
             // groupBox1
             // 
@@ -1834,6 +1845,7 @@
             dgvCustomer.AutoGenerateColumns = false;
             dgvCustomer.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvCustomer.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCustomer.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn4, dataGridViewTextBoxColumn10, dataGridViewTextBoxColumn11 });
             dgvCustomer.DataSource = customerBindingSource;
             dgvCustomer.Location = new Point(7, 9);
             dgvCustomer.Name = "dgvCustomer";
@@ -1842,6 +1854,31 @@
             dgvCustomer.Size = new Size(904, 218);
             dgvCustomer.TabIndex = 1;
             dgvCustomer.CellClick += dgvCustomer_CellClick;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            dataGridViewTextBoxColumn4.DataPropertyName = "Name";
+            dataGridViewTextBoxColumn4.HeaderText = "Name";
+            dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            dataGridViewTextBoxColumn10.DataPropertyName = "Address";
+            dataGridViewTextBoxColumn10.HeaderText = "Address";
+            dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            dataGridViewTextBoxColumn11.DataPropertyName = "Phone_Num";
+            dataGridViewTextBoxColumn11.HeaderText = "Phone_Num";
+            dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // customerBindingSource
+            // 
+            customerBindingSource.DataSource = typeof(PharmacyManagementSystem.DAL.Models.Customer);
             // 
             // reportsTab
             // 
@@ -1912,12 +1949,35 @@
             // 
             dgvAccounts.AutoGenerateColumns = false;
             dgvAccounts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvAccounts.DataSource = usersBindingSource1;
+            dgvAccounts.Columns.AddRange(new DataGridViewColumn[] { userNameDataGridViewTextBoxColumn1, roleDataGridViewTextBoxColumn1, isActiveDataGridViewCheckBoxColumn });
+            dgvAccounts.DataSource = usersBindingSource;
             dgvAccounts.Location = new Point(0, 0);
             dgvAccounts.Margin = new Padding(3, 2, 3, 2);
             dgvAccounts.Name = "dgvAccounts";
             dgvAccounts.Size = new Size(350, 112);
             dgvAccounts.TabIndex = 0;
+            // 
+            // userNameDataGridViewTextBoxColumn1
+            // 
+            userNameDataGridViewTextBoxColumn1.DataPropertyName = "UserName";
+            userNameDataGridViewTextBoxColumn1.HeaderText = "UserName";
+            userNameDataGridViewTextBoxColumn1.Name = "userNameDataGridViewTextBoxColumn1";
+            // 
+            // roleDataGridViewTextBoxColumn1
+            // 
+            roleDataGridViewTextBoxColumn1.DataPropertyName = "Role";
+            roleDataGridViewTextBoxColumn1.HeaderText = "Role";
+            roleDataGridViewTextBoxColumn1.Name = "roleDataGridViewTextBoxColumn1";
+            // 
+            // isActiveDataGridViewCheckBoxColumn
+            // 
+            isActiveDataGridViewCheckBoxColumn.DataPropertyName = "IsActive";
+            isActiveDataGridViewCheckBoxColumn.HeaderText = "IsActive";
+            isActiveDataGridViewCheckBoxColumn.Name = "isActiveDataGridViewCheckBoxColumn";
+            // 
+            // usersBindingSource
+            // 
+            usersBindingSource.DataSource = typeof(PharmacyManagementSystem.DAL.Models.Users);
             // 
             // userData
             // 
@@ -2279,6 +2339,7 @@
             dgvSupplier.AutoGenerateColumns = false;
             dgvSupplier.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvSupplier.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvSupplier.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn12, dataGridViewTextBoxColumn13, dataGridViewTextBoxColumn14, dataGridViewTextBoxColumn15 });
             dgvSupplier.DataSource = supplierBindingSource;
             dgvSupplier.Location = new Point(5, 286);
             dgvSupplier.Name = "dgvSupplier";
@@ -2288,6 +2349,38 @@
             dgvSupplier.TabIndex = 16;
             dgvSupplier.CellClick += dgvSupplier_CellClick;
             // 
+            // dataGridViewTextBoxColumn12
+            // 
+            dataGridViewTextBoxColumn12.DataPropertyName = "Name";
+            dataGridViewTextBoxColumn12.HeaderText = "Name";
+            dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            dataGridViewTextBoxColumn13.DataPropertyName = "Address";
+            dataGridViewTextBoxColumn13.HeaderText = "Address";
+            dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            dataGridViewTextBoxColumn13.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            dataGridViewTextBoxColumn14.DataPropertyName = "Phone_Num";
+            dataGridViewTextBoxColumn14.HeaderText = "Phone_Num";
+            dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            dataGridViewTextBoxColumn14.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            dataGridViewTextBoxColumn15.DataPropertyName = "Email";
+            dataGridViewTextBoxColumn15.HeaderText = "Email";
+            dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            dataGridViewTextBoxColumn15.ReadOnly = true;
+            // 
+            // supplierBindingSource
+            // 
+            supplierBindingSource.DataSource = typeof(PharmacyManagementSystem.DAL.Models.Supplier);
+            // 
             // userNameDataGridViewTextBoxColumn
             // 
             userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
@@ -2295,6 +2388,58 @@
             // roleDataGridViewTextBoxColumn
             // 
             roleDataGridViewTextBoxColumn.Name = "roleDataGridViewTextBoxColumn";
+            // 
+            // productBindingSource1
+            // 
+            productBindingSource1.DataSource = typeof(PharmacyManagementSystem.DAL.Models.Product);
+            // 
+            // nameDataGridViewTextBoxColumn3
+            // 
+            nameDataGridViewTextBoxColumn3.DataPropertyName = "Name";
+            nameDataGridViewTextBoxColumn3.HeaderText = "Name";
+            nameDataGridViewTextBoxColumn3.Name = "nameDataGridViewTextBoxColumn3";
+            // 
+            // genericNameDataGridViewTextBoxColumn1
+            // 
+            genericNameDataGridViewTextBoxColumn1.DataPropertyName = "Generic_Name";
+            genericNameDataGridViewTextBoxColumn1.HeaderText = "Generic_Name";
+            genericNameDataGridViewTextBoxColumn1.Name = "genericNameDataGridViewTextBoxColumn1";
+            // 
+            // typeDataGridViewTextBoxColumn
+            // 
+            typeDataGridViewTextBoxColumn.DataPropertyName = "Type";
+            typeDataGridViewTextBoxColumn.HeaderText = "Type";
+            typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
+            // 
+            // quantityDataGridViewTextBoxColumn1
+            // 
+            quantityDataGridViewTextBoxColumn1.DataPropertyName = "Quantity";
+            quantityDataGridViewTextBoxColumn1.HeaderText = "Quantity";
+            quantityDataGridViewTextBoxColumn1.Name = "quantityDataGridViewTextBoxColumn1";
+            // 
+            // expireDateDataGridViewTextBoxColumn1
+            // 
+            expireDateDataGridViewTextBoxColumn1.DataPropertyName = "Expire_Date";
+            expireDateDataGridViewTextBoxColumn1.HeaderText = "Expire_Date";
+            expireDateDataGridViewTextBoxColumn1.Name = "expireDateDataGridViewTextBoxColumn1";
+            // 
+            // companyDataGridViewTextBoxColumn1
+            // 
+            companyDataGridViewTextBoxColumn1.DataPropertyName = "Company";
+            companyDataGridViewTextBoxColumn1.HeaderText = "Company";
+            companyDataGridViewTextBoxColumn1.Name = "companyDataGridViewTextBoxColumn1";
+            // 
+            // packSizeDataGridViewTextBoxColumn1
+            // 
+            packSizeDataGridViewTextBoxColumn1.DataPropertyName = "Pack_Size";
+            packSizeDataGridViewTextBoxColumn1.HeaderText = "Pack_Size";
+            packSizeDataGridViewTextBoxColumn1.Name = "packSizeDataGridViewTextBoxColumn1";
+            // 
+            // priceDataGridViewTextBoxColumn1
+            // 
+            priceDataGridViewTextBoxColumn1.DataPropertyName = "price";
+            priceDataGridViewTextBoxColumn1.HeaderText = "price";
+            priceDataGridViewTextBoxColumn1.Name = "priceDataGridViewTextBoxColumn1";
             // 
             // PMSWindow
             // 
@@ -2319,7 +2464,6 @@
             groupBox4.PerformLayout();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)customerBindingSource).EndInit();
             purchaseTab.ResumeLayout(false);
             groupBox14.ResumeLayout(false);
             groupBox14.PerformLayout();
@@ -2345,10 +2489,11 @@
             groupBox12.ResumeLayout(false);
             groupBox12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvCustomer).EndInit();
+            ((System.ComponentModel.ISupportInitialize)customerBindingSource).EndInit();
             reportsTab.ResumeLayout(false);
             accountTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvAccounts).EndInit();
-            ((System.ComponentModel.ISupportInitialize)usersBindingSource1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)usersBindingSource).EndInit();
             userData.ResumeLayout(false);
             userData.PerformLayout();
             supplierTap.ResumeLayout(false);
@@ -2360,7 +2505,7 @@
             groupBox7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvSupplier).EndInit();
             ((System.ComponentModel.ISupportInitialize)supplierBindingSource).EndInit();
-            ((System.ComponentModel.ISupportInitialize)usersBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)productBindingSource1).EndInit();
             ResumeLayout(false);
         }
 
@@ -2409,13 +2554,6 @@
         private Button purchaseReport;
         private Button salesReport;
         private Button shortageReport;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private DataGridViewTextBoxColumn stockQPack;
-        private DataGridViewTextBoxColumn stockQUnit;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private DataGridView dgvAccounts;
         private GroupBox userData;
         private TextBox txtAcUserName;
@@ -2461,9 +2599,7 @@
         private TextBox txtECAddress;
         private Label label47;
         private Label label42;
-        private BindingSource customerBindingSource;
         private DataGridView dgvCustomer;
-        private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn phoneNumDataGridViewTextBoxColumn;
         private Button btnCRemove;
@@ -2476,7 +2612,6 @@
         private DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn phoneNumDataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
-        private BindingSource supplierBindingSource;
         private TextBox txtESuEmail;
         private TextBox txtESuPhone;
         private Label label36;
@@ -2492,27 +2627,9 @@
         private TextBox txtSuName;
         private DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn roleDataGridViewTextBoxColumn;
-        private BindingSource usersBindingSource;
         private Label label27;
         private Button Logoutbtn;
-        private DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn1;
-        private DataGridViewTextBoxColumn roleDataGridViewTextBoxColumn1;
-        private DataGridViewCheckBoxColumn isActiveDataGridViewCheckBoxColumn;
-        private BindingSource usersBindingSource1;
-        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn2;
-        private DataGridViewTextBoxColumn genericNameDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn expireDateDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn companyDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn packSizeDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn categoryIDDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn saleItemsDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn purchaseItemsDataGridViewTextBoxColumn;
-        private BindingSource productBindingSource;
         private Label cmpny;
         private DateTimePicker dateTimePicker1;
         private Button button2;
@@ -2600,5 +2717,35 @@
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private DataGridViewTextBoxColumn expire;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private BindingSource customerBindingSource;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private BindingSource supplierBindingSource;
+        private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn genericNameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn expireDateDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn companyDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn packSizeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
+        private BindingSource productBindingSource;
+        private DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn roleDataGridViewTextBoxColumn1;
+        private DataGridViewCheckBoxColumn isActiveDataGridViewCheckBoxColumn;
+        private BindingSource usersBindingSource;
+        private BindingSource productBindingSource1;
+        private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn3;
+        private DataGridViewTextBoxColumn genericNameDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn expireDateDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn companyDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn packSizeDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn1;
     }
 }

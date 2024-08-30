@@ -893,6 +893,7 @@ namespace PharmacyManagmentSystem.UI.Forms
                 if (supplier != null)
                 {
                     purchSCode.Text = supplier.Id.ToString();
+                    purchSName.Text = supplier.Name;
                     purchSAddress.Text = supplier.Address.ToString();
                     PurchSPhone.Text = supplier.Phone_Num.ToString();
                 }
@@ -911,7 +912,7 @@ namespace PharmacyManagmentSystem.UI.Forms
             DGVpurch.Rows.Add(row);
             if (product != null)
             {
-               
+
             }
 
 
@@ -928,7 +929,7 @@ namespace PharmacyManagmentSystem.UI.Forms
             //    //prod.Expire_Date = purchPExpire.Value;
             //    //prod.Pack_Size = purchPSize.Text;
 
-                
+
             //    MessageBox.Show("Succeccfuly added!");
 
             //    if (purchTotal.Text != "")
@@ -984,10 +985,15 @@ namespace PharmacyManagmentSystem.UI.Forms
             //    purchPGeneric.Text = "";
             //    purchPQty.Text = "";
             //    purchPSize.Text = "";
-              
-            }
+
+        }
+
+        private void comboCustomerName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
+}
 
 
 
