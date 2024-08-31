@@ -29,10 +29,14 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             panel1 = new Panel();
-            Logoutbtn = new Button();
+            guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             label1 = new Label();
             panel2 = new Panel();
@@ -131,6 +135,15 @@
             textBox12 = new TextBox();
             label15 = new Label();
             dataGridView2 = new DataGridView();
+            nameDataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
+            genericNameDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            typeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            quantityDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            expireDateDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            companyDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            packSizeDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            priceDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            productBindingSource1 = new BindingSource(components);
             addNewProduct = new TabPage();
             dataGridView1 = new DataGridView();
             nameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
@@ -245,15 +258,6 @@
             supplierBindingSource = new BindingSource(components);
             userNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             roleDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            productBindingSource1 = new BindingSource(components);
-            nameDataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
-            genericNameDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            typeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            quantityDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            expireDateDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            companyDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            packSizeDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            priceDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             gtcPharmacy.SuspendLayout();
@@ -270,6 +274,7 @@
             Stock.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)productBindingSource1).BeginInit();
             addNewProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)productBindingSource).BeginInit();
@@ -291,13 +296,12 @@
             groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvSupplier).BeginInit();
             ((System.ComponentModel.ISupportInitialize)supplierBindingSource).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)productBindingSource1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ButtonShadow;
-            panel1.Controls.Add(Logoutbtn);
+            panel1.BackColor = Color.MidnightBlue;
+            panel1.Controls.Add(guna2CircleButton1);
             panel1.Controls.Add(guna2ControlBox1);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
@@ -308,40 +312,47 @@
             panel1.Size = new Size(1084, 58);
             panel1.TabIndex = 0;
             // 
-            // Logoutbtn
+            // guna2CircleButton1
             // 
-            Logoutbtn.Location = new Point(24, 23);
-            Logoutbtn.Name = "Logoutbtn";
-            Logoutbtn.Size = new Size(75, 23);
-            Logoutbtn.TabIndex = 2;
-            Logoutbtn.Text = "Log Out";
-            Logoutbtn.UseVisualStyleBackColor = true;
-            Logoutbtn.Click += Logoutbtn_Click;
+            guna2CircleButton1.DisabledState.BorderColor = Color.DarkGray;
+            guna2CircleButton1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2CircleButton1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2CircleButton1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2CircleButton1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2CircleButton1.ForeColor = Color.White;
+            guna2CircleButton1.Location = new Point(49, 7);
+            guna2CircleButton1.Name = "guna2CircleButton1";
+            guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            guna2CircleButton1.Size = new Size(83, 43);
+            guna2CircleButton1.TabIndex = 3;
+            guna2CircleButton1.Text = "Logout";
+            guna2CircleButton1.Click += Logoutbtn_Click;
             // 
             // guna2ControlBox1
             // 
             guna2ControlBox1.Anchor = AnchorStyles.Right;
             guna2ControlBox1.BackColor = Color.Gray;
             guna2ControlBox1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            guna2ControlBox1.CustomizableEdges = customizableEdges3;
+            guna2ControlBox1.CustomizableEdges = customizableEdges5;
             guna2ControlBox1.FillColor = Color.FromArgb(0, 0, 0, 0);
             guna2ControlBox1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
             guna2ControlBox1.IconColor = Color.White;
             guna2ControlBox1.Location = new Point(1531, 15);
             guna2ControlBox1.Margin = new Padding(3, 4, 3, 4);
             guna2ControlBox1.Name = "guna2ControlBox1";
-            guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2ControlBox1.Size = new Size(35, 49);
             guna2ControlBox1.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(381, 9);
+            label1.Font = new Font("Urdu Typesetting", 26F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.LightSteelBlue;
+            label1.Location = new Point(331, -9);
             label1.Name = "label1";
-            label1.Size = new Size(387, 37);
+            label1.Size = new Size(481, 64);
             label1.TabIndex = 0;
             label1.Text = "Pharmacy Management System";
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -380,22 +391,23 @@
             gtcPharmacy.TabButtonHoverState.ForeColor = Color.White;
             gtcPharmacy.TabButtonHoverState.InnerColor = Color.FromArgb(40, 52, 70);
             gtcPharmacy.TabButtonIdleState.BorderColor = Color.Empty;
-            gtcPharmacy.TabButtonIdleState.FillColor = Color.FromArgb(33, 42, 57);
+            gtcPharmacy.TabButtonIdleState.FillColor = Color.MidnightBlue;
             gtcPharmacy.TabButtonIdleState.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            gtcPharmacy.TabButtonIdleState.ForeColor = Color.FromArgb(156, 160, 167);
-            gtcPharmacy.TabButtonIdleState.InnerColor = Color.FromArgb(33, 42, 57);
-            gtcPharmacy.TabButtonSelectedState.BorderColor = Color.FromArgb(64, 64, 64);
-            gtcPharmacy.TabButtonSelectedState.FillColor = Color.Gray;
+            gtcPharmacy.TabButtonIdleState.ForeColor = Color.AliceBlue;
+            gtcPharmacy.TabButtonIdleState.InnerColor = Color.MidnightBlue;
+            gtcPharmacy.TabButtonSelectedState.BorderColor = Color.CornflowerBlue;
+            gtcPharmacy.TabButtonSelectedState.FillColor = Color.AliceBlue;
             gtcPharmacy.TabButtonSelectedState.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            gtcPharmacy.TabButtonSelectedState.ForeColor = Color.White;
-            gtcPharmacy.TabButtonSelectedState.InnerColor = Color.FromArgb(224, 224, 224);
+            gtcPharmacy.TabButtonSelectedState.ForeColor = Color.Navy;
+            gtcPharmacy.TabButtonSelectedState.InnerColor = Color.CornflowerBlue;
             gtcPharmacy.TabButtonSize = new Size(180, 40);
             gtcPharmacy.TabIndex = 0;
-            gtcPharmacy.TabMenuBackColor = Color.DarkGray;
+            gtcPharmacy.TabMenuBackColor = Color.MidnightBlue;
             gtcPharmacy.Selected += gtcPharmacy_Selected;
             // 
             // salesTab
             // 
+            salesTab.BackColor = Color.AliceBlue;
             salesTab.Controls.Add(DGVSales);
             salesTab.Controls.Add(groupBox13);
             salesTab.Controls.Add(groupBox4);
@@ -408,10 +420,10 @@
             salesTab.Size = new Size(896, 518);
             salesTab.TabIndex = 1;
             salesTab.Text = "Sales";
-            salesTab.UseVisualStyleBackColor = true;
             // 
             // DGVSales
             // 
+            DGVSales.BackgroundColor = Color.LightSteelBlue;
             DGVSales.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DGVSales.Columns.AddRange(new DataGridViewColumn[] { salesPCodeDGV, salesProductName, salesUnitprice, salesUnitQuantity });
             DGVSales.Location = new Point(6, 301);
@@ -459,6 +471,7 @@
             // 
             // salesTotalPrice
             // 
+            salesTotalPrice.BackColor = Color.AliceBlue;
             salesTotalPrice.Enabled = false;
             salesTotalPrice.Location = new Point(343, 31);
             salesTotalPrice.Name = "salesTotalPrice";
@@ -467,6 +480,7 @@
             // 
             // SalesBillNo
             // 
+            SalesBillNo.BackColor = Color.AliceBlue;
             SalesBillNo.Enabled = false;
             SalesBillNo.Location = new Point(74, 31);
             SalesBillNo.Name = "SalesBillNo";
@@ -486,6 +500,7 @@
             // 
             // salesPay
             // 
+            salesPay.BackColor = Color.AliceBlue;
             salesPay.Location = new Point(625, 31);
             salesPay.Name = "salesPay";
             salesPay.Size = new Size(74, 23);
@@ -548,6 +563,7 @@
             // 
             // comboPForm
             // 
+            comboPForm.BackColor = Color.AliceBlue;
             comboPForm.Enabled = false;
             comboPForm.FormattingEnabled = true;
             comboPForm.Location = new Point(720, 23);
@@ -558,6 +574,7 @@
             // comboPName
             // 
             comboPName.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboPName.BackColor = Color.AliceBlue;
             comboPName.FormattingEnabled = true;
             comboPName.Location = new Point(280, 22);
             comboPName.Name = "comboPName";
@@ -566,6 +583,7 @@
             // 
             // textsalesExpire
             // 
+            textsalesExpire.BackColor = Color.AliceBlue;
             textsalesExpire.Enabled = false;
             textsalesExpire.Location = new Point(532, 77);
             textsalesExpire.Name = "textsalesExpire";
@@ -574,6 +592,7 @@
             // 
             // salesProductCode
             // 
+            salesProductCode.BackColor = Color.AliceBlue;
             salesProductCode.Location = new Point(73, 21);
             salesProductCode.Name = "salesProductCode";
             salesProductCode.Size = new Size(74, 23);
@@ -582,6 +601,7 @@
             // 
             // textsalesBalance
             // 
+            textsalesBalance.BackColor = Color.AliceBlue;
             textsalesBalance.Enabled = false;
             textsalesBalance.Location = new Point(291, 77);
             textsalesBalance.Name = "textsalesBalance";
@@ -590,6 +610,7 @@
             // 
             // PQty
             // 
+            PQty.BackColor = Color.AliceBlue;
             PQty.Location = new Point(783, 77);
             PQty.Name = "PQty";
             PQty.Size = new Size(74, 23);
@@ -610,6 +631,7 @@
             // 
             // salesPPrice
             // 
+            salesPPrice.BackColor = Color.AliceBlue;
             salesPPrice.Enabled = false;
             salesPPrice.Location = new Point(67, 75);
             salesPPrice.Name = "salesPPrice";
@@ -719,6 +741,7 @@
             // comboCustomerName
             // 
             comboCustomerName.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboCustomerName.BackColor = Color.AliceBlue;
             comboCustomerName.Enabled = false;
             comboCustomerName.FormattingEnabled = true;
             comboCustomerName.Location = new Point(182, 20);
@@ -729,6 +752,7 @@
             // 
             // customerAddress
             // 
+            customerAddress.BackColor = Color.AliceBlue;
             customerAddress.Enabled = false;
             customerAddress.Location = new Point(682, 21);
             customerAddress.Name = "customerAddress";
@@ -737,6 +761,7 @@
             // 
             // customerPhone
             // 
+            customerPhone.BackColor = Color.AliceBlue;
             customerPhone.Enabled = false;
             customerPhone.Location = new Point(458, 21);
             customerPhone.Name = "customerPhone";
@@ -745,6 +770,7 @@
             // 
             // salesCustomerCode
             // 
+            salesCustomerCode.BackColor = Color.AliceBlue;
             salesCustomerCode.Location = new Point(58, 20);
             salesCustomerCode.Name = "salesCustomerCode";
             salesCustomerCode.Size = new Size(53, 23);
@@ -795,6 +821,7 @@
             // 
             // purchaseTab
             // 
+            purchaseTab.BackColor = Color.AliceBlue;
             purchaseTab.Controls.Add(groupBox14);
             purchaseTab.Controls.Add(groupBox6);
             purchaseTab.Controls.Add(button1);
@@ -806,7 +833,6 @@
             purchaseTab.Size = new Size(896, 518);
             purchaseTab.TabIndex = 2;
             purchaseTab.Text = "Purchase";
-            purchaseTab.UseVisualStyleBackColor = true;
             // 
             // groupBox14
             // 
@@ -826,6 +852,7 @@
             // 
             // purchTotal
             // 
+            purchTotal.BackColor = Color.AliceBlue;
             purchTotal.Enabled = false;
             purchTotal.Location = new Point(343, 31);
             purchTotal.Name = "purchTotal";
@@ -834,6 +861,7 @@
             // 
             // purchBillNo
             // 
+            purchBillNo.BackColor = Color.AliceBlue;
             purchBillNo.Enabled = false;
             purchBillNo.Location = new Point(74, 31);
             purchBillNo.Name = "purchBillNo";
@@ -853,6 +881,7 @@
             // 
             // textBox34
             // 
+            textBox34.BackColor = Color.AliceBlue;
             textBox34.Enabled = false;
             textBox34.Location = new Point(625, 31);
             textBox34.Name = "textBox34";
@@ -909,6 +938,7 @@
             // 
             // purchSName
             // 
+            purchSName.BackColor = Color.AliceBlue;
             purchSName.Enabled = false;
             purchSName.FormattingEnabled = true;
             purchSName.Location = new Point(232, 27);
@@ -948,6 +978,7 @@
             // 
             // purchSCode
             // 
+            purchSCode.BackColor = Color.AliceBlue;
             purchSCode.Location = new Point(63, 26);
             purchSCode.Name = "purchSCode";
             purchSCode.Size = new Size(97, 23);
@@ -956,6 +987,7 @@
             // 
             // PurchSPhone
             // 
+            PurchSPhone.BackColor = Color.AliceBlue;
             PurchSPhone.Enabled = false;
             PurchSPhone.Location = new Point(722, 25);
             PurchSPhone.Name = "PurchSPhone";
@@ -974,6 +1006,7 @@
             // 
             // purchSAddress
             // 
+            purchSAddress.BackColor = Color.AliceBlue;
             purchSAddress.Enabled = false;
             purchSAddress.Location = new Point(499, 26);
             purchSAddress.Name = "purchSAddress";
@@ -1018,6 +1051,7 @@
             // 
             // purchPExpire
             // 
+            purchPExpire.CalendarMonthBackground = Color.AliceBlue;
             purchPExpire.Location = new Point(424, 72);
             purchPExpire.Name = "purchPExpire";
             purchPExpire.Size = new Size(194, 23);
@@ -1054,6 +1088,7 @@
             // 
             // purchPCode
             // 
+            purchPCode.BackColor = Color.AliceBlue;
             purchPCode.Location = new Point(79, 31);
             purchPCode.Name = "purchPCode";
             purchPCode.Size = new Size(97, 23);
@@ -1131,6 +1166,7 @@
             // 
             // purchPQty
             // 
+            purchPQty.BackColor = Color.AliceBlue;
             purchPQty.Location = new Point(724, 31);
             purchPQty.Name = "purchPQty";
             purchPQty.Size = new Size(119, 23);
@@ -1138,6 +1174,7 @@
             // 
             // purchPGeneric
             // 
+            purchPGeneric.BackColor = Color.AliceBlue;
             purchPGeneric.Location = new Point(80, 114);
             purchPGeneric.Name = "purchPGeneric";
             purchPGeneric.Size = new Size(157, 23);
@@ -1145,6 +1182,7 @@
             // 
             // purchPSize
             // 
+            purchPSize.BackColor = Color.AliceBlue;
             purchPSize.Location = new Point(753, 73);
             purchPSize.Name = "purchPSize";
             purchPSize.Size = new Size(79, 23);
@@ -1152,6 +1190,7 @@
             // 
             // purchPCompany
             // 
+            purchPCompany.BackColor = Color.AliceBlue;
             purchPCompany.Location = new Point(139, 70);
             purchPCompany.Name = "purchPCompany";
             purchPCompany.Size = new Size(161, 23);
@@ -1159,6 +1198,7 @@
             // 
             // purchPForm
             // 
+            purchPForm.BackColor = Color.AliceBlue;
             purchPForm.Location = new Point(477, 31);
             purchPForm.Name = "purchPForm";
             purchPForm.Size = new Size(161, 23);
@@ -1166,6 +1206,7 @@
             // 
             // purchPName
             // 
+            purchPName.BackColor = Color.AliceBlue;
             purchPName.Location = new Point(243, 31);
             purchPName.Name = "purchPName";
             purchPName.Size = new Size(161, 23);
@@ -1173,6 +1214,7 @@
             // 
             // DGVpurch
             // 
+            DGVpurch.BackgroundColor = Color.LightSteelBlue;
             DGVpurch.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DGVpurch.Columns.AddRange(new DataGridViewColumn[] { purchId, dataGridViewTextBoxColumn8, dataGridViewTextBoxColumn9, expire });
             DGVpurch.Location = new Point(9, 312);
@@ -1209,6 +1251,7 @@
             // 
             // Stock
             // 
+            Stock.BackColor = Color.AliceBlue;
             Stock.Controls.Add(groupBox2);
             Stock.Controls.Add(dataGridView2);
             Stock.Location = new Point(184, 4);
@@ -1216,7 +1259,6 @@
             Stock.Size = new Size(896, 518);
             Stock.TabIndex = 10;
             Stock.Text = "Stock";
-            Stock.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -1248,6 +1290,7 @@
             // 
             // textBox10
             // 
+            textBox10.BackColor = Color.AliceBlue;
             textBox10.Location = new Point(360, 30);
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(161, 23);
@@ -1274,6 +1317,7 @@
             // 
             // textBox11
             // 
+            textBox11.BackColor = Color.AliceBlue;
             textBox11.Location = new Point(654, 28);
             textBox11.Name = "textBox11";
             textBox11.Size = new Size(161, 23);
@@ -1291,6 +1335,7 @@
             // 
             // textBox12
             // 
+            textBox12.BackColor = Color.AliceBlue;
             textBox12.Location = new Point(93, 28);
             textBox12.Name = "textBox12";
             textBox12.Size = new Size(161, 23);
@@ -1310,6 +1355,7 @@
             // dataGridView2
             // 
             dataGridView2.AutoGenerateColumns = false;
+            dataGridView2.BackgroundColor = Color.LightSteelBlue;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Columns.AddRange(new DataGridViewColumn[] { nameDataGridViewTextBoxColumn3, genericNameDataGridViewTextBoxColumn1, typeDataGridViewTextBoxColumn, quantityDataGridViewTextBoxColumn1, expireDateDataGridViewTextBoxColumn1, companyDataGridViewTextBoxColumn1, packSizeDataGridViewTextBoxColumn1, priceDataGridViewTextBoxColumn1 });
             dataGridView2.DataSource = productBindingSource1;
@@ -1320,8 +1366,61 @@
             dataGridView2.TabIndex = 14;
             dataGridView2.CellContentClick += dataGridView2_CellContentClick;
             // 
+            // nameDataGridViewTextBoxColumn3
+            // 
+            nameDataGridViewTextBoxColumn3.DataPropertyName = "Name";
+            nameDataGridViewTextBoxColumn3.HeaderText = "Name";
+            nameDataGridViewTextBoxColumn3.Name = "nameDataGridViewTextBoxColumn3";
+            // 
+            // genericNameDataGridViewTextBoxColumn1
+            // 
+            genericNameDataGridViewTextBoxColumn1.DataPropertyName = "Generic_Name";
+            genericNameDataGridViewTextBoxColumn1.HeaderText = "Generic_Name";
+            genericNameDataGridViewTextBoxColumn1.Name = "genericNameDataGridViewTextBoxColumn1";
+            // 
+            // typeDataGridViewTextBoxColumn
+            // 
+            typeDataGridViewTextBoxColumn.DataPropertyName = "Type";
+            typeDataGridViewTextBoxColumn.HeaderText = "Type";
+            typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
+            // 
+            // quantityDataGridViewTextBoxColumn1
+            // 
+            quantityDataGridViewTextBoxColumn1.DataPropertyName = "Quantity";
+            quantityDataGridViewTextBoxColumn1.HeaderText = "Quantity";
+            quantityDataGridViewTextBoxColumn1.Name = "quantityDataGridViewTextBoxColumn1";
+            // 
+            // expireDateDataGridViewTextBoxColumn1
+            // 
+            expireDateDataGridViewTextBoxColumn1.DataPropertyName = "Expire_Date";
+            expireDateDataGridViewTextBoxColumn1.HeaderText = "Expire_Date";
+            expireDateDataGridViewTextBoxColumn1.Name = "expireDateDataGridViewTextBoxColumn1";
+            // 
+            // companyDataGridViewTextBoxColumn1
+            // 
+            companyDataGridViewTextBoxColumn1.DataPropertyName = "Company";
+            companyDataGridViewTextBoxColumn1.HeaderText = "Company";
+            companyDataGridViewTextBoxColumn1.Name = "companyDataGridViewTextBoxColumn1";
+            // 
+            // packSizeDataGridViewTextBoxColumn1
+            // 
+            packSizeDataGridViewTextBoxColumn1.DataPropertyName = "Pack_Size";
+            packSizeDataGridViewTextBoxColumn1.HeaderText = "Pack_Size";
+            packSizeDataGridViewTextBoxColumn1.Name = "packSizeDataGridViewTextBoxColumn1";
+            // 
+            // priceDataGridViewTextBoxColumn1
+            // 
+            priceDataGridViewTextBoxColumn1.DataPropertyName = "price";
+            priceDataGridViewTextBoxColumn1.HeaderText = "price";
+            priceDataGridViewTextBoxColumn1.Name = "priceDataGridViewTextBoxColumn1";
+            // 
+            // productBindingSource1
+            // 
+            productBindingSource1.DataSource = typeof(PharmacyManagementSystem.DAL.Models.Product);
+            // 
             // addNewProduct
             // 
+            addNewProduct.BackColor = Color.AliceBlue;
             addNewProduct.Controls.Add(dataGridView1);
             addNewProduct.Controls.Add(groupBox1);
             addNewProduct.Location = new Point(184, 4);
@@ -1329,18 +1428,33 @@
             addNewProduct.Size = new Size(896, 518);
             addNewProduct.TabIndex = 3;
             addNewProduct.Text = "Add New Product";
-            addNewProduct.UseVisualStyleBackColor = true;
             addNewProduct.Click += addNewProduct_Click;
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle4.BackColor = Color.CornflowerBlue;
+            dataGridViewCellStyle4.ForeColor = Color.AliceBlue;
+            dataGridViewCellStyle4.SelectionForeColor = Color.LightSteelBlue;
+            dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.BackgroundColor = Color.LightSteelBlue;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { nameDataGridViewTextBoxColumn, genericNameDataGridViewTextBoxColumn, quantityDataGridViewTextBoxColumn, expireDateDataGridViewTextBoxColumn, companyDataGridViewTextBoxColumn, packSizeDataGridViewTextBoxColumn, priceDataGridViewTextBoxColumn });
             dataGridView1.DataSource = productBindingSource;
             dataGridView1.Location = new Point(17, 179);
             dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = Color.CornflowerBlue;
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             dataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle6.BackColor = Color.AliceBlue;
+            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridView1.RowTemplate.Resizable = DataGridViewTriState.True;
             dataGridView1.Size = new Size(874, 231);
             dataGridView1.TabIndex = 13;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
@@ -1442,6 +1556,7 @@
             // 
             // txtCategory
             // 
+            txtCategory.BackColor = Color.AliceBlue;
             txtCategory.Location = new Point(437, 123);
             txtCategory.Name = "txtCategory";
             txtCategory.Size = new Size(100, 23);
@@ -1459,6 +1574,7 @@
             // 
             // dateTimePicker1
             // 
+            dateTimePicker1.CalendarMonthBackground = Color.AliceBlue;
             dateTimePicker1.Location = new Point(93, 119);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(146, 23);
@@ -1477,6 +1593,7 @@
             // 
             // textBox6
             // 
+            textBox6.BackColor = Color.AliceBlue;
             textBox6.Location = new Point(510, 70);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(156, 23);
@@ -1494,6 +1611,7 @@
             // 
             // textBox5
             // 
+            textBox5.BackColor = Color.AliceBlue;
             textBox5.Location = new Point(735, 25);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(55, 23);
@@ -1511,6 +1629,7 @@
             // 
             // textBox4
             // 
+            textBox4.BackColor = Color.AliceBlue;
             textBox4.Location = new Point(315, 70);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(140, 23);
@@ -1529,6 +1648,7 @@
             // 
             // textBox3
             // 
+            textBox3.BackColor = Color.AliceBlue;
             textBox3.Location = new Point(93, 70);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(131, 23);
@@ -1546,6 +1666,7 @@
             // 
             // comboBox1
             // 
+            comboBox1.BackColor = Color.AliceBlue;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Tablet", "Capsule", "Injection", "Syrup", "", "Suspension", "", "Solution", "Oral Powder", "", "Effervescent Granules", "Cream", "", "Ointment", "", "Gel", "", "Lotion", "Suppository", "", "Enemas", "Eye Drop", "", "Eye Ointment", "Ear Drop", "", "Ear Ointment" });
             comboBox1.Location = new Point(295, 27);
@@ -1565,6 +1686,7 @@
             // 
             // textBox2
             // 
+            textBox2.BackColor = Color.AliceBlue;
             textBox2.Location = new Point(505, 26);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(161, 23);
@@ -1582,6 +1704,7 @@
             // 
             // textBox1
             // 
+            textBox1.BackColor = Color.AliceBlue;
             textBox1.Location = new Point(63, 28);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(161, 23);
@@ -1599,6 +1722,7 @@
             // 
             // customersTab
             // 
+            customersTab.BackColor = Color.AliceBlue;
             customersTab.Controls.Add(groupBox10);
             customersTab.Controls.Add(groupBox11);
             customersTab.Controls.Add(groupBox12);
@@ -1609,7 +1733,6 @@
             customersTab.Size = new Size(896, 518);
             customersTab.TabIndex = 8;
             customersTab.Text = "Customers";
-            customersTab.UseVisualStyleBackColor = true;
             // 
             // groupBox10
             // 
@@ -1645,6 +1768,7 @@
             // 
             // txtCSearch
             // 
+            txtCSearch.BackColor = Color.AliceBlue;
             txtCSearch.Location = new Point(155, 28);
             txtCSearch.Name = "txtCSearch";
             txtCSearch.Size = new Size(192, 23);
@@ -1691,6 +1815,7 @@
             // 
             // txtECPhone
             // 
+            txtECPhone.BackColor = Color.AliceBlue;
             txtECPhone.Location = new Point(522, 68);
             txtECPhone.Name = "txtECPhone";
             txtECPhone.ReadOnly = true;
@@ -1709,6 +1834,7 @@
             // 
             // txtECAddress
             // 
+            txtECAddress.BackColor = Color.AliceBlue;
             txtECAddress.Location = new Point(313, 68);
             txtECAddress.Name = "txtECAddress";
             txtECAddress.ReadOnly = true;
@@ -1717,6 +1843,7 @@
             // 
             // txtECID
             // 
+            txtECID.BackColor = Color.AliceBlue;
             txtECID.Location = new Point(122, 27);
             txtECID.Name = "txtECID";
             txtECID.ReadOnly = true;
@@ -1725,6 +1852,7 @@
             // 
             // txtECName
             // 
+            txtECName.BackColor = Color.AliceBlue;
             txtECName.Location = new Point(73, 68);
             txtECName.Name = "txtECName";
             txtECName.ReadOnly = true;
@@ -1789,6 +1917,7 @@
             // 
             // txtCPhone
             // 
+            txtCPhone.BackColor = Color.AliceBlue;
             txtCPhone.Location = new Point(522, 34);
             txtCPhone.Name = "txtCPhone";
             txtCPhone.Size = new Size(144, 23);
@@ -1796,6 +1925,7 @@
             // 
             // txtCAddress
             // 
+            txtCAddress.BackColor = Color.AliceBlue;
             txtCAddress.Location = new Point(308, 34);
             txtCAddress.Name = "txtCAddress";
             txtCAddress.Size = new Size(144, 23);
@@ -1803,6 +1933,7 @@
             // 
             // txtCName
             // 
+            txtCName.BackColor = Color.AliceBlue;
             txtCName.Location = new Point(71, 34);
             txtCName.Name = "txtCName";
             txtCName.Size = new Size(161, 23);
@@ -1844,6 +1975,7 @@
             dgvCustomer.AllowUserToDeleteRows = false;
             dgvCustomer.AutoGenerateColumns = false;
             dgvCustomer.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvCustomer.BackgroundColor = Color.LightSteelBlue;
             dgvCustomer.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvCustomer.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn4, dataGridViewTextBoxColumn10, dataGridViewTextBoxColumn11 });
             dgvCustomer.DataSource = customerBindingSource;
@@ -1882,6 +2014,7 @@
             // 
             // reportsTab
             // 
+            reportsTab.BackColor = Color.AliceBlue;
             reportsTab.Controls.Add(customerReport);
             reportsTab.Controls.Add(purchaseReport);
             reportsTab.Controls.Add(salesReport);
@@ -1892,7 +2025,6 @@
             reportsTab.Size = new Size(896, 518);
             reportsTab.TabIndex = 7;
             reportsTab.Text = "Reports";
-            reportsTab.UseVisualStyleBackColor = true;
             // 
             // customerReport
             // 
@@ -1934,6 +2066,7 @@
             // 
             // accountTab
             // 
+            accountTab.BackColor = Color.AliceBlue;
             accountTab.Controls.Add(dgvAccounts);
             accountTab.Controls.Add(userData);
             accountTab.Location = new Point(184, 4);
@@ -1943,12 +2076,12 @@
             accountTab.Size = new Size(896, 518);
             accountTab.TabIndex = 0;
             accountTab.Text = "Account";
-            accountTab.UseVisualStyleBackColor = true;
             // 
             // dgvAccounts
             // 
             dgvAccounts.AutoGenerateColumns = false;
             dgvAccounts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvAccounts.BackgroundColor = Color.LightSteelBlue;
             dgvAccounts.Columns.AddRange(new DataGridViewColumn[] { userNameDataGridViewTextBoxColumn1, roleDataGridViewTextBoxColumn1, isActiveDataGridViewCheckBoxColumn });
             dgvAccounts.DataSource = usersBindingSource;
             dgvAccounts.Location = new Point(0, 0);
@@ -2020,6 +2153,7 @@
             // 
             // itemAcRole
             // 
+            itemAcRole.BackColor = Color.AliceBlue;
             itemAcRole.FormattingEnabled = true;
             itemAcRole.Items.AddRange(new object[] { "Admin", "Pharmacist", "Manager" });
             itemAcRole.Location = new Point(101, 92);
@@ -2029,6 +2163,7 @@
             // 
             // txtAcPassword
             // 
+            txtAcPassword.BackColor = Color.AliceBlue;
             txtAcPassword.Location = new Point(101, 58);
             txtAcPassword.Name = "txtAcPassword";
             txtAcPassword.Size = new Size(161, 23);
@@ -2037,6 +2172,7 @@
             // 
             // txtAcUserName
             // 
+            txtAcUserName.BackColor = Color.AliceBlue;
             txtAcUserName.Location = new Point(101, 25);
             txtAcUserName.Name = "txtAcUserName";
             txtAcUserName.Size = new Size(161, 23);
@@ -2074,6 +2210,7 @@
             // 
             // supplierTap
             // 
+            supplierTap.BackColor = Color.AliceBlue;
             supplierTap.Controls.Add(groupBox9);
             supplierTap.Controls.Add(groupBox8);
             supplierTap.Controls.Add(groupBox7);
@@ -2084,7 +2221,6 @@
             supplierTap.Size = new Size(896, 518);
             supplierTap.TabIndex = 11;
             supplierTap.Text = "Supplier";
-            supplierTap.UseVisualStyleBackColor = true;
             // 
             // groupBox9
             // 
@@ -2120,6 +2256,8 @@
             // 
             // txtSuSearch
             // 
+            txtSuSearch.BackColor = Color.AliceBlue;
+            txtSuSearch.ForeColor = Color.AliceBlue;
             txtSuSearch.Location = new Point(95, 33);
             txtSuSearch.Name = "txtSuSearch";
             txtSuSearch.Size = new Size(227, 23);
@@ -2156,6 +2294,8 @@
             // 
             // txtESuEmail
             // 
+            txtESuEmail.BackColor = Color.AliceBlue;
+            txtESuEmail.ForeColor = Color.AliceBlue;
             txtESuEmail.Location = new Point(275, 88);
             txtESuEmail.Name = "txtESuEmail";
             txtESuEmail.ReadOnly = true;
@@ -2164,6 +2304,8 @@
             // 
             // txtESuPhone
             // 
+            txtESuPhone.BackColor = Color.AliceBlue;
+            txtESuPhone.ForeColor = Color.AliceBlue;
             txtESuPhone.Location = new Point(76, 88);
             txtESuPhone.Name = "txtESuPhone";
             txtESuPhone.ReadOnly = true;
@@ -2202,6 +2344,8 @@
             // 
             // txtESuAddress
             // 
+            txtESuAddress.BackColor = Color.AliceBlue;
+            txtESuAddress.ForeColor = Color.AliceBlue;
             txtESuAddress.Location = new Point(290, 41);
             txtESuAddress.Name = "txtESuAddress";
             txtESuAddress.ReadOnly = true;
@@ -2210,6 +2354,8 @@
             // 
             // txtESuName
             // 
+            txtESuName.BackColor = Color.AliceBlue;
+            txtESuName.ForeColor = Color.AliceBlue;
             txtESuName.Location = new Point(74, 41);
             txtESuName.Name = "txtESuName";
             txtESuName.ReadOnly = true;
@@ -2256,6 +2402,8 @@
             // 
             // txtSuEmail
             // 
+            txtSuEmail.BackColor = Color.AliceBlue;
+            txtSuEmail.ForeColor = Color.AliceBlue;
             txtSuEmail.Location = new Point(298, 90);
             txtSuEmail.Name = "txtSuEmail";
             txtSuEmail.Size = new Size(137, 23);
@@ -2263,6 +2411,8 @@
             // 
             // txtSuAddress
             // 
+            txtSuAddress.BackColor = Color.AliceBlue;
+            txtSuAddress.ForeColor = Color.AliceBlue;
             txtSuAddress.Location = new Point(298, 41);
             txtSuAddress.Name = "txtSuAddress";
             txtSuAddress.Size = new Size(137, 23);
@@ -2270,6 +2420,8 @@
             // 
             // txtSuName
             // 
+            txtSuName.BackColor = Color.AliceBlue;
+            txtSuName.ForeColor = Color.AliceBlue;
             txtSuName.Location = new Point(71, 40);
             txtSuName.Name = "txtSuName";
             txtSuName.Size = new Size(137, 23);
@@ -2277,6 +2429,8 @@
             // 
             // txtSuPhone
             // 
+            txtSuPhone.BackColor = Color.AliceBlue;
+            txtSuPhone.ForeColor = Color.AliceBlue;
             txtSuPhone.Location = new Point(71, 90);
             txtSuPhone.Name = "txtSuPhone";
             txtSuPhone.Size = new Size(137, 23);
@@ -2338,6 +2492,7 @@
             dgvSupplier.AllowUserToDeleteRows = false;
             dgvSupplier.AutoGenerateColumns = false;
             dgvSupplier.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvSupplier.BackgroundColor = Color.LightSteelBlue;
             dgvSupplier.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvSupplier.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn12, dataGridViewTextBoxColumn13, dataGridViewTextBoxColumn14, dataGridViewTextBoxColumn15 });
             dgvSupplier.DataSource = supplierBindingSource;
@@ -2389,58 +2544,6 @@
             // 
             roleDataGridViewTextBoxColumn.Name = "roleDataGridViewTextBoxColumn";
             // 
-            // productBindingSource1
-            // 
-            productBindingSource1.DataSource = typeof(PharmacyManagementSystem.DAL.Models.Product);
-            // 
-            // nameDataGridViewTextBoxColumn3
-            // 
-            nameDataGridViewTextBoxColumn3.DataPropertyName = "Name";
-            nameDataGridViewTextBoxColumn3.HeaderText = "Name";
-            nameDataGridViewTextBoxColumn3.Name = "nameDataGridViewTextBoxColumn3";
-            // 
-            // genericNameDataGridViewTextBoxColumn1
-            // 
-            genericNameDataGridViewTextBoxColumn1.DataPropertyName = "Generic_Name";
-            genericNameDataGridViewTextBoxColumn1.HeaderText = "Generic_Name";
-            genericNameDataGridViewTextBoxColumn1.Name = "genericNameDataGridViewTextBoxColumn1";
-            // 
-            // typeDataGridViewTextBoxColumn
-            // 
-            typeDataGridViewTextBoxColumn.DataPropertyName = "Type";
-            typeDataGridViewTextBoxColumn.HeaderText = "Type";
-            typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
-            // 
-            // quantityDataGridViewTextBoxColumn1
-            // 
-            quantityDataGridViewTextBoxColumn1.DataPropertyName = "Quantity";
-            quantityDataGridViewTextBoxColumn1.HeaderText = "Quantity";
-            quantityDataGridViewTextBoxColumn1.Name = "quantityDataGridViewTextBoxColumn1";
-            // 
-            // expireDateDataGridViewTextBoxColumn1
-            // 
-            expireDateDataGridViewTextBoxColumn1.DataPropertyName = "Expire_Date";
-            expireDateDataGridViewTextBoxColumn1.HeaderText = "Expire_Date";
-            expireDateDataGridViewTextBoxColumn1.Name = "expireDateDataGridViewTextBoxColumn1";
-            // 
-            // companyDataGridViewTextBoxColumn1
-            // 
-            companyDataGridViewTextBoxColumn1.DataPropertyName = "Company";
-            companyDataGridViewTextBoxColumn1.HeaderText = "Company";
-            companyDataGridViewTextBoxColumn1.Name = "companyDataGridViewTextBoxColumn1";
-            // 
-            // packSizeDataGridViewTextBoxColumn1
-            // 
-            packSizeDataGridViewTextBoxColumn1.DataPropertyName = "Pack_Size";
-            packSizeDataGridViewTextBoxColumn1.HeaderText = "Pack_Size";
-            packSizeDataGridViewTextBoxColumn1.Name = "packSizeDataGridViewTextBoxColumn1";
-            // 
-            // priceDataGridViewTextBoxColumn1
-            // 
-            priceDataGridViewTextBoxColumn1.DataPropertyName = "price";
-            priceDataGridViewTextBoxColumn1.HeaderText = "price";
-            priceDataGridViewTextBoxColumn1.Name = "priceDataGridViewTextBoxColumn1";
-            // 
             // PMSWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -2476,6 +2579,7 @@
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)productBindingSource1).EndInit();
             addNewProduct.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)productBindingSource).EndInit();
@@ -2505,7 +2609,6 @@
             groupBox7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvSupplier).EndInit();
             ((System.ComponentModel.ISupportInitialize)supplierBindingSource).EndInit();
-            ((System.ComponentModel.ISupportInitialize)productBindingSource1).EndInit();
             ResumeLayout(false);
         }
 
@@ -2628,7 +2731,6 @@
         private DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn roleDataGridViewTextBoxColumn;
         private Label label27;
-        private Button Logoutbtn;
         private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn2;
         private Label cmpny;
         private DateTimePicker dateTimePicker1;
@@ -2747,5 +2849,6 @@
         private DataGridViewTextBoxColumn companyDataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn packSizeDataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn1;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
     }
 }
