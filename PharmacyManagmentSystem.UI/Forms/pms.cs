@@ -992,6 +992,11 @@ namespace PharmacyManagmentSystem.UI.Forms
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

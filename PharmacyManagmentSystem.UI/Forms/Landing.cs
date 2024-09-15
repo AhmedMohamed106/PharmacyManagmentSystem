@@ -27,12 +27,12 @@ namespace PharmacyManagmentSystem.UI.Forms
         {
 
         }
-        public Landing(UsersService userservice , CustomerService customerService , SupplierService supplierservice //, SaleItemService saleItemService, PurchaseItemService purchaseItemService
+        public Landing(UsersService userservice, CustomerService customerService, SupplierService supplierservice //, SaleItemService saleItemService, PurchaseItemService purchaseItemService
 , SaleItemService saleItemService, PurchaseItemService purchaseItemService, PurchaseService purchaseService, CategoryService categoryService, ProductService productService)
         {
             InitializeComponent();
             this._userService = userservice;
-            this._customerService= customerService;
+            this._customerService = customerService;
             this._supplierService = supplierservice;
             this.saleItemService = saleItemService;
             this.purchaseItemService = purchaseItemService;
@@ -41,15 +41,15 @@ namespace PharmacyManagmentSystem.UI.Forms
             this.productService = productService;
         }
 
-       
+
 
         private void login_Click_1(object sender, EventArgs e)
         {
             string username = txtUserName.Text;
             string password = txtPassword.Text;
 
-            var mainForm = new PMSWindow(_customerService, _supplierService, _userService , saleItemService , purchaseItemService , purchaseService
-                  ,categoryService , productService);
+            var mainForm = new PMSWindow(_customerService, _supplierService, _userService, saleItemService, purchaseItemService, purchaseService
+                  , categoryService, productService);
 
             mainForm.Login(username, password);
 
@@ -57,6 +57,16 @@ namespace PharmacyManagmentSystem.UI.Forms
             {
                 this.Hide();
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
